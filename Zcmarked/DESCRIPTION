@@ -1,0 +1,21 @@
+Package: Zcmarked
+Version: 1.0.0
+Date: 2011-05-18
+Title: SMI California Sea Lion Survival Analysis with
+    marked package
+Author: Jeff Laake <jeff.laake@noaa.gov>
+Description: This package provides code that uses RMark to
+    analyze resight data of branded sea lions for survival
+    estimation.
+Depends:
+    R (>= 2.13.0),
+    marked
+Imports:
+    RODBC,
+    CIPinnipedAnalysis
+LazyLoad: yes
+License: GPL version 2 or later
+Maintainer: Jeff Laake <Jeff.Laake@noaa.gov>
+Collate:
+    'EnvironCovariates.r'
+    'extract.Zc.r'
