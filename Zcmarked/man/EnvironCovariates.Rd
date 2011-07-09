@@ -2,7 +2,7 @@
 \alias{EnvironCovariates}
 \title{Extracts environmental covariate data for SMI Zc analysis...}
 \usage{EnvironCovariates(average.years=c(1994:1996, 1998:2008),
-    fdir="C:/Users/JLaake/Desktop/Master", sites=1:5)}
+    fdir="", sites=1:5)}
 
 \description{
   Extracts environmental covariate data for SMI Zc analysis

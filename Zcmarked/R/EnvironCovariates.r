@@ -15,9 +15,10 @@
 #'			OcttoJuneUWI36Anomalies, ApriltoJuneUWI36Anomalies, JulytoJuneUWI36Anomalies,
 #'			OcttoJuneMEI, ApriltoJuneMEI, JulytoJuneMEI
 #' @author Jeff Laake
-EnvironCovariates=function(average.years=c(1994:1996,1998:2008),fdir="C:/Users/JLaake/Desktop/Master",sites=1:5)
+EnvironCovariates=function(average.years=c(1994:1996,1998:2008),fdir="",sites=1:5)
 {
 #   SST Anomalies
+	if(fdir=="")fdir=system.file(package = "Zcmarked")
 	anomalies=create.SST.anomalies(average.years,fdir=fdir,store=FALSE)
 	fpath=file.path(fdir,"environmental.data.mdb")
 	connection=odbcConnectAccess(fpath)

@@ -40,10 +40,14 @@
 #'   \item{td}{sequence of fields named tdyyyy with values 0/1; it is 1 if seen
 #'   in year yyyy-1} \item{recap}{0 if never resighted and 1 otherwise}
 #'   \item{TotalTimesResighted}{number of years resighted}
+#' 
 #' @author Jeff Laake
+#' @examples 
+#' zcdata=extract.Zc()
 extract.Zc <-
-		function(file="BrandMaster.mdb",dir="C:/Users/JLaake/Desktop/Workspace/Zcmarked/Analysis",begin=515,end=815,select=1,lastyear=2010)
+		function(file="BrandMaster.mdb",dir="",begin=515,end=815,select=1,lastyear=2010)
 {
+	if(dir=="")dir=system.file(package="Zcmarked")
 	fdir=file.path(dir,file)
 	connection=odbcConnectAccess(fdir)
 	Alive=sqlFetch(connection,"Alive")

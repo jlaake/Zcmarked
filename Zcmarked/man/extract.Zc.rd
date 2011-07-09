@@ -1,9 +1,8 @@
 \name{extract.Zc}
 \alias{extract.Zc}
 \title{Extracts Zc SMI capture histories and covariates...}
-\usage{extract.Zc(file="BrandMaster.mdb",
-    dir="C:/Users/JLaake/Desktop/Workspace/Zcmarked/Analysis",
-    begin=515, end=815, select=1, lastyear=2010)}
+\usage{extract.Zc(file="BrandMaster.mdb", dir="", begin=515,
+    end=815, select=1, lastyear=2010)}
 
 \description{
   Extracts Zc SMI capture histories and covariates : from
@@ -53,3 +52,4 @@ sea lion to be consider a recapture}
   \item{lastyear}{final year to be included in resight history not final cohort which 
 is currently hard-coded at 2009}
 }
+\examples{zcdata=extract.Zc()}
