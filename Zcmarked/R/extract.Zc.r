@@ -47,7 +47,7 @@
 extract.Zc <-
 		function(file="BrandMaster.mdb",dir="",begin=515,end=815,select=1,lastyear=2010)
 {
-	if(dir=="")dir=system.file(package="Zcmarked")
+	if(dir=="")dir=system.file(package="CIPinnipedAnalysis")
 	fdir=file.path(dir,file)
 	connection=odbcConnectAccess(fdir)
 	Alive=sqlFetch(connection,"Alive")
