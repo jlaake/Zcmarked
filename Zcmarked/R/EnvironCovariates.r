@@ -1,10 +1,12 @@
+
+
 #' Extracts environmental covariate data for SMI Zc analysis
 #' : by extracting data from ACCESS database and creating a series of
 #' anomaly summaries for sea surface temperature(SST), upwelling index (UWI) and 
 #' multivariate ENSO index (MEI).
 #' 
-#' @import CIPinnipedAnalysis
 #' @export
+#' @import CIPinnipedAnalysis
 #' @param average.years years to use for average for anomaly creation
 #' @param fdir directory containing environmental.data.mdb
 #' @param sites SST sites to be used in SST averaging (from create.SST.anomalies)
@@ -15,7 +17,7 @@
 #'			OcttoJuneUWI36Anomalies, ApriltoJuneUWI36Anomalies, JulytoJuneUWI36Anomalies,
 #'			OcttoJuneMEI, ApriltoJuneMEI, JulytoJuneMEI
 #' @author Jeff Laake
-EnvironCovariates=function(average.years=c(1994:1996,1998:2008),fdir="",sites=1:5)
+EnvironCovariates<-function(average.years=c(1994:1996,1998:2008),fdir="",sites=1:5)
 {
 #   SST Anomalies
 	if(fdir=="")fdir=system.file(package = "CIPinnipedAnalysis")

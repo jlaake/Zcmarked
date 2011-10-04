@@ -1,4 +1,4 @@
-import(CIPinnipedAnalysis)
 export(EnvironCovariates)
-import(RODBC)
 export(extract.Zc)
+import(CIPinnipedAnalysis)
+import(RODBC)
