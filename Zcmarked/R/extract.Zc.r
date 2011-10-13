@@ -24,8 +24,8 @@
 #' @param end month-day at end of resight period (815 = August 15)
 #' @param select either 0 or 1; if 1 it requires at least 2 resightings of a
 #'   sea lion to be consider a recapture
-#' @param lastyear final year to be included in resight history not final cohort which 
-#'   is currently hard-coded at 2009
+#' @param lastyear final year to be included in resight history
+#' @param lastcohort final cohort which is included
 #' @return dataframe containing following fields \item{ch}{capture history;
 #'   character string} \item{cohort}{year branded; factor variable}
 #'   \item{sex}{either M or F; factor variable} \item{weight}{weight (kg) at
@@ -45,7 +45,7 @@
 #' @examples 
 #' zcdata=extract.Zc()
 extract.Zc <-
-		function(file="BrandMaster.mdb",dir="",begin=515,end=815,select=1,lastyear=2010)
+		function(file="BrandMaster.mdb",dir="",begin=515,end=815,select=1,lastyear=2010,lastcohort=2010)
 {
 	if(dir=="")dir=system.file(package="CIPinnipedAnalysis")
 	fdir=file.path(dir,file)
@@ -55,10 +55,8 @@ extract.Zc <-
 	Alive=droplevels(Alive[Alive$pupyear<=lastyear,])
 	Brand=sqlFetch(connection,"ZcBrand")
 	mon=as.POSIXlt(Brand$branddate)$mon+1
-# Only use brands with known sex and weight and branded in Sept or later and cohort <= 2009
-# This code will no longer work with inclusion of V brands in 2010 and will have to be changed; 2009 hard coded and 
-# does not work for lesser value either but code could be modified to adjust cohort.count.table
-	Brand=droplevels(Brand[Brand$sex!="U" & !is.na(Brand$weight) & Brand$weight>0 & mon>8 & Brand$cohort<=2009,])
+# Only use brands with known sex and weight and branded in Sept or later and cohort <= lastcohort
+	Brand=droplevels(Brand[Brand$sex!="U" & !is.na(Brand$weight) & Brand$weight>0 & mon>8 & Brand$cohort<=lastcohort,])
 	Brand$sex=Brand$adjsex
 	AreaCodes=sqlFetch(connection,"smiareacodes")
 # Limited Resights
@@ -70,7 +68,7 @@ extract.Zc <-
     LimitedResights=merge(LimitedResights,Brand[,c("brand","sex","cohort")],by="brand")
 	LimitedResights$adjsex=LimitedResights$sex
 	LimitedResights$sex=NULL
-	LimitedResights=LimitedResights[LimitedResights$cohort<=2009,]
+	LimitedResights=LimitedResights[LimitedResights$cohort<=lastcohort,]
 	LimitedResights$cohort=NULL
 	LimitedResights$pregnant=as.character(LimitedResights$pregnant)
 	LimitedResights$withpup=as.character(LimitedResights$withpup)	
@@ -82,10 +80,10 @@ extract.Zc <-
 					             (LimitedResights$adjsex=="M"&LimitedResights$withpup%in%c("T","t")),1,0)
 	LimitedResights=droplevels(LimitedResights)
 # BrandResightJoin
-	BrandResightJoin=merge(Brand,LimitedResights,by="brand",all.x=TRUE)
-	if(lastyear>2009)BrandResightJoin$cohort=factor(BrandResightJoin$cohort,levels=c(sort(unique(BrandResightJoin$cohort)), 2010:lastyear))
+    BrandResightJoin=merge(Brand,LimitedResights,by="brand",all.x=TRUE)
+	if(lastyear>2009)BrandResightJoin$cohort=factor(BrandResightJoin$cohort,levels=c(sort(unique(c(BrandResightJoin$cohort, 2010:lastyear)))))
 # LimitedResightswithCount
-	brandyear=paste(BrandResightJoin$brand,BrandResightJoin$pupyear,sep="")
+	brandyear=as.character(paste(BrandResightJoin$brand,BrandResightJoin$pupyear,sep=""))
 	count.table=table(brandyear)
 	xx=data.frame(brandyear=names(count.table),count=as.numeric(count.table))
 	LimitedResights$brandyear=paste(LimitedResights$brand,LimitedResights$pupyear,sep="")
@@ -105,7 +103,7 @@ extract.Zc <-
 	capture.history[capture.history>1]=1
 	xx=Brand[,c("brand","sex","cohort","weight")]
 	CaptureHistory=as.data.frame(capture.history)
-	CaptureHistory$brand=as.numeric(row.names(CaptureHistory))
+	CaptureHistory$brand=row.names(CaptureHistory)
 	CaptureHistory=merge(xx,CaptureHistory,by="brand",all.x=TRUE)
 	capture.history=CaptureHistory[,-(1:4)]
 	CaptureHistory$TotalTimesResighted=rowSums(capture.history)-1
