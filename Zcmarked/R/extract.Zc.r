@@ -47,6 +47,11 @@
 extract.Zc <-
 		function(file="BrandMaster.mdb",dir="",begin=515,end=815,select=1,lastyear=2010,lastcohort=2010)
 {
+	if(lastyear<lastcohort)
+	{
+        cat("\n lastyear < lastcohort; resetting lastyear=lastcohort\n")
+		lastyear=lastcohort
+	}	
 	if(dir=="")dir=system.file(package="CIPinnipedAnalysis")
 	fdir=file.path(dir,file)
 	connection=odbcConnectAccess(fdir)
@@ -95,12 +100,15 @@ extract.Zc <-
 	cohort.count.table=with(BrandResightJoin,table(brand,cohort))
 	resight.count.table=ifelse(resight.count.table<=select,0,1)
 	cohort.count.table=ifelse(cohort.count.table<=0,0,1)
+	if(lastyear>lastcohort)
+		cohort.count.table=cbind(cohort.count.table, matrix(0,ncol=(lastyear-lastcohort),nrow=nrow(cohort.count.table)))
 	BrandResightJoin$nphotos=ifelse(BrandResightJoin$photos%in%c("","N")|is.na(BrandResightJoin$photos),0,1)
 	photo.table=with(BrandResightJoin,tapply(nphotos,list(brand,pupyear),sum))
 	photo.table[is.na(photo.table)]=0
 	photo.table=cbind(matrix(0,ncol=3,nrow=nrow(photo.table)),photo.table)
 	capture.history=cohort.count.table+resight.count.table+photo.table
 	capture.history[capture.history>1]=1
+	colnames(capture.history)=1987:lastyear
 	xx=Brand[,c("brand","sex","cohort","weight")]
 	CaptureHistory=as.data.frame(capture.history)
 	CaptureHistory$brand=row.names(CaptureHistory)
