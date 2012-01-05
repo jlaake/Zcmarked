@@ -1,3 +1,5 @@
+export(dbConnection)
+export(define.models)
 export(EnvironCovariates)
 export(extract.Zc)
 import(CIPinnipedAnalysis)

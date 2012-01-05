@@ -5,9 +5,9 @@
 branding(ZCBrand) and resighting (Alive) tables. It constructs all the
 queries that used to be done in ACCESS.}
 \usage{
-  extract.Zc(file = "BrandMaster.mdb", dir = "", begin =
-  515, end = 815, select = 1, lastyear = 2010, lastcohort =
-  2010)
+  extract.Zc(file = "BrandMaster.mdb", dir = "",
+    begin = 515, end = 815, select = 1, lastyear = 2010,
+    lastcohort = 2010)
 }
 \arguments{
   \item{file}{ACCESS database filename}

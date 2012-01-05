@@ -5,8 +5,8 @@
 anomaly summaries for sea surface temperature(SST), upwelling index (UWI) and
 multivariate ENSO index (MEI).}
 \usage{
-  EnvironCovariates(average.years = c(1994:1996,
-  1998:2008), fdir = "", sites = 1:5)
+  EnvironCovariates(average.years = c(1994:1996, 1998:2008),
+    fdir = "", sites = 1:5)
 }
 \arguments{
   \item{average.years}{years to use for average for anomaly

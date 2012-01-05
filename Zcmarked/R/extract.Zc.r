@@ -52,9 +52,7 @@ extract.Zc <-
         cat("\n lastyear < lastcohort; resetting lastyear=lastcohort\n")
 		lastyear=lastcohort
 	}	
-	if(dir=="")dir=system.file(package="CIPinnipedAnalysis")
-	fdir=file.path(dir,file)
-	connection=odbcConnectAccess(fdir)
+	connection=dbConnection(file,dir)
 	Alive=sqlFetch(connection,"Alive")
 	Alive$pupyear=as.numeric(as.POSIXlt(Alive$sitedate)$year)+1900
 	Alive=droplevels(Alive[Alive$pupyear<=lastyear,])
@@ -74,6 +72,7 @@ extract.Zc <-
 	LimitedResights$adjsex=LimitedResights$sex
 	LimitedResights$sex=NULL
 	LimitedResights=LimitedResights[LimitedResights$cohort<=lastcohort,]
+	LimitedResights$yearbranded=LimitedResights$cohort
 	LimitedResights$cohort=NULL
 	LimitedResights$pregnant=as.character(LimitedResights$pregnant)
 	LimitedResights$withpup=as.character(LimitedResights$withpup)	
@@ -118,18 +117,26 @@ extract.Zc <-
 	CaptureHistory$recap=ifelse(CaptureHistory$TotalTimesResighted>0,1,0)
 # ReproCovariates
 	xx=with(LimitedResightswithCount[LimitedResightswithCount$repro==1,],tapply(pupyear,brand,min))
-	repro.table=data.frame(brand=as.numeric(names(xx)),repro.year=as.numeric(xx))
+#   If I ever want age at first repro
+#   zz=with(LimitedResightswithCount[LimitedResightswithCount$repro ==  1, ], tapply(pupyear-yearbranded,brand,function(x)min(x[x>0])))
+#   zz=with(repro.df,tapply(first.repro.age,list(brand,repro.year),min))
+#    zz[is.na(zz)]=0
+#    repro.df=data.frame(brand=as.numeric(names(xx)),repro.year=as.numeric(xx),first.repro.age=as.numeric(zz))
+	repro.df=data.frame(brand=as.numeric(names(xx)),repro.year=as.numeric(xx))
 #	repro.table$repro.year=ifelse(repro.table$repro.year<100,1900+repro.table$repro.year,repro.table$repro.year)
-	repro.table=with(repro.table,table(brand,repro.year))
+	repro.table=with(repro.df,table(brand,repro.year))
 	xx=as.matrix(repro.table)
 	class(xx)="matrix"
 	xx=cbind(data.frame(brand=as.numeric(row.names(repro.table))),xx)
 	xx=merge(Brand[,"brand",drop=FALSE],xx,all.x=TRUE,by="brand")
 	xx=xx[,-1]
 	xx[is.na(xx)]=0
+    zz=xx
 	xx[]=t(apply(xx,1,cumsum))
-	ReproCovariates=xx
-	names(ReproCovariates)=paste("repro",names(ReproCovariates),sep="")
+	zz=xx-zz
+	zz[]=t(apply(zz,1,cumsum))	
+	ReproCovariates=cbind(xx,zz)
+	names(ReproCovariates)=c(paste("repro",names(xx),sep=""),paste("RepAge",names(xx),sep=""))
 # RegionCovariates
 	xx=with(LimitedResightswithCount[LimitedResightswithCount$capregion==1,],tapply(pupyear,brand,min))
 	area1.table=data.frame(brand=as.numeric(names(xx)),area1.year=as.numeric(xx))
