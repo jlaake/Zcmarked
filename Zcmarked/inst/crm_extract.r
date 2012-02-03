@@ -55,7 +55,7 @@ zcdata.proc=process.data(zcdata,model="cjs",begin.time=1987)
 # will be included in data unless you specify fields argument.  Thus, even though prepro isn't
 # used for Phi and repro isn't used for p, they are included here and then removed below.
 zc.ddl=make.design.data(zcdata.proc,parameters=list(Phi=list(time.varying=c("area1","area2","area3","repro","td","prepro","RepAge")),
-				p=list(time.varying=c("area1","area2","area3","repro","td","prepro"))))
+				p=list(time.varying=c("area1","area2","area3","repro","td","prepro","RepAge"))))
 # remove unused fields in Phi and p design data								
 zc.ddl$Phi$repro1987=NULL
 zc.ddl$Phi$RepAge1987=NULL
@@ -87,6 +87,7 @@ zc.ddl$Phi$TotalTimesResighted=NULL
 zc.ddl$p$initial.age=NULL
 zc.ddl$Phi$initial.age=NULL
 zc.ddl$p$repro=NULL
+zc.ddl$p$RepAge=NULL
 zc.ddl$Phi$area12009=NULL
 zc.ddl$Phi$area22009=NULL
 zc.ddl$Phi$area32009=NULL
@@ -196,12 +197,16 @@ zc.ddl$Phi$leptom= zc.ddl$Phi$leptom/100
 zc.ddl$Phi$leptof= zc.ddl$Phi$leptof/100
 zc.ddl$Phi$DA= zc.ddl$Phi$DA/100
 #  Add in environmental covariates
+envcovdf=EnvironCovariates()
 zc.ddl$Phi=merge_design.covariates(zc.ddl$Phi,envcovdf,bytime=TRUE)
 zc.ddl$Phi=droplevels(zc.ddl$Phi)
 zc.ddl$p=droplevels(zc.ddl$p)
 # save files for passing to Linux machine
 save(zcdata,file="zcdata.rda")
-save(envcovdf,"envcovdf.rda")
+save(envcovdf,file="envcovdf.rda")
+save(zc.ddl,file="zc.ddl.rda")
+save(zcdata.proc,file="zcdata.proc.rda")
+
 
 
 

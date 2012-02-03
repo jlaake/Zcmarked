@@ -64,6 +64,8 @@ extract.Zc <-
 	AreaCodes=sqlFetch(connection,"smiareacodes")
 # Limited Resights
 	xx=merge(Alive,AreaCodes[,c("code","two")],all.x=TRUE,by="code")
+# For SMI extract only
+#	xx=xx[(xx$sitecode%in%"SMI"&xx$pupyear>=1990),]
 	xx=xx[(xx$sitecode%in%c("ANI","SMI")&xx$pupyear>=1990) | (xx$sitecode%in%c("FAI","FAR")&xx$pupyear>=1992),]
 	mday=as.numeric(as.POSIXlt(xx$sitedate)$mon+1)*100+as.POSIXlt(xx$sitedate)$mday
 	LimitedResights=xx[mday<=end& mday>=begin,]
