@@ -47,7 +47,7 @@ EnvironCovariates<-function(average.years=c(1994:1996,1998:2008),fdir=NULL,sites
 	names(ApriltoJuneUWI36Anomalies)=as.character(as.numeric(names(ApriltoJuneUWI36Anomalies))-1)
 	JulytoJuneUWI36Anomalies=rowMeans(cbind(UWI[1:(nyears-1),as.character(7:12),2],UWI[2:nyears,as.character(1:6),2]),na.rm=TRUE)
 #   Multivariate ENSO Index - lagged by 3 months -- so the indices don't line up with the months
-	MEI=getCalcurData("Environ","MEI",fdir=dir)
+	MEI=getCalcurData("Environ","MEI",dir=fdir)
 	minyear=min(MEI$Year)
 	maxyear=max(MEI$Year)
 	nyears=maxyear-minyear+1
