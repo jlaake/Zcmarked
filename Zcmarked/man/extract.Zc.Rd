@@ -1,18 +1,13 @@
 \name{extract.Zc}
 \alias{extract.Zc}
-\title{Extracts Zc SMI capture histories and covariates
-: from ACCESS database, it constructs the relevant capture histories from the
-branding(ZCBrand) and resighting (Alive) tables. It constructs all the
-queries that used to be done in ACCESS.}
+\title{Zc SMI capture histories and covariates}
 \usage{
-  extract.Zc(file = "BrandMaster.mdb", dir = "",
-    begin = 515, end = 815, select = 1, lastyear = 2010,
-    lastcohort = 2010)
+  extract.Zc(dir = NULL, begin = 515, end = 815,
+    select = 1, lastyear = 2010, lastcohort = 2010)
 }
 \arguments{
-  \item{file}{ACCESS database filename}
-
-  \item{dir}{Directory containing ACCESS database}
+  \item{dir}{Directory containing Calcur databases; NULL
+  uses std location}
 
   \item{begin}{month-day at beginning of resight period
   (515 = May 15)}
@@ -49,19 +44,26 @@ queries that used to be done in ACCESS.}
   \item{TotalTimesResighted}{number of years resighted}
 }
 \description{
-  Attaches directly to ACCESS database and extracts initial
-  brand and all resighting information.  Excludes any sea
-  lions with missing sex or initial weight. Also, excludes
-  the small number of animals branded in the spring and
-  only uses those branded past August (month 8).  Restricts
-  resightings to those seen between \code{begin} and
-  \code{end} inclusive of those dates. Also restricts
-  resightings to SMI and ANI from 1990 onwards and to
-  FAI/FAR from 1992 onwards. SMI resightings are split into
-  2 areas based on field \code{two} in table smiareacodes.
-  All other resightings are lumped into area 3. A sea lion
-  is only considered resighted for the year if either it
-  was seen twice in the year or a photo was taken.
+  Extracts data from ACCESS databases and constructs the
+  relevant capture histories from the branding(ZCBrand) and
+  resighting (Alive) tables. It constructs all the queries
+  that used to be done in ACCESS.
+}
+\details{
+  It uses CalcurData package to get to ACCESS database and
+  extracts initial brand and all resighting information.
+  Excludes any sea lions with missing sex or initial
+  weight. Also, excludes the small number of animals
+  branded in the spring and only uses those branded past
+  August (month 8).  Restricts resightings to those seen
+  between \code{begin} and \code{end} inclusive of those
+  dates. Also restricts resightings to SMI and ANI from
+  1990 onwards and to FAI/FAR from 1992 onwards. SMI
+  resightings are split into 2 areas based on field
+  \code{two} in table smiareacodes.  All other resightings
+  are lumped into area 3. A sea lion is only considered
+  resighted for the year if either it was seen twice in the
+  year or a photo was taken.
 }
 \examples{
 zcdata=extract.Zc()

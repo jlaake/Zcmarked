@@ -6,9 +6,9 @@
 #' multivariate ENSO index (MEI).
 #' 
 #' @export
-#' @import CIPinnipedAnalysis
+#' @import CalcurData
 #' @param average.years years to use for average for anomaly creation
-#' @param fdir directory containing environmental.data.mdb
+#' @param fdir directory that contains environmental.data.mdb; NULL is std location
 #' @param sites SST sites to be used in SST averaging (from create.SST.anomalies)
 #'        1) ESB, 2)WSB, 3)PtArg, 4)PtSM, 5)PtSL, 6)CSM, 7)MB, 8)PtReyes
 #' @return dataframe with rows as years from 1987 to last year in data and the columns are:
@@ -17,13 +17,10 @@
 #'			OcttoJuneUWI36Anomalies, ApriltoJuneUWI36Anomalies, JulytoJuneUWI36Anomalies,
 #'			OcttoJuneMEI, ApriltoJuneMEI, JulytoJuneMEI
 #' @author Jeff Laake
-EnvironCovariates<-function(average.years=c(1994:1996,1998:2008),fdir="",sites=1:5)
+EnvironCovariates<-function(average.years=c(1994:1996,1998:2008),fdir=NULL,sites=1:5)
 {
 #   SST Anomalies
-	if(fdir=="")fdir=system.file(package = "CIPinnipedAnalysis")
 	anomalies=create.SST.anomalies(average.years,fdir=fdir,store=FALSE)
-	fpath=file.path(fdir,"environmental.data.mdb")
-	connection=odbcConnectAccess(fpath)
 	SSTAnomalies=t(apply(anomalies[,,sites],c(2,1),mean,na.rm=TRUE))
 	SSTAnomalies[is.nan(SSTAnomalies)]=NA
 	nyears=nrow(SSTAnomalies)
@@ -33,7 +30,7 @@ EnvironCovariates<-function(average.years=c(1994:1996,1998:2008),fdir="",sites=1
 	names(ApriltoJuneSSTAnomalies)=as.character(as.numeric(names(ApriltoJuneSSTAnomalies))-1)
 	JulytoJuneSSTAnomalies=rowMeans(cbind(SSTAnomalies[1:(nyears-1),c("July","Aug","Sept","Oct","Nov","Dec")],SSTAnomalies[2:nyears,c("Jan","Feb","Mar","Apr","May","June")]),na.rm=TRUE)
 #   UpwellingIndex for 33N & 36N 	
-	UWI=sqlFetch(connection,"UWIAnomaly")
+	UWI=getCalcurData("Environ","UWIAnomaly",dir=fdir)
 	UWI=UWI[order(UWI$Year,UWI$Month),]
 	UWI=tapply(UWI$UWI,list(UWI$Year,UWI$Month,UWI$Location),unique)
 	minyear=min(as.numeric(dimnames(UWI)[[1]]))
@@ -50,7 +47,7 @@ EnvironCovariates<-function(average.years=c(1994:1996,1998:2008),fdir="",sites=1
 	names(ApriltoJuneUWI36Anomalies)=as.character(as.numeric(names(ApriltoJuneUWI36Anomalies))-1)
 	JulytoJuneUWI36Anomalies=rowMeans(cbind(UWI[1:(nyears-1),as.character(7:12),2],UWI[2:nyears,as.character(1:6),2]),na.rm=TRUE)
 #   Multivariate ENSO Index - lagged by 3 months -- so the indices don't line up with the months
-	MEI=sqlFetch(connection,"MEI")
+	MEI=getCalcurData("Environ","MEI",fdir=dir)
 	minyear=min(MEI$Year)
 	maxyear=max(MEI$Year)
 	nyears=maxyear-minyear+1
@@ -82,6 +79,5 @@ EnvironCovariates<-function(average.years=c(1994:1996,1998:2008),fdir="",sites=1
 			ApriltoJuneMEI=ApriltoJuneMEI[as.character(1987:maxyear)],
 			JulytoJuneMEI=JulytoJuneMEI[as.character(1987:maxyear)]
 			)
-	odbcClose(connection)
     return(envcovdf)
 }

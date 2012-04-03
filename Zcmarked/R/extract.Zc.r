@@ -1,11 +1,10 @@
-
-
-#' Extracts Zc SMI capture histories and covariates
-#' : from ACCESS database, it constructs the relevant capture histories from the
+#' Zc SMI capture histories and covariates
+#' 
+#' Extracts data from ACCESS databases and constructs the relevant capture histories from the
 #' branding(ZCBrand) and resighting (Alive) tables. It constructs all the
 #' queries that used to be done in ACCESS.
 #' 
-#' Attaches directly to ACCESS database and extracts initial brand and all
+#' It uses CalcurData package to get to ACCESS database and extracts initial brand and all
 #' resighting information.  Excludes any sea lions with missing sex or initial
 #' weight. Also, excludes the small number of animals branded in the spring and
 #' only uses those branded past August (month 8).  Restricts resightings to
@@ -16,10 +15,9 @@
 #' area 3. A sea lion is only considered resighted for the year if either it
 #' was seen twice in the year or a photo was taken.
 #'
-#' @import RODBC 
+#' @import CalcurData 
 #' @export
-#' @param file ACCESS database filename
-#' @param dir Directory containing ACCESS database
+#' @param dir Directory containing Calcur databases; NULL uses std location 
 #' @param begin month-day at beginning of resight period (515 = May 15)
 #' @param end month-day at end of resight period (815 = August 15)
 #' @param select either 0 or 1; if 1 it requires at least 2 resightings of a
@@ -44,24 +42,22 @@
 #' @author Jeff Laake
 #' @examples 
 #' zcdata=extract.Zc()
-extract.Zc <-
-		function(file="BrandMaster.mdb",dir="",begin=515,end=815,select=1,lastyear=2010,lastcohort=2010)
+extract.Zc=function(dir=NULL,begin=515,end=815,select=1,lastyear=2010,lastcohort=2010)
 {
 	if(lastyear<lastcohort)
 	{
         cat("\n lastyear < lastcohort; resetting lastyear=lastcohort\n")
 		lastyear=lastcohort
 	}	
-	connection=dbConnection(file,dir)
-	Alive=sqlFetch(connection,"Alive")
+	Alive=getCalcurData("Zc","Alive",dir=dir)
 	Alive$pupyear=as.numeric(as.POSIXlt(Alive$sitedate)$year)+1900
 	Alive=droplevels(Alive[Alive$pupyear<=lastyear,])
-	Brand=sqlFetch(connection,"ZcBrand")
+	Brand=getCalcurData("Zc","ZcBrand",dir=dir)
 	mon=as.POSIXlt(Brand$branddate)$mon+1
 # Only use brands with known sex and weight and branded in Sept or later and cohort <= lastcohort
 	Brand=droplevels(Brand[Brand$sex!="U" & !is.na(Brand$weight) & Brand$weight>0 & mon>8 & Brand$cohort<=lastcohort,])
 	Brand$sex=Brand$adjsex
-	AreaCodes=sqlFetch(connection,"smiareacodes")
+	AreaCodes=getCalcurData("Zc","smiareacodes",dir=dir)
 # Limited Resights
 	xx=merge(Alive,AreaCodes[,c("code","two")],all.x=TRUE,by="code")
 # For SMI extract only
