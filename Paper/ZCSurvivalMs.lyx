@@ -135,10 +135,10 @@ SweaveOpts{echo=FALSE}
 
 \end_inset
 
-To be written!
+
 \end_layout
 
-\begin_layout Standard
+\begin_layout Abstract
 \begin_inset ERT
 status collapsed
 
@@ -573,1709 +573,7 @@ IslandCounts=table(BrandResightJoin$sitecode)
 
 \end_layout
 
-\begin_layout Section*
-\paragraph_spacing double
-Introduction
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-Demographic models are a cornerstone of population analysis (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Johnson1994"
-
-\end_inset
-
-) and require estimates of survival, reproduction and movement rates of
- individuals into and out of a population.
- For pinnipeds which are long-lived, have expansive ranges, and spend most
- of their lives at sea, demographic studies that span the lifetime of individual
-s are rare (but see 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Testa1987a"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Huber1991"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Hern'andez-Camacho2008a"
-
-\end_inset
-
-).
- Consequently, population analysis is often based on trends in indices such
- as annual counts of pups or adults but the causal factors producing the
- trends are often unknown (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Lowry1992"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Fritz2005"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Kirkwood2005"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Towell2006"
-
-\end_inset
-
-).
- The annual variation in survival and natality rates derived from demographic
- studies can provide insight into the underlying mechanisms for population
- trends, such as age or sex-specific responses to population size, environmental
- changes or disease (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Eberhardt1977"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Fowler1992"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Jorgenson1997"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Coulson2000"
-
-\end_inset
-
-).
- Estimates of survival and natality can also be used to develop correction
- factors for population indices and to develop age-structured population
- models to estimate population growth rates (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Wickens1997"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Holmes2007"
-
-\end_inset
-
-).
- For pinnipeds, estimates of life history parameters can be obtained from
- cross-sectional samples from animals collected for research, during subsistence
- harvests, or incidental to fisheries (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Lander1981"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Pitcher1981"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Boyd1985"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "York1994"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Bester1995"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Hammill1995"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Lima1995"
-
-\end_inset
-
-) but these data are often biased toward specific sex or age classes.
- Mark-recapture studies of uniquely marked live pinnipeds offer an alternative
- and often less biased method of estimating life history parameters and
- have become a more common method to estimate vital rates (e.g.
- 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Testa1987a"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "LeBoeuf1988"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Huber1991"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Boyd1995a"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Schwarz2000a"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "McMahon2003"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "McIntosh2006a"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Beauplet2006"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Wilkinson2011"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-California sea lions (
-\shape italic
-Zalophus californianus
-\shape default
-) are an abundant pinniped with an expansive range along the Pacific coast
- of North America, from Mexico to southeast Alaska.
- But each summer, most of the population returns to the breeding areas for
- the reproductive season, offering a unique opportunity to observe all the
- age-classes and both sexes and to conduct longitudinal studies of uniquely
- marked individuals.
- The primary breeding areas are the California Channel Islands off the coast
- of California and offshore islands of Baja California, Mexico.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-The U.S.
- California sea lion population is the largest breeding population in the
- species range.
- The population breeds in the California Channel Islands and feeds in the
- California Current ecosystem.
- The population has been increasing up to 5
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-%
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- per year since sea lions were protected by the U.S.
- Marine Mammal Protection Act in 1972 (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Caretta2007"
-
-\end_inset
-
-).
- The population is currently estimated at 240,000 to 280,000 animals (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Caretta2007"
-
-\end_inset
-
-).
- During the period of population growth, the California Current ecosystem
- was predominately in a warm oceanographic regime that began in 1977 and
- resulted in two decades of low productivity (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Hayward1996"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Goericke2004"
-
-\end_inset
-
-).
- This period was followed by a cold regime beginning in 1999 characterized
- by high productivity (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Goericke2004"
-
-\end_inset
-
-) that continued into 2007 (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "McClatchie2008"
-
-\end_inset
-
-).
- Within these large-scale oceanographic events, El Niño Southern Oscillation
- (ENSO) events occurred in 1982-1983 (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Arntz1991"
-
-\end_inset
-
-), 1992-1993 (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Lynn1995"
-
-\end_inset
-
-), 1997-1998 (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Lynn1998"
-
-\end_inset
-
-), and 2002-2003 (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Venrick2003"
-
-\end_inset
-
-) that intensified the low productivity of the ecosystem for one to two
- years.
- Although the large-scale and ENSO events were associated with large declines
- in the abundance of marine species at most trophic levels (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Veit1996"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Goericke2004"
-
-\end_inset
-
-), the sea lion population responded only to the ENSO events with significant
- temporary declines in pup production and pup survival during each event
- (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Francis1991a"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "DeLong1991b"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Boness1991a"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "DeLong2000"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Melin2002a"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Caretta2007"
-
-\end_inset
-
-).
- The ENSO reduced prey availability for California sea lions, particularly
- for females with dependent pups that cannot migrate to better foraging
- areas, and resulted in low natality and low survival of pups.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-In addition to environmental events that occurred during the period of populatio
-n growth, the California sea lion population also experienced occurrences
- of leptospirosis disease (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Colagross-Schouten2002"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Norman2008"
-
-\end_inset
-
-), hookworm disease (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Lyons1997"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Lyons2001"
-
-\end_inset
-
-) and domic acid poisoning from a naturally occurring toxin (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Scholin2000"
-
-\end_inset
-
-).
- Environmental and disease events may influence the dynamics of a population
- long after the immediate effects are observed in population trends (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Jorgenson1997"
-
-\end_inset
-
-).
- Demographic studies allow the age and sex-specific effects of such events
- to be described and modeled for effects on the population growth.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-In 1987 we initiated a long-term branding and resighting study at San Miguel
- Island, California because there had been no demographic studies to estimate
- the life history parameters of California sea lions breeding in the California
- Channel Islands.
- Without these basic measurements, 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Lowry1992"
-
-\end_inset
-
- used survival and natality rates of the northern fur seal (
-\shape italic
-Callorhinus ursinus
-\shape default
-) to develop a model of California sea lion population growth based upon
- trends in pup production.
- However, a species-specific demographic model is needed to better understand
- factors influencing California sea lion population trends.
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-Recently 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Hern'andez-Camacho2008a"
-
-\end_inset
-
- reported sex- and age-specific survival rates for branded California sea
- lions from a mark-recapture study in the Gulf of California, Mexico.
- Their dataset was relatively small, so they were only able to describe
- general patterns in survival and were limited to 4 age classes and were
- unable to demonstrate senescence in survival rates.
- While the survival rates of 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Hern'andez-Camacho2008a"
-
-\end_inset
-
- provide a useful comparison, the survival dynamics at San Miguel will differ
- due to El Ni
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-~n
-\end_layout
-
-\end_inset
-
-o events which impact sea lions at San Miguel (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "DeLong1991b"
-
-\end_inset
-
-) but not in the Gulf of California (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Aurioles1991"
-
-\end_inset
-
-,
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Hern'andez-Camacho2008a"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-To establish precise baseline measurements of sex and age-specific survival
- rates of California sea lions in the Channel Islands, from 1987 to 2009,
- we annually branded a cohort of 200 to 500 3-5 month old pups at San Miguel.
- We resighted branded sea lions during subsequent reproductive seasons from
- 1990 to 2009.
- Using Cormack-Jolly-Seber (CJS) models for capture-recapture data, we estimated
- sex- and age-specific survival and evaluated variation in survival due
- to pup weight and temporal variation resulting from environmental changes
- such as El Niño and disease.
- The dynamic nature of the 22 year period with population growth, large-scale
- ecosystem shifts, El Niño and disease events provided both opportunity
- and challenges in evaluating factors that may affect survival.
-\end_layout
-
-\begin_layout Section*
-\paragraph_spacing double
-
-\series bold
-Methods
-\end_layout
-
-\begin_layout Subsection*
-\paragraph_spacing double
-
-\series bold
-Study Site and Species
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-San Miguel Island (SMI) (34.03
-\begin_inset Formula $^{\mathrm{o}}$
-\end_inset
-
- N, 120.44
-\begin_inset Formula $^{\mathrm{o}}$
-\end_inset
-
- W) is one of the California Channel Islands located 46 km off the California
- coast (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Range-and-breeding"
-
-\end_inset
-
-).
- California sea lions use SMI for pupping, breeding and hauling-out.
- Reproductive and hauling sites range from small, rocky coves to large,
- expansive sandy beaches.
- Most reproduction occurs on the west end of the island.
- Hauling sites on the remainder of the island are used primarily by juveniles
- and non-reproductive males especially during the reproductive season.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-All age, sex, and reproductive classes of California sea lions inhabit SMI
- at various times throughout the year, but the greatest number of animals
- at the colony occurs between late May and early August for the reproductive
- season (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Peterson1967"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Odell1981"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Heath1989"
-
-\end_inset
-
-).
- Most adult females are non-migratory and visit the colony regularly throughout
- the year but males tend to disperse from the colony during the winter,
- returning to the colony in late May for breeding.
- California sea lions have distinct pupping and breeding periods within
- the reproductive season.
- Pupping occurs over a six week period from late May to early July.
- California sea lion females give birth to a single pup and remain in constant
- attendance of the pup for 5 to 8 d.
- After the perinatal period, females begin an attendance cycle in which
- they alternate 2 to 4 d foraging trips to sea with 1 to 2 d nursing visits
- ashore until the pup is weaned at about 11 months of age (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Odell1981"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Heath1989"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Antonelis1990"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Melin2000a"
-
-\end_inset
-
-).
- Breeding occurs about 3 to 4 weeks post-partum, beginning in late June
- and ending in early August.
- Males arrive at the colony in May but peak numbers occur in July at the
- peak of breeding.
- Only a small proportion of adult males establish breeding territories.
- Individual males may hold a territory from one day to two months.
- Non-breeding males haulout on beaches outside the main breeding areas.
- Males disperse from the colony in early August and winter at hauling sites
- along the California, Oregon and Washington coasts, the islands of British
- Columbia, Canada and southeast Alaska.
- Juveniles and adult females haul out at SMI as well as hauling areas along
- the central California coast during the winter but lactating females must
- return regularly to the colony to nurse their pups.
- 
-\end_layout
-
-\begin_layout Subsection*
-\paragraph_spacing double
-
-\series bold
-Marking and Resighting Effort
-\end_layout
-
-\begin_layout Subsubsection*
-\paragraph_spacing double
-
-\shape italic
-Marking
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-From 1987 through 2007, we hot branded 3 to 5 month old California sea lion
- pups at Adams Cove on SMI (200 to 500 each year).
- We branded between 1
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-%
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- and 4
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-%
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- of the pups born annually.
- For 2 to 5 days, large groups of females and pups hauled out on the beach
- in Adams Cove were slowly herded so as to release the females and retain
- the pups for branding.
- Pups that were too small for branding or unhealthy were removed from the
- group.
- Although this resulted in a slightly biased sample of pups, typically fewer
- than a dozen pups (
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-textless
-\end_layout
-
-\end_inset
-
- 2
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-%
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-) were rejected and we believe that the unhealthy pups were unlikely to
- survive and the stress of being held and branded might further compromise
- any chance of their survival.
- Starting in 1993, the sample sex ratio was skewed to provide a larger sample
- size for females to increase the precision of female survival estimates
- and to provide a larger sample size for natality estimation.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-Pups were gathered and held in a large holding pen until they were branded
- and released.
- Before branding, each pup was weighed to nearest 0.2 kg, sexed and tagged
- in the foreflippers with yellow roto-tags.
- The tags facilitated location of branded animals in large groups and provided
- a returnable identification for animals found dead on beaches or in nets.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-Each pup was branded on the left shoulder (except for the 1987 cohort which
- was branded on the right shoulder) with a unique number and released.
- Branding techniques are described in 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Merrick1996"
-
-\end_inset
-
-.
- Hot brands destroy the hair follicles and pigment-producing cells in the
- epidermis, leaving a dark permanent mark that grows proportionally with
- the animal.
- Brands were completely healed within two months after application.
- Each brand digit was about 7.5 cm high and 4.0 cm wide at application.
- At adulthood, each digit was about 15.0 cm high and 8.0 cm wide.
- Brands of this size were easily observed from distances up to 600 m with
- binoculars or spotting scopes.
-\end_layout
-
-\begin_layout Subsubsection*
-\paragraph_spacing double
-
-\shape italic
-Resighting
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-To obtain accurate estimates of survival, sea lions of all age and sex classes
- needed to be resighted.
- Resighting all age and sex classes was complicated by the expansive range
- of sea lions (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Range-and-breeding"
-
-\end_inset
-
-).
- However, during the reproductive season, the range contracts primarily
- to the breeding islands and the central and northern California hauling
- sites.
- We focused the resight effort during this time to minimize the geographic
- areas that needed to be surveyed and to maximize the number of marked sea
- lions of each age and sex class that could be sighted.
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-From 1990 through 2009, branded sea lions were resighted during the reproductive
- season at SMI.
- Observations were made from stationary blinds or from cliffs overlooking
- populated beaches.
- Because of the large number of areas that sea lions use on the island,
- all areas could not be surveyed every day.
- We divided the survey effort into two areas; Area 1 was surveyed daily
- every year and Area 2 was surveyed daily in some years but more commonly
- two to three times a week.
- Observers scanned areas repeatedly until clearly visible branded animals
- were identified.
- Branded animals were identified using binoculars or 20 to 45X zoom spotting
- scopes.
- For each observation of a branded animal, the date, area, reproductive
- status and brand number were recorded.
- Prior to 1994, observation effort was limited to SMI under the assumption
- that California sea lions would have fairly high fidelity to their natal
- site.
- However, a study in 1994 indicated that many juveniles were hauling out
- at Año Nuevo Island (ANI) (37.01°N, 122.3°W), during the reproductive season
- suggesting that observation effort only at SMI would not be adequate for
- juveniles.
- In 1996, ANI, the Farallon Islands (FAI) (37.7°N, 123.0°W) and haul-outs
- in Monterey Bay and along the Big Sur coast were surveyed during the reproducti
-ve season (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Range-and-breeding"
-
-\end_inset
-
-).
- The more expansive effort demonstrated that most juveniles could be observed
- at SMI, ANI and to a lesser degree, FAI.
- Because of limited resources, we only added annual field sighting effort
- at ANI from 1996 to 2009 that included surveys two to three times a week
- between May and August.
- We also supported observation effort at the FAI during 1998 because we
- expected larger numbers of juveniles and adults to move further north during
- the El Niño event.
- We obtained opportunistic sightings from the FAI in other years.
-\end_layout
-
-\begin_layout Subsection*
-\paragraph_spacing double
-
-\series bold
-Model Development
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-Annual survival rates (i.e, probability of surviving a year) were estimated
- from the release-resighting data of branded sea lions using the Cormack-Jolly-S
-eber (CJS) model formulation.
- For CJS models, the initial capture and marking is a release event and
- only recaptures (resightings) of the marked individuals at later sampling
- occasions are treated as data.
- For our analysis, each year from 1987-2007 a branded cohort of pups was
- 
-\begin_inset Quotes eld
-\end_inset
-
-released
-\begin_inset Quotes erd
-\end_inset
-
- and surviving pups were sighted in the following years during the reproductive
- season.
- We used resights from 1990-2009 (no effort in 1987-1988) during 15 May
- to 15 August of each year as the sampling occasion because it encompasses
- pupping, breeding and post-breeding (when the structure of the rookery
- is more dynamic and mixed) periods.
- For CJS, sampling occasions are assumed to be instantaneous events such
- that there are no deaths during the sampling period.
- While observations obtained over a 3 month period are clearly not instantaneous
-, we chose this period to balance the need to get an adequate sample size
- of all age and sex classes against the possibility of losses (deaths) during
- the period.
- In our analysis, we have assumed that all observed branded animals survive
- during the 3 month period and all mortality occurs between occasions.
- Annual survival for non-pups in year y represented 1 July of year y to
- 1 July of year y+1.
- For pups, survival was for the time period from branding to 1 July of the
- following year.
- Branding occurred at different times so unequal time intervals (e.g.
- 0.8 for 8 tenths of a year) were used for each pup survival year to represent
- them as annual rates .
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-Most capture-recapture models assume that 
-\begin_inset Quotes eld
-\end_inset
-
-marks
-\begin_inset Quotes erd
-\end_inset
-
- are not lost and are recorded correctly.
- In comparison to flipper tags which are often used on pinnipeds, brands
- have the distinct advantage of being permanent and cannot be 
-\begin_inset Quotes eld
-\end_inset
-
-lost
-\begin_inset Quotes erd
-\end_inset
-
- unless the brand is obscured (e.g., tar accumulation or bite scars) or illegible,
- which occurred infrequently in our study.
- However, brands can potentially be misread or recorded incorrectly which
- can bias survival estimates.
- Brand misreads are most problematic if a brand of a dead animal is incorrectly
- recorded as being seen and thus alive.
- To reduce the potential impact of brand misreading on the estimates, we
- defined a sighting of a branded sea lion to have occurred if it was seen
- at least twice (typically on different days) in the same year or it was
- photographed for verification.
- As long as errors occur independently, this will reduce the error rate
- substantially.
- In 2003 we began using field computers with an error checking program as
- part of the data entry process.
- After the brand was entered into the computer, the observer was notified
- if the brand number was for a sea lion that was known to be dead, the opposite
- sex, or if the sea lion had not been seen for 2 or more years (which is
- not necessarily an error but is uncommon for adult animals).
- When any of these conditions occurred, the observer checked the brand while
- in the field and corrected the brand number if an error was made.
- We have received reports of branded sea lions all along the U.S.
- west coast and occasionally in Mexico and Canada.
- However, in addition to the seasonal restriction, we restricted the analysis
- to sightings made on SMI, ANI and FAI where we had consistent sampling
- programs and personnel with sufficient experience to read and record brands.
-\end_layout
-
-\begin_layout Subsubsection*
-\paragraph_spacing double
-Model Design
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-For a sea lion to be sighted at some time after branding, it must survive
- until that time and it must be seen and have its brand read.
- Thus, the probability that a sea lion is sighted at some occasion following
- release is a function of the probability that it survives (
-\begin_inset Formula $\varphi$
-\end_inset
-
-), the parameter of interest, and the probability of sighting (
-\begin_inset Formula $p$
-\end_inset
-
-) and reading the brand of a surviving sea lion, a necessary but less interestin
-g parameter.
- Survival and sighting probabilities can vary due to time, age, sex and
- various other reasons.
- A CJS model specification depends on survival (
-\begin_inset Formula $\varphi)$
-\end_inset
-
- and sighting (
-\begin_inset Formula $p)$
-\end_inset
-
- probability sub-models.
- 
-\end_layout
-
-\begin_layout Subsubsection*
-\paragraph_spacing double
-
-\shape italic
-Survival probability
-\shape default
- (
-\begin_inset Formula $\varphi$
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-We examined 76 different models (Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:survival models"
-
-\end_inset
-
-) for survival that included some combination of sex, age, year, pup weight,
- reproductive status, and temporal environmental and disease covariates.
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-underline{Age and Sex}
-\end_layout
-
-\end_inset
-
-: Sea lion age was specified as the number of years at their last birthday
- (specified as 1 July).
- Thus, pups were age 0, yearlings age 1, and so on.
- We used the following intervals for age: 0, 1, 2, 3-4, 5-7, 8-9, 10-11,
- 12-14, and 15-21.
- We used these intervals to reduce the number of age-specific parameters
- and because they were relevant to sea lion life history.
- Sea lions less than 3 years old were not reproductive and we expected the
- greatest change in survival for juveniles so we estimated a separate 
-\begin_inset Formula $\varphi$
-\end_inset
-
- for ages 0, 1 and 2.
- Females may become reproductive at age 3 (rarely) or 4 and most are reproductiv
-e by age 7 (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Melin2011"
-
-\end_inset
-
-).
- Ages 8 to 21 were divided into four groups to examine changes in survival
- at older ages.
- The age intervals were wider for older animals because the sample size
- of live animals decreased with age.
- The age intervals were designed specifically for females but similar intervals
- applied to males which mature socially and sexually between 9 and 14 years
- old.
- Due to differences in their life history and behavior, we expected that
- survival pattern would differ for males and females.
- We also expected that any patterns across age would differ for the sexes,
- so we considered models that included interactions with sex (sex*age).
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-There was little resighting effort expended in 1988 and 1989, so we excluded
- those resighting occasions and set p=0 for those 2 years which precluded
- estimating year-specific survival from 1987, 1988 and 1989 for the 1987
- and 1988 cohorts.
- Thus, for each model we included four parameters for female and male survival
- from pup to age 3 (1990) for the 1987 cohort and from pup to age 2 for
- the 1988 cohort.
- For the remaining cohorts, survival could be estimated separately for each
- age.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-underline{Pup Weight}
-\end_layout
-
-\end_inset
-
-: Pup weight affects post-weaning survival in other otariids (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Baker1992"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Hastings2011"
-
-\end_inset
-
-) so we examined models in which pup weight affected pup survival.
- With the possibility of a carryover effect of pup weight, such that smaller
- pups have lower survival throughout their lives (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Hastings2011"
-
-\end_inset
-
-), we also examined models in which pup weight influenced the survival of
- yearlings and older animals by adding age-specific parameters until they
- no longer improved the fit.
- Given the short-time period between weaning and their first birthday (3
- to 4 months), it was very likely that smaller pups might survive a few
- months post-weaning and die as yearlings but any further carryover was
- possible but unlikely.
- The pup weight covariate (Weight) was measured as the deviation of the
- pup's weight from the sex-specific mean weight of all pups from 1989-2007.
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-underline{Reproductive Status}
-\end_layout
-
-\end_inset
-
-: In terms of survival, reproduction is potentially costly for sea lions.
- For females, once they give birth, they produce a pup most years and sustain
- an energetically demanding cycle of lactation and gestation for much of
- their adult life.
- It may be potentially more costly for males who can be seriously or terminally
- hurt while engaging in territorial behaviors or may lose substantial weight
- while largely fasting during breeding.
- While age may encapsulate some variation in survival due to reproduction
- as they mature sexually, some sea lions, particularly males may never engage
- in breeding.
- Thus, we defined an individual time-varying covariate (Repro) that was
- initially 0.
- Once a female was seen either pregnant or with a pup, it was set and remained
- at 1 for survival probabilities after that occasion.
- Likewise, the covariate for males was set and remained at 1, if the male
- was seen engaging in territorial behavior.
- The impact of reproduction on survival may increase or decrease with age,
- so we also considered an individual time-varying covariate (RepAge) that
- measured the number of years since the sea lion was first seen as reproductive.
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-underline{Environment}
-\end_layout
-
-\end_inset
-
-: We expected that survival would vary by year due to natural variation
- in prey availability and oceanographic conditions such as the El Niño events
- in 1992-1993, 1997-1998 and 2002-2003.
- However, we did not expect that temporal variation would act equally across
- age classes.
- Instead, we expected more temporal variation in survival of younger sea
- lions and that our ability to detect temporal variation would decrease
- for older ages partially due to smaller sample sizes resulting from mortality.
- Thus, in posing alternative models, we fitted a sequence of models in which
- temporal variation was included for age 0, age 0 and 1, ages 0, 1, 2, etc.
- until there was no indication of a temporal signal in an age class.
- For older age classes that did not support separate annual survival probabiliti
-es we evaluated models with annual survival varying as a linear function
- of environmental conditions, the greatest of these being the periodic occurrenc
-e of El Niño events.
- El Niño events are characterized by changes in atmospheric-ocean circulation
- patterns and are described by a multivariate El Niño Southern Oscillation
- index (MEI) measured at the equator (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Wolter1998"
-
-\end_inset
-
-).
- Because of changes in ocean circulation patterns, sea surface temperatures
- increase along the California coast and provide a locally based proxy for
- the strength and duration of the events as well as smaller scale perturbations
- in the California Current that affect sea lion prey availability.
- We know that El Niño events impact survival of sea lions (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "DeLong1991b"
-
-\end_inset
-
-) but the strength and duration of El Niño events determines the influence
- they have on survival so we evaluated two alternative covariates to capture
- differential effects of El Niño: 1) average sea surface temperature (SST)
- anomaly which was measured at five NOAA data buoys (NOAA National Data
- Buoy Center, http://www.ndbc.noaa.gov) located generally north of San Miguel
- Island in the female foraging area (
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "Melin2000d"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Melin2008"
-
-\end_inset
-
-), and 2) the MEI which we lagged by three months because it is measured
- at the equator and a three month lag provided the highest correlation with
- the local SST.
- For pups, we used the average from 1 October to 30 March and for non-pups
- we used the average from 1 July to 30 June to correspond to the survival
- periods.
- For MEI these were lagged by three months so they were actually the average
- from 1 April to 30 March of the following year.
- For pups and yearlings, we also examined models with a linear trend over
- time.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-underline{Disease}
-\end_layout
-
-\end_inset
-
-: We also evaluated models in which the number of reported stranded male
- sea lions diagnosed with leptospirosis disease was a predictor (Lepto)
- for 2+ male survival and likewise the number of reported stranded sea lions
- diagnosed with domoic acid (DA) poisoning was a predictor for 2+ female
- survival.
- Both are often a primary sex-specific cause for stranding and mortality
- in California sea lions (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Gulland1996"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Gulland2002"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Greig2005"
-
-\end_inset
-
-).
- The number of sea lions (2 years and older) that stranded in central and
- southern California were accumulated between 1 July and 30 June to match
- the time frame for the survival estimates.
- The stranding information was provided by Sarah Wilkin of the Southwest
- Region of the National Marine Fisheries Service who collates the data from
- the stranding coordinators throughout California.
- 
-\end_layout
-
-\begin_layout Paragraph
-\paragraph_spacing double
-Resighting probability (
-\begin_inset Formula $p$
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-We fitted 9 different models for p (Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:resight models"
-
-\end_inset
-
-).
- This may seem like a small number of models to consider, especially in
- comparison to survival; however, our model set is the result of an iterative
- analysis of these data over a decade as we collected data and refined the
- analysis.
- We have excluded many of the simpler models that were clearly inferior.
- The models for p were generally more complex because we shifted survey
- coverage over time as we learned.
- Initially we presumed a high level of fidelity to the branding site because
- we assumed that the pups were born where they were captured for branding
- and that they would have fidelity to the area (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Baker1995"
-
-\end_inset
-
-); so, our effort was focused in the vicinity of Adams Cove where pups were
- branded.
- However this presumption was incorrect because branded pups dispersed to
- other areas of the colony, animals colonized new areas on SMI over the
- study period, and juveniles and non-territorial males were primarily using
- other areas of the island during the reproductive season.
- In response we adjusted the sampling coverage across the island which meant
- that any sex, age and spatial differences in resighting probability would
- change over time.
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-underline{Year}
-\end_layout
-
-\end_inset
-
-: We expected p to vary by year because the level of survey effort varied
- by year.
- Directed annual resighting effort began in 1990 at SMI but the effort varied
- significantly by year until 1994 when a dedicated resighting survey program
- was instituted and the effort became consistent over years.
- In addition, the resighting effort was expanded with the addition of a
- resighting program at ANI in 1994 that continued through 2009.
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-underline{Area}
-\end_layout
-
-\end_inset
-
-: As in 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Melin2011"
-
-\end_inset
-
-, we divided SMI into two areas to cope with individual fidelity to specific
- areas that received unequal survey coverage.
- Area 1 was the vicinity around Adams Cove which received the most resighting
- effort.
- Area 2 was the remainder of the island which received a lower level of
- effort initially but increased over time as animals colonized new areas
- within Area 2.
- We defined a third area which included ANI and any opportunistic sightings
- from FAI.
- We defined an individual sea lion covariate for Areas 1 and 2 which varied
- over time.
- The covariate for Area 1 was initially 0 at release but was set and remained
- at 1 for years after a sea lion was seen in Area 1.
- The covariate for Area 2 was initially 0 and was set and remained at 1
- after being seen in Area 2 but was reset to 0 if it was subsequently seen
- in Area 1.
- Sea lions never seen or only seen in Area 3 retained a value of 0 for both
- covariates.
- Both Area 1 and Area 2 covariates were considered in models with parameters
- that varied by age and sex and also by year.
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-underline{Reproductive Status}
-\end_layout
-
-\end_inset
-
-: With resighting surveys being conducted during the reproductive season,
- we would expect higher resighting probabilities for pupping females and
- territorial males.
- While age may account for some of this variation, there is age-variation
- in recruitment (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Melin2011"
-
-\end_inset
-
-) and some sea lions, particularly males, may never participate in breeding.
- As with survival, we used a time-varying individual reproductive covariate
- (Repro) for resighting probability that was initially 0 but was set and
- remained at 1 for all years after being seen with a pup for females or
- demonstrating territoriality for males.
- We expected the affect of this covariate to differ for males and females
- so we estimated separate parameters for each sex.
- We also considered models in which the effect varied across years due to
- the impact of El Niño events on reproduction, pup mortality and presence
- at SMI.
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-underline{Age and Sex}
-\end_layout
-
-\end_inset
-
-: We expected that sighting probability would vary for females and males
- and it would differ across ages for each sex.
- Adult females spend more time at the island for birth, breeding and attendance
- to the pup; whereas, adult males are on the island primarily for breeding.
- Idle (non-territorial) males may spend far less time at the island or remain
- elsewhere.
- Juveniles do not participate in breeding and are more often seen at ANI
- ,especially males.
- We used the same age intervals for sighting probability as we did for survival
- except that we collapsed the last 4 age intervals into two (8-11, 12+)
- because we did not expect much change in p once sea lions reached sexual
- maturity.
- With shifts in spatial survey coverage over time, we expected temporal
- variation in the sex- and age-specific resighting probabilities (ie.
- interaction of sex, age and year); however, we found that it was necessary
- to limit fitting 3-way interactions to data collected in 1994 and beyond,
- due to paucity of data prior to that year.
- We found that many estimates of p would end up at boundaries (0 or 1) if
- we attempted to fit interactions for data prior to 1994.
- So we segmented the model fitting at 1994.
- For data prior to 1994 we fitted sex and age interactions but an additive
- effect for year.
- For data from 1994 and later we fitted the more complex three-way interaction
- of year-age-sex with the additional covariates of reproduction and area.
- There were few observations of reproductive sea lions prior to 1993 and
- the sampling was almost exclusively in Area 1 prior to 1994, so limiting
- these to 1994 and beyond had little impact on the parameter estimates.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-
-\end_layout
-
-\begin_layout Subsubsection*
-\paragraph_spacing double
-Model Fitting
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-Our initial analysis of these data were conducted with the computer software
- MARK (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "White1999"
-
-\end_inset
-
-; 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-underline{http://www.phidot.org/software/mark/}
-\end_layout
-
-\end_inset
-
-).
- However, we found that as we added individual time-varying covariates and
- created more complex models, the time needed to fit a single model in MARK
- made the analysis no longer feasible in a reasonable amount of time.
- Also, with MARK there was no capacity for varying unequal time intervals
- which were 1 for non-pups and less than 1 and variable for each pup release
- cohort because of shifts in branding dates.
- Thus, we developed an R (R Core Development Team 2012
-\begin_inset CommandInset citation
-LatexCommand nocite
-key "RDevelopmentCoreTeam2012"
-
-\end_inset
-
-) package to fit CJS models with the special requirements we needed.
- The package is called marked and is described in more detail by 
-\series bold
-Johnson et al (in press)
-\series default
-.
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-While it’s possible that our individual time-varying covariates could have
- been handled better with multi-state models in MARK, the size of our analysis
- and number of covariates, made it inefficient.
- Also, the existing multi-state analysis in MARK would not have addressed
- the problem of unequal time intervals.
-\end_layout
-
-\begin_layout Subsubsection*
-\paragraph_spacing double
-Model Selection and Testing
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-We used AIC/QAIC model selection (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Burnham2002a"
-
-\end_inset
-
-) to select the best model(s).
- For survival estimates and standard errors, we used model averaging for
- all models with a 
-\begin_inset Formula $\Delta$
-\end_inset
-
-QAICc
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-textless
-\end_layout
-
-\end_inset
-
- 4.
- In describing results for resighting probability we used the single best
- model because it is a nuisance parameter and we are not interested in inference.
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-We did use MARK to estimate over-dispersion with the median 
-\begin_inset Formula $\hat{c}$
-\end_inset
-
- approach (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Cooch2012"
-
-\end_inset
-
-).
- We used a global model of 
-\begin_inset Formula $\varphi$
-\end_inset
-
-(sex*age*year) p (sex*age*year) which excludes individual covariates because
- the median c-hat approach does not allow individual covariates.
- We restricted the analysis to the 1993-2007 cohorts which used most of
- the data and avoided the missing data for the 1988 and 1989 occasions and
- the low resight probabilities prior to 1994.
- We used the estimated 
-\begin_inset Formula $\hat{c}$
-\end_inset
-
- to compute QAIC and to inflate the estimated standard errors to reflect
- additional uncertainty resulting from over-dispersion.
- 
-\end_layout
-
-\begin_layout Section*
-\paragraph_spacing double
-
-\series bold
-Results
-\series default
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
+\begin_layout Abstract
 \begin_inset ERT
 status collapsed
 
@@ -2382,279 +680,7 @@ dd=dev.off()
 
 \end_layout
 
-\begin_layout Standard
-\paragraph_spacing double
-From 1987 to 2007, 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{sum(cohort_table)}
-\end_layout
-
-\end_inset
-
- sea lion pups were branded (
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{sum(cohort_table[,1])}
-\end_layout
-
-\end_inset
-
- females and 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{sum(cohort_table[,2])}
-\end_layout
-
-\end_inset
-
- males) between late September and mid-November (Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Cohort_table"
-
-\end_inset
-
-).
- During the resighting periods (15 May - 15 August), approximately 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{sprintf("%.1f",100*length(zcdata$ch[zcdata$sex=="F"&zcdata$TotalTimesResigh
-ted>1])/length(zcdata$ch[zcdata$sex=="F"]))}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-%
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- of female and 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{sprintf("%.1f",100*length(zcdata$ch[zcdata$sex=="M"&zcdata$TotalTimesResigh
-ted>1])/length(zcdata$ch[zcdata$sex=="M"]))}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-%
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- of male branded sea lions were resighted in one or more years following
- branding; however, there were large differences across cohorts (Figure
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "FigResight"
-
-\end_inset
-
-).
- These were most notable for pup cohorts that were born just prior or during
- an El Niño event.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-With a greater abundance of sea lions and greater survey effort, it was
- not surprising that most sea lion were resighted at SMI (
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{IslandCounts[3]}
-\end_layout
-
-\end_inset
-
-) with fewer at ANI (
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{IslandCounts[1]}
-\end_layout
-
-\end_inset
-
-) and very few at FAI (
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{IslandCounts[2]}
-\end_layout
-
-\end_inset
-
-).
- During the resighting periods, SMI was used mostly by reproductive and
- non-reproductive adults (e.g.
- non-territorial males); whereas, ANI and FAI were used mostly by juveniles
- (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "FigResightbyIsland"
-
-\end_inset
-
-).
- At ANI and FAI 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{sprintf("%.1f",100*sum(age.sex.island[1:3,,1])/sum(age.sex.island[,,1]))}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-%
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- were sea lions between 1 and 3 years of age; whereas, only 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{sprintf("%.1f",100*sum(age.sex.island[1:3,,2])/sum(age.sex.island[,,2]))}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-%
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- of the sightings at SMI were between 1 and 3 years of age.
- As expected, male sea lions were more predominate at ANI and FAI and females
- were more predominate at SMI (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "FigResightbyIsland"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
+\begin_layout Abstract
 \begin_inset ERT
 status collapsed
 
@@ -3762,8 +1788,15 @@ ic)
 
 \begin_layout Plain Layout
 
-    names(best_models)=c("p Model","Phi Model","Number of parameters","Delta
- QAIC")
+    names(best_models)=c("
+\backslash
+
+\backslash
+textit{p} Model","$
+\backslash
+
+\backslash
+phi$ model","Number of parameters","Delta QAIC")
 \end_layout
 
 \begin_layout Plain Layout
@@ -3773,8 +1806,7 @@ ic)
 
 \begin_layout Plain Layout
 
-    modelset=paste("p",best_models[["p Model"]],"Phi",best_models[["Phi
- Model"]],sep=".")
+    modelset=paste("p",best_models[[1]],"Phi",best_models[[2]],sep=".")
 \end_layout
 
 \begin_layout Plain Layout
@@ -3844,7 +1876,7 @@ if(runit)
 
 \begin_layout Plain Layout
 
-	    model$vcv=vcv
+	    model$vcv=vcv*1.11
 \end_layout
 
 \begin_layout Plain Layout
@@ -4049,182 +2081,1408 @@ dd=dev.off
 
 \end_layout
 
-\begin_layout Standard
-\paragraph_spacing double
-From the global model, a median 
-\begin_inset Formula $\hat{{c}}$
-\end_inset
-
- over-dispersion value was estimated to be 1.11.
- We used this value for calculations of 
-\begin_inset Formula $\Delta$
-\end_inset
-
-QAICc for model selection and model averaging.
-\end_layout
-
-\begin_layout Subsection*
-\paragraph_spacing double
-Capture probability
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-For capture (resighting) probability, model 6 was consistently the best
- model but model 7 had some support (Table 
+\begin_layout Abstract
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
 
-
-\backslash
-ref{best_models}
+<<>>=
 \end_layout
-
-\end_inset
-
-).
- For years prior to 1994, when the effort was less, resighting probability
- was limited to additive year, sex and age effects and an interaction of
- sex and age.
- For all other years, the probability model included all main effects and
- interactions of sex, age and year (sex*age*year).
- Resighting probability varied by 6 to 10-fold over the years with resighting
- probability increasing as survey effort was increased in the mid to late
- 1990s (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "FigAvgResightProbByYear"
-
-\end_inset
-
-).
- The large increase in 1994 was associated with initiation of a dedicated
- resight effort at ANI and the increase in 1997 reflects an increase in
- effort and expansion of regular surveys to cover beaches on SMI beyond
- the Point Bennett rookery.
- The differential usage of these areas by the sex and age groups led to
- the interaction with year.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-As expected older sea lions were much more likely to be seen than juveniles
- (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "FigAvgResightProbByAge"
-
-\end_inset
-
-) but the age difference was lessened with surveys at ANI and FAI.
- In general, differences in resighting probability between males and females
- were much less than age and temporal differences but there were obvious
- interactions with time and age (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "FigAvgResightProbByYear"
-
-\end_inset
-
--
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "FigAvgResightProbByAge"
-
-\end_inset
-
-).
- Resighting probability increased with age for females until age 5-7 when
- most females become reproductive and for males, resighting probability
- increased until age 12, the mean age of territorial males (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "FigAvgResightProbByAge"
-
-\end_inset
-
-).
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-The best models also included covariates for location (area) and reproductive
- status.
- Resighting probabilities were highest for Area 1 and lowest for those only
- previously seen at ANI or FAI or not previously seen (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "FigAvgResightProbByReproArea"
-
-\end_inset
-
-) and these differences varied by sex and age (sex:age:(Area1 + Area2)).
- Sea lions that were previously seen as reproductive (female with pup or
- territorial male) were more likely to be seen because most of the effort
- was at San Miguel during the pupping/breeding season.
- The influence of reproductive status was greater for females than males
- (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "FigAvgResightProbByReproArea"
-
-\end_inset
-
-) and varied by year which reflected variation in pup production with lower
- production in years influenced by El Ni
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
-
-\backslash
-~n
+# Define the define.models function which creates a function with an environment
+ containing all
 \end_layout
-
-\end_inset
-
-o (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "FigAvgResightProbByYear"
-
-\end_inset
-
-).
- Model 7 which had some support was the same as model 6 with an additional
- interaction of sex with reproductive status and year because annual changes
- were not as great for males.
- For 1998-2009 when there were both reproductive females and males, the
- variance across years of the ratio of resighting probability for reproductive
- and non-reproductive female seal lions was 
-\begin_inset ERT
-status collapsed
 
 \begin_layout Plain Layout
 
+# of the Phi and p models that were considered.
+\end_layout
+
+\begin_layout Plain Layout
+
+define.models=function(zcdata.proc,maxyear)
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+######################### Fixed parameters #####################################
+#########
+\end_layout
+
+\begin_layout Plain Layout
+
+# Fixed p=0 and Phi=1 parameters to handle lack of sampling in 1988 & 1989
+\end_layout
+
+\begin_layout Plain Layout
+
+	fixed.0=fix.parameters(zcdata.proc,occasions=2:3,value=c(0))
+\end_layout
+
+\begin_layout Plain Layout
+
+	fixed.1=fix.parameters(zcdata.proc,occasions=1:2,value=c(1))
+\end_layout
+
+\begin_layout Plain Layout
+
+#####################  Model specifications ####################################
+###############
+\end_layout
+
+\begin_layout Plain Layout
+
+#    p
+\end_layout
+
+\begin_layout Plain Layout
+
+# constant 
+\end_layout
+
+\begin_layout Plain Layout
+
+	p.0=list(formula=~1)
+\end_layout
+
+\begin_layout Plain Layout
+
+# additive time + sex + age class
+\end_layout
+
+\begin_layout Plain Layout
+
+	p.1=list(formula=~time+sex+agep,fixed=fixed.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+# for time <1994, sex:agep and for >= 1994, time:sex:agep 
+\end_layout
+
+\begin_layout Plain Layout
+
+	p.2=list(formula=~pre94:(sex*agep94) + pre94:time + p94plus:time:sex:agep,
+ fixed=fixed.0,remove.intercept=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+# for time <1994, sex:agep and for >= 1994, time:sex:agep + sex:reproductive
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+	p.3=list(formula=~pre94:(sex*agep94) + pre94:time + p94plus:time:sex:agep
+ + p94plus:prepro + p94plus:male:prepro, fixed=fixed.0,remove.intercept=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+# for time <1994, sex:agep and for >= 1994, time:sex:agep + sex:reproductive
+ + sex*area (>1994)
+\end_layout
+
+\begin_layout Plain Layout
+
+	p.4=list(formula=~pre94:(sex*agep94) + pre94:time + p94plus:time:sex:agep
+ + p94plus:prepro + p94plus:male:prepro + p94plus:area2+ p94plus:male:area2
+ + p94plus:area1 + p94plus:male:area1,fixed=fixed.0,remove.intercept=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+# for time <1994, sex:agep and for >= 1994, time:sex:agep + sex:reproductive
+ + sex:agep for area 1 and 2
+\end_layout
+
+\begin_layout Plain Layout
+
+	p.5=list(formula=~pre94:(sex*agep94)  + pre94:time + p94plus:time:sex:agep
+ + p94plus:prepro + p94plus:male:prepro + p94plus:sex:agep:area1 + p94plus:sex:a
+gep:area2, fixed=fixed.0,remove.intercept=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+# for time <1994, sex:agep and for >= 1994, time:sex:agep + sex:reproductive
+ by time due to ENSO events but additive for males + sex:agep for area 1
+ and 2
+\end_layout
+
+\begin_layout Plain Layout
+
+	p.6=list(formula=~pre94:(sex*agep94)  + pre94:time + p94plus:time:sex:agep
+ + p94plus:time:prepro + p94plus:male:prepro + p94plus:sex:agep:area1 +
+ p94plus:sex:agep:area2, fixed=fixed.0,remove.intercept=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+# for time <1994, sex:agep and for >= 1994, time:sex:agep + sex:reproductive:tim
+e due to ENSO events + sex:agep for area 1 and 2
+\end_layout
+
+\begin_layout Plain Layout
+
+	p.7=list(formula=~pre94:(sex*agep94)  + pre94:time + p94plus:time:sex:agep
+ + p94plus:time:prepro + p94plus:male:time:prepro + p94plus:sex:agep:area1
+ + p94plus:sex:agep:area2, fixed=fixed.0,remove.intercept=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+# for time <1994, sex:agep and for >= 1994, time:sex:agep + sex:reproductive
+ by time due to ENSO events but additive for males + sex:agep for area 1
+ and 2 + time:sex:agep for area 1
+\end_layout
+
+\begin_layout Plain Layout
+
+	p.8=list(formula=~pre94:(sex*agep94)  + pre94:time + p94plus:time:sex:agep
+ + p94plus:time:prepro + p94plus:male:prepro + p94plus:sex:agep:area1:time
+ + p94plus:sex:agep:area2, fixed=fixed.0,remove.intercept=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+#    Phi
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.00=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex+AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.01=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.02=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:time))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.03=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.04=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.05=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:(yearling:time + two:time)))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.06=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:(yearling:time + twoplus:time)))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.07=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:(yearling:time + two:time + threeplus:time)))	
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.08=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + pup:weight))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.09=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.10=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:(yearling:time + two:time) + pup:weight))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.11=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:(yearling:time + twoplus:time) + pup:weight))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.12=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + pup:weight + yearling:weight))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.13=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.14=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:(yearling:time + two:time) + pup:weight+ yearling:weight))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.15=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:(yearling:time + twoplus:time) + pup:weight+ yearling:weight))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.16=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + pup:weight + yearling:weight + two:weight))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.17=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight + yearling:weight + two:weight))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.18=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:(yearling:time + two:time) + pup:weight+ yearling:weight + two:weigh
+t))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.19=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:(yearling:time + twoplus:time) + pup:weight+ yearling:weight
+ + two:weight))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.20=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.21=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + two:JulytoJuneSSTAnomalies))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.22=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + twoplus:JulytoJuneSSTAnomalies))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.23=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + two:JulytoJuneMEI))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.24=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + twoplus:JulytoJuneMEI))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.25=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + repro + male:repro))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.26=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + two:JulytoJuneMEI + repro + male:repro))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.27=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + twoplus:JulytoJuneMEI + repro + male:repro))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.28=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA +  male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.29=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + two:JulytoJuneMEI + male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.30=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + twoplus:JulytoJuneMEI + male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.31=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + repro:AgeS + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.32=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + two:JulytoJuneMEI +  repro:AgeS + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.33=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + twoplus:JulytoJuneMEI + repro:AgeS + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.34=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + two:JulytoJuneMEI + two:male:JulytoJuneMEI +  repro:AgeS
+ + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.35=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + twoplus:JulytoJuneMEI + twoplus:male:JulytoJuneMEI
+ +  repro:AgeS + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.36=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + two:JulytoJuneMEI + two:male:JulytoJuneMEI +  male:repro
+ + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.37=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA + twoplus:JulytoJuneMEI + twoplus:male:JulytoJuneMEI
+  + male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.38=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + two:JulytoJuneMEI
+ + two:male:JulytoJuneMEI + repro:AgeS + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.39=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + twoplus:JulytoJuneMEI
+ + twoplus:male:JulytoJuneMEI +  repro:AgeS + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.40=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + two:JulytoJuneMEI
+ + two:male:JulytoJuneMEI +  male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.41=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + twoplus:JulytoJuneMEI
+ + twoplus:male:JulytoJuneMEI + male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.42=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + two:JulytoJuneMEI
+ + threeplus:JulytoJuneMEI +  male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.43=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + two:JulytoJuneMEI
+ + two:male:JulytoJuneMEI + threeplus:JulytoJuneMEI + threeplus:male:JulytoJuneM
+EI +  male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.44=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA+ two:JulytoJuneMEI + threeplus:JulytoJuneMEI + male:repro
+ + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.45=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom
+ + female:twoplus:DA+ two:JulytoJuneMEI + two:male:JulytoJuneMEI + threeplus:Jul
+ytoJuneMEI + threeplus:male:JulytoJuneMEI + male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.46=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarMEI  + p90plus:yearling:time + pup:weight+ yearling:weight
+ + male:twoplus:leptom + female:twoplus:DA + two:JulytoJuneMEI +  male:repro
+ + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.47=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarMEI + p90plus:yearling:time + pup:weight+ yearling:weight
+ + male:twoplus:leptom + female:twoplus:DA + twoplus:JulytoJuneMEI + male:repro
+ + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.48=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarMEI + p90plus:yearling:time + pup:weight+ yearling:weight
+ + male:twoplus:leptom + female:twoplus:DA + two:JulytoJuneMEI +  repro:AgeS
+ + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.49=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarMEI + p90plus:yearling:time + pup:weight+ yearling:weight
+ + male:twoplus:leptom + female:twoplus:DA + twoplus:JulytoJuneMEI  + repro:AgeS
+ + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.50=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarMEI + p90plus:yearling:time + pup:weight+ yearling:weight
+ + male:twoplus:leptom + female:twoplus:DA+ two:JulytoJuneMEI + threeplus:Julyto
+JuneMEI +  male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.51=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarMEI  + yearling:I(Time-12) + yearling:JulytoJuneMEI + pup:weight+
+ yearling:weight + male:twoplus:leptom + female:twoplus:DA + two:JulytoJuneMEI
+ +  male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.52=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarMEI + yearling:I(Time-12) + yearling:JulytoJuneMEI + pup:weight+
+ yearling:weight + male:twoplus:leptom + female:twoplus:DA + twoplus:JulytoJuneM
+EI + male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.53=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarMEI + yearling:I(Time-12) + yearling:JulytoJuneMEI + pup:weight+
+ yearling:weight + male:twoplus:leptom + female:twoplus:DA + two:JulytoJuneMEI
+ +  repro:AgeS + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.54=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarMEI + yearling:I(Time-12) + yearling:JulytoJuneMEI + pup:weight+
+ yearling:weight + male:twoplus:leptom + female:twoplus:DA + twoplus:JulytoJuneM
+EI +  repro:AgeS + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.55=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarMEI + yearling:I(Time-12) + yearling:JulytoJuneMEI + pup:weight+
+ yearling:weight + male:twoplus:leptom + female:twoplus:DA+ two:JulytoJuneMEI
+ + threeplus:JulytoJuneMEI +  male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.56=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e  + yearling:I(Time-12) + yearling:JulytoJuneMEI + pup:weight+ yearling:weight
+ + male:twoplus:leptom + female:twoplus:DA + two:JulytoJuneMEI +  male:repro
+ + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.57=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + yearling:I(Time-12) + yearling:JulytoJuneMEI + pup:weight+ yearling:weight
+ + male:twoplus:leptom + female:twoplus:DA + twoplus:JulytoJuneMEI  + male:repro
+ + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.58=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + yearling:I(Time-12) + yearling:JulytoJuneMEI + pup:weight+ yearling:weight
+ + male:twoplus:leptom + female:twoplus:DA + two:JulytoJuneMEI + repro:AgeS
+ + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.59=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + yearling:I(Time-12) + yearling:JulytoJuneMEI + pup:weight+ yearling:weight
+ + male:twoplus:leptom + female:twoplus:DA + twoplus:JulytoJuneMEI + repro:AgeS
+ + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.60=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + yearling:I(Time-12) + yearling:JulytoJuneMEI + pup:weight+ yearling:weight
+ + male:twoplus:leptom + female:twoplus:DA+ two:JulytoJuneMEI + threeplus:Julyto
+JuneMEI + male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.61=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarSSTAnomalies  + p90plus:yearling:time + pup:weight+ yearling:weig
+ht + male:twoplus:leptom + female:twoplus:DA + two:JulytoJuneMEI + male:repro
+ + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.62=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarSSTAnomalies + p90plus:yearling:time + pup:weight+ yearling:weigh
+t + male:twoplus:leptom + female:twoplus:DA + twoplus:JulytoJuneMEI +  male:repr
+o + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.63=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarSSTAnomalies + p90plus:yearling:time + pup:weight+ yearling:weigh
+t + male:twoplus:leptom + female:twoplus:DA + two:JulytoJuneMEI + repro:AgeS
+ + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.64=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarSSTAnomalies + p90plus:yearling:time + pup:weight+ yearling:weigh
+t + male:twoplus:leptom + female:twoplus:DA + twoplus:JulytoJuneMEI + repro:AgeS
+ + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.65=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarSSTAnomalies + p90plus:yearling:time + pup:weight+ yearling:weigh
+t + male:twoplus:leptom + female:twoplus:DA+ two:JulytoJuneMEI + threeplus:Julyt
+oJuneMEI + male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.66=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarSSTAnomalies  + yearling:I(Time-12) + yearling:JulytoJuneSSTAnoma
+lies + pup:weight+ yearling:weight + male:twoplus:leptom + female:twoplus:DA
+ + two:JulytoJuneMEI + male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.67=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarSSTAnomalies + yearling:I(Time-12) + yearling:JulytoJuneSSTAnomal
+ies + pup:weight+ yearling:weight + male:twoplus:leptom + female:twoplus:DA
+ + twoplus:JulytoJuneMEI + male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.68=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarSSTAnomalies + yearling:I(Time-12) + yearling:JulytoJuneSSTAnomal
+ies + pup:weight+ yearling:weight + male:twoplus:leptom + female:twoplus:DA
+ + two:JulytoJuneMEI +  repro:AgeS + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.69=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarSSTAnomalies + yearling:I(Time-12) + yearling:JulytoJuneSSTAnomal
+ies + pup:weight+ yearling:weight + male:twoplus:leptom + female:twoplus:DA
+ + twoplus:JulytoJuneMEI + repro:AgeS + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.70=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + pup:I(Time-12)
+ + pup:OcttoMarSSTAnomalies + yearling:I(Time-12) + yearling:JulytoJuneSSTAnomal
+ies + pup:weight+ yearling:weight + male:twoplus:leptom + female:twoplus:DA+
+ two:JulytoJuneMEI + threeplus:JulytoJuneMEI + male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.71=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e  + yearling:I(Time-12) + yearling:JulytoJuneSSTAnomalies + pup:weight+
+ yearling:weight + male:twoplus:leptom + female:twoplus:DA + two:JulytoJuneMEI
+ + male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.72=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + yearling:I(Time-12) + yearling:JulytoJuneSSTAnomalies + pup:weight+
+ yearling:weight + male:twoplus:leptom + female:twoplus:DA + twoplus:JulytoJuneM
+EI + male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.73=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + yearling:I(Time-12) + yearling:JulytoJuneSSTAnomalies + pup:weight+
+ yearling:weight + male:twoplus:leptom + female:twoplus:DA + two:JulytoJuneMEI
+ + repro:AgeS + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.74=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + yearling:I(Time-12) + yearling:JulytoJuneSSTAnomalies + pup:weight+
+ yearling:weight + male:twoplus:leptom + female:twoplus:DA + twoplus:JulytoJuneM
+EI + repro:AgeS + male:repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	Phi.75=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:tim
+e + yearling:I(Time-12) + yearling:JulytoJuneSSTAnomalies + pup:weight+
+ yearling:weight + male:twoplus:leptom + female:twoplus:DA+ two:JulytoJuneMEI
+ + threeplus:JulytoJuneMEI + male:repro + repro:AgeS))
+\end_layout
+
+\begin_layout Plain Layout
+
+	model.list=create.model.list(c("Phi","p"))
+\end_layout
+
+\begin_layout Plain Layout
+
+	models=function(x)
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\end_layout
+
+\begin_layout Plain Layout
+
+		model.parameters=list()
+\end_layout
+
+\begin_layout Plain Layout
+
+		for(j in 1:length(x))
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\end_layout
+
+\begin_layout Plain Layout
+
+			if(!is.list(eval(parse(text=x[j]),envir=environment(models))[[1]]))
+\end_layout
+
+\begin_layout Plain Layout
+
+				model.parameters[[names(x)[j]]]=eval(parse(text=(as.character(x[j]))),envir=en
+vironment(models))
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+		for(j in 1:length(x))
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\end_layout
+
+\begin_layout Plain Layout
+
+			if(is.list(eval(parse(text=x[j]),envir=environment(models))[[1]]))
+\end_layout
+
+\begin_layout Plain Layout
+
+				model.parameters=c(model.parameters,eval(parse(text=(as.character(x[j]))),envir
+=environment(models)))
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+		model.name=paste(x,collapse=".")
+\end_layout
+
+\begin_layout Plain Layout
+
+		return(list(model.name=model.name,model.parameters=model.parameters))
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+	return(models)
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+# Assign the function it creates to crm_models and it will be used in the
+ analysis
+\end_layout
+
+\begin_layout Plain Layout
+
+crm_models=define.models(zcdata.proc,maxyear)
+\end_layout
+
+\begin_layout Plain Layout
+
+# Time bins for p to handle lack of sampling in 1988 & 1989 [1988-1990],1991,...,
+\end_layout
+
+\begin_layout Plain Layout
+
+dp1=list(p=list(time.bins=c(1987,1990,1991:maxyear)))
+\end_layout
+
+\begin_layout Plain Layout
+
+################################################################################
+############
+\end_layout
+
+\begin_layout Plain Layout
+
+# This code is only run if runit=TRUE
+\end_layout
+
+\begin_layout Plain Layout
+
+if(runit)
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+# build set of p models with single Phi for parameter counts
+\end_layout
+
+\begin_layout Plain Layout
+
+   model.list=as.matrix(expand.grid(p=paste("p",0:8,sep="."),Phi="Phi.00"))
+\end_layout
+
+\begin_layout Plain Layout
+
+# Each model is written out to a file spec_p.#.Phi.##.rda for p counts but not
+ run
+\end_layout
+
+\begin_layout Plain Layout
+
+   crm.wrapper(model.list,zcdata.proc,zc.ddl,crm_models,design.parameters=dp1,method=
+c("nlminb"))
+\end_layout
+
+\begin_layout Plain Layout
+
+   p.count=apply(as.matrix(model.list),1,function.wrapper,fx=fx.par.count,par="p")
+\end_layout
+
+\begin_layout Plain Layout
+
+# Get Phi counts from models that have already been run
+\end_layout
+
+\begin_layout Plain Layout
+
+   model.list=as.matrix(expand.grid(p=paste("p",6,sep="."),Phi=paste("Phi",formatC(0
+:75,digits=1,flag="00"),sep=".")))
+\end_layout
+
+\begin_layout Plain Layout
+
+# fit all models -- each model is written out to a file spec_p.#.Phi.##.rda
+\end_layout
+
+\begin_layout Plain Layout
+
+   Phi.count=apply(as.matrix(model.list),1,function.wrapper,fx=fx.par.count,par="Phi")
+\end_layout
+
+\begin_layout Plain Layout
+
+################################################################################
+############
+\end_layout
+
+\begin_layout Plain Layout
+
+# Fit all models -- commented out
+\end_layout
+
+\begin_layout Plain Layout
+
+# create list of all models 9*76=684 models 
+\end_layout
+
+\begin_layout Plain Layout
+
+#model.list=expand.grid(p=paste("p",0:8,sep="."),Phi=paste("Phi",formatC(0:75,digit
+s=1,flag="00"),sep="."))
+\end_layout
+
+\begin_layout Plain Layout
+
+# fit all models -- each model is written out to a file p.#.Phi.##.rda
+\end_layout
+
+\begin_layout Plain Layout
+
+#crm.wrapper(model.list,zcdata.proc,zc.ddl,crm_models,design.parameters=dp1,method=c(
+"nlminb"))
+\end_layout
+
+\begin_layout Plain Layout
+
+################################################################################
+############
+\end_layout
+
+\begin_layout Plain Layout
+
+#    Fit models with -p.5,p.6,p.7
+\end_layout
+
+\begin_layout Plain Layout
+
+# create list of all models 3*76=228 models 
+\end_layout
+
+\begin_layout Plain Layout
+
+    if(fit.models)
+\end_layout
+
+\begin_layout Plain Layout
+
+    {
+\end_layout
+
+\begin_layout Plain Layout
+
+       model.list=expand.grid(p=paste("p",5:7,sep="."),Phi=paste("Phi",formatC(0:75
+,digits=1,flag="00"),sep="."))
+\end_layout
+
+\begin_layout Plain Layout
+
+#      fit models -- each model is written out to a file p.#.Phi.##.rda
+\end_layout
+
+\begin_layout Plain Layout
+
+       crm.wrapper(model.list,zcdata.proc,zc.ddl,crm_models,design.parameters=dp1,met
+hod=c("nlminb"))
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+################################################################################
+############
+\end_layout
+
+\begin_layout Plain Layout
+
+# get aic values of models with p.5,p.6,p.7 - chat = 1.11
+\end_layout
+
+\begin_layout Plain Layout
+
+    mat=as.matrix(expand.grid(p=c("p.5","p.6","p.7"),Phi=paste("Phi",formatC(0:75,dig
+its=1,flag="00"),sep=".")))
+\end_layout
+
+\begin_layout Plain Layout
+
+    aic=apply(mat,1,function.wrapper,fx=fx.aic,chat=1.11)
+\end_layout
+
+\begin_layout Plain Layout
+
+    aic_df=data.frame(mat)
+\end_layout
+
+\begin_layout Plain Layout
+
+    aic_df$aic=aic
+\end_layout
+
+\begin_layout Plain Layout
+
+    aic_df$delta_aic=aic_df$aic-min(aic_df$aic)
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+#   Get best models with delta aic < 6
+\end_layout
+
+\begin_layout Plain Layout
+
+    best_models=aic_df[aic_df$delta_aic<6,] 
+\end_layout
+
+\begin_layout Plain Layout
+
+    best_models$p=sapply(best_models$p,function(x)as.numeric(strsplit(as.character
+(x),"
+\backslash
 
 \backslash
-Sexpr{round(var.ratio,1)}
+.")[[1]][2]))
+\end_layout
+
+\begin_layout Plain Layout
+
+    best_models$Phi=sapply(best_models$Phi,function(x)as.numeric(strsplit(as.chara
+cter(x),"
+\backslash
+
+\backslash
+.")[[1]][2]))
+\end_layout
+
+\begin_layout Plain Layout
+
+    best_models$aic=NULL
+\end_layout
+
+\begin_layout Plain Layout
+
+#   Order them based on delta aic
+\end_layout
+
+\begin_layout Plain Layout
+
+    best_models=best_models[order(best_models$delta_aic),]
+\end_layout
+
+\begin_layout Plain Layout
+
+#   Get parameter count
+\end_layout
+
+\begin_layout Plain Layout
+
+    best_models$npar=p.count[best_models$p]+Phi.count[best_models$Phi]
+\end_layout
+
+\begin_layout Plain Layout
+
+#   Create dataframe of best models
+\end_layout
+
+\begin_layout Plain Layout
+
+    best_models=data.frame(best_models[,1:2],best_models$npar,best_models$delta_a
+ic)
+\end_layout
+
+\begin_layout Plain Layout
+
+    names(best_models)=c("
+\backslash
+
+\backslash
+textit{p} Model","$
+\backslash
+
+\backslash
+phi$ model","Number of parameters","Delta QAIC")
+\end_layout
+
+\begin_layout Plain Layout
+
+    rownames(best_models)=NULL
+\end_layout
+
+\begin_layout Plain Layout
+
+    modelset=paste("p",best_models[[1]],"Phi",best_models[[2]],sep=".")
+\end_layout
+
+\begin_layout Plain Layout
+
+#   Compute model weights
+\end_layout
+
+\begin_layout Plain Layout
+
+    weight=best_models[["Delta QAIC"]] 
+\end_layout
+
+\begin_layout Plain Layout
+
+    weight=exp(-.5*weight)
+\end_layout
+
+\begin_layout Plain Layout
+
+    weight=weight/sum(weight)
+\end_layout
+
+\begin_layout Plain Layout
+
+    best_models[,4]=formatC(best_models[,4],digits=1,format="f")
+\end_layout
+
+\begin_layout Plain Layout
+
+# compute v-c matrices for best models and save results
+\end_layout
+
+\begin_layout Plain Layout
+
+if(runit)
+\end_layout
+
+\begin_layout Plain Layout
+
+{  
+\end_layout
+
+\begin_layout Plain Layout
+
+    for(modelname in modelset)
+\end_layout
+
+\begin_layout Plain Layout
+
+    {
+\end_layout
+
+\begin_layout Plain Layout
+
+	    eval(parse(text=paste("load(file='../Analysis/",modelname,".rda')",sep="")))
+\end_layout
+
+\begin_layout Plain Layout
+
+    	eval(parse(text=paste("model=",modelname,sep="")))
+\end_layout
+
+\begin_layout Plain Layout
+
+    	vcv=cjs.hessian(model)
+\end_layout
+
+\begin_layout Plain Layout
+
+	    model$vcv=vcv*1.11
+\end_layout
+
+\begin_layout Plain Layout
+
+	    eval(parse(text=paste(modelname,"=model",sep="")))
+\end_layout
+
+\begin_layout Plain Layout
+
+	    eval(parse(text=paste("save(",modelname,",file='../Analysis/",modelname,".rda'
+)",sep="")))
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}	
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# load the best model which is p.6 and Phi.44
+\end_layout
+
+\begin_layout Plain Layout
+
+load(file="../Analysis/p.6.Phi.44.rda")
+\end_layout
+
+\begin_layout Plain Layout
+
+# Get real parameter estimates
+\end_layout
+
+\begin_layout Plain Layout
+
+x=p.6.Phi.44$real
+\end_layout
+
+\begin_layout Plain Layout
+
+reprobyyear=p.mean(x[x$repro==1,],age=1:25)[,-(1:10)]
+\end_layout
+
+\begin_layout Plain Layout
+
+notreprobyyear=p.mean(x[x$repro==0,],age=1:25)[,-(1:10)]
+\end_layout
+
+\begin_layout Plain Layout
+
+female.repro.ratio=mean(reprobyyear[1,]/notreprobyyear[1,])
+\end_layout
+
+\begin_layout Plain Layout
+
+male.repro.ratio=mean(reprobyyear[2,]/notreprobyyear[2,],na.rm=T)
+\end_layout
+
+\begin_layout Plain Layout
+
+var.ratio=(var(reprobyyear[1,]/notreprobyyear[1,],na.rm=T))/(var(reprobyyear[2,]/n
+otreprobyyear[2,],na.rm=T))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# Use function p.mean in marked package to compute the mean for each year
+ across all ages
+\end_layout
+
+\begin_layout Plain Layout
+
+pdf(file="AvgResightProbByYear.pdf")
+\end_layout
+
+\begin_layout Plain Layout
+
+barplot(p.mean(x,age=1:25)[,-(1:2)],beside=T,legend=c("Female","Male"),xlab="Year
+",ylab="Average resighting probability", args.legend=list(bty="n"),ylim=c(0,.7))
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+dd=dev.off()
+\end_layout
+
+\begin_layout Plain Layout
+
+# Use function p.mean in marked package to compute the mean for each specified
+ age across all years from 1990 to 2009
+\end_layout
+
+\begin_layout Plain Layout
+
+pdf(file="AvgResightProbByAge.pdf")
+\end_layout
+
+\begin_layout Plain Layout
+
+barplot(p.mean(x,time=1990:2009,age.bins=c(1,2,3,5,8,12,25),age.levels=c("1","2","3
+-4","5-7","8-11","12+")),beside=T,legend=c("Female","Male"),xlab="Age",ylab="Ave
+rage resighting probability",args.legend=list(x=4,y=.4,bty="n"),ylim=c(0,0.5))
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+dd=dev.off()
+\end_layout
+
+\begin_layout Plain Layout
+
+# Compute mean values of p for groups split by area 1/2, repro status (0/1)
+ and sex
+\end_layout
+
+\begin_layout Plain Layout
+
+x=x[x$p.age%in%5:15,]
+\end_layout
+
+\begin_layout Plain Layout
+
+sex_repro=rep("Repro Female",nrow(x))
+\end_layout
+
+\begin_layout Plain Layout
+
+sex_repro[x$sex=="M"&x$repro==1]="Repro Male"
+\end_layout
+
+\begin_layout Plain Layout
+
+sex_repro[x$sex=="F"&x$repro==0]="Non-Repro Female"
+\end_layout
+
+\begin_layout Plain Layout
+
+sex_repro[x$sex=="M"&x$repro==0]="Non-Repro Male"
+\end_layout
+
+\begin_layout Plain Layout
+
+area=rep("Area 1",nrow(x))
+\end_layout
+
+\begin_layout Plain Layout
+
+area[x$area2==1]="Area 2"
+\end_layout
+
+\begin_layout Plain Layout
+
+area[x$area1==0 & x$area2==0]="Neither"
+\end_layout
+
+\begin_layout Plain Layout
+
+# Create dotchart of those mean values
+\end_layout
+
+\begin_layout Plain Layout
+
+pdf(file="AvgResightProbbyReproArea.pdf")
+\end_layout
+
+\begin_layout Plain Layout
+
+dotchart(tapply(x$p,list(sex_repro,area),mean))
+\end_layout
+
+\begin_layout Plain Layout
+
+dd=dev.off
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+@
 \end_layout
 
 \end_inset
 
- times greater than for males whose attendance is for breeding and less
- influenced by variation in pup production and survival.
- 
+
 \end_layout
 
-\begin_layout Subsection*
-\paragraph_spacing double
-Survival probability
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
+\begin_layout Abstract
 \begin_inset ERT
 status collapsed
 
@@ -6805,244 +6063,7 @@ dd=dev.off()
 
 \end_layout
 
-\begin_layout Standard
-\paragraph_spacing double
-Eleven of the 76 models for survival were in the top set of models (Table
- 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{best_models}
-\end_layout
-
-\end_inset
-
-).
- Most were slight variants of each other.
- All of the models contained sex and age and their interaction, annual variation
- for pups and yearlings, pup weight at branding influencing pup and yearling
- survival, annual variation in survival related to indices for leptospirosis
- and domoic acid strandings, annual variation for ages 2 and older related
- to El Niño events (MEI), and differential survival for sea lions observed
- as reproductive with age and sex differences.
- Where they differed was in the ages affected by MEI, sex differences due
- to MEI and a sex-age interaction for sea lions observed as reproductive.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-Age and sex variation in survival and a sex-specific age pattern (sex:age)
- were expected.
- Both younger and older animals are more vulnerable to mortality than prime
- aged animals leading to the typical dome shaped survival curve (Figure
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "FigAgeSpecificSurvival"
-
-\end_inset
-
-).
- Sexual dimorphism and sex differences in timing of sexual maturity led
- to an expected sex-age interaction.
- Survival was lowest for pups and yearlings and highest for prime age animals
- between 2 and 11 years old and survival declined for ages 12 and older.
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-Annual variation in survival for pups and yearlings was sufficiently large
- to warrant fitting a separate survival parameter for each year (Figure
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "FigPupYearlingSurvival"
-
-\end_inset
-
-).
- Annual average survival varied from 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{min(pupF)}
-\end_layout
-
-\end_inset
-
- to 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{formatC(max(pupF),format="f",digits=3)}
-\end_layout
-
-\end_inset
-
- for female pups and 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{min(pupM)}
-\end_layout
-
-\end_inset
-
- to 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{max(pupM)}
-\end_layout
-
-\end_inset
-
- for male pups (Tables 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{Fsurvivaltab}
-\end_layout
-
-\end_inset
-
--
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{Msurvivaltab}
-\end_layout
-
-\end_inset
-
-).
- Likewise, yearling survival varied from 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{min(yrF)}
-\end_layout
-
-\end_inset
-
- to 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{max(yrF)}
-\end_layout
-
-\end_inset
-
- for females and 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{min(yrM)}
-\end_layout
-
-\end_inset
-
- to 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{max(yrM)}
-\end_layout
-
-\end_inset
-
- for males.
- This variation was primarily due to the impact of El Niño on these age
- classes.
- Pup and yearling survival were severely depressed in 1997 during the strong
- El Niño event and to a much lesser degree during the weaker 1992 El Niño
- event (Tables 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{Fsurvivaltab}
-\end_layout
-
-\end_inset
-
--
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{Msurvivaltab}
-\end_layout
-
-\end_inset
-
-).
- In addition, pups born during an El Niño had lower survival the following
- year as yearlings.
- This was most apparent in 1998 when pup survival was high but survival
- of yearlings from the 1997 pup cohort was nearly as low as survival of
- the yearlings from the 1996 cohort that were weaned during the 1997 El
- Niño.
- The same pattern occurred, but to a lesser degree, in 1993 after the 1992
- El Niño event.
- The very weak 2003 El Niño event had little evident impact on their survival.
- 
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
+\begin_layout Abstract
 \begin_inset ERT
 status collapsed
 
@@ -7135,14 +6156,289 @@ Lepto.se=Leptoodds*sqrt(p.6.Phi.44$vcv[Leptobeta.which,Leptobeta.which])
 
 \end_layout
 
-\begin_layout Standard
-\paragraph_spacing double
-Models containing separate annual survival parameters for ages 2 and older
- were not supported but simpler linear-logistic models relating survival
- to environmental conditions and disease were supported.
- Survival was lower under El Ni
+\begin_layout Abstract
+\noindent
+We conducted a mark-resight study of branded California sea lions (
+\shape italic
+Zalophus californianus
+\shape default
+) on San Miguel Island, California to estimate sex- and age-specific annual
+ survival rates and evaluate the magnitude and causes of environmental and
+ individual variation.
+ We fitted Cormack-Jolly-Seber models to resighting data collected from
+ 1990 to 2009 of 
 \begin_inset ERT
-status open
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{sum(cohort_table)}
+\end_layout
+
+\end_inset
+
+ sea lion pups branded from 1987 to 2007.
+ Survival varied by sex and age and their interaction (i.e., sex-specific
+ age pattern).
+ Survival was lowest for pups and yearlings and highest for prime-aged animals
+ between 2 and 11 years old (Females: 0.90-0.94; Males: 0.84-0.91).
+ Survival declined for ages 12 and older (Females: 0.60-0.88; Males: 0.55-0.74).
+ Pup and yearling survival varied annually and pups with greater weight
+ at branding had higher pup and yearling survival.
+ For every 1 kg increase above the sex-specific average weight, the pup's
+ odds of survival increased by 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{100*round(exp(beta.mavg$estimate[1])-1,2)}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (se = 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{100*round(exp(beta.mavg$estimate[1])*beta.mavg$se[1],3)}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+) and a yearling's odds increased by 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{formatC(100*round(exp(beta.mavg$estimate[2])-1,2),digits=2,format="f")}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (se = 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{100*round(exp(beta.mavg$estimate[1])*beta.mavg$se[2],3)}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+).
+ Annual average survival varied from 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{min(pupF)}
+\end_layout
+
+\end_inset
+
+ to 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{formatC(max(pupF),format="f",digits=3)}
+\end_layout
+
+\end_inset
+
+ for female pups and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{min(pupM)}
+\end_layout
+
+\end_inset
+
+ to 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{max(pupM)}
+\end_layout
+
+\end_inset
+
+ for male pups.
+ Likewise, yearling survival varied from 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{min(yrF)}
+\end_layout
+
+\end_inset
+
+ to 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{max(yrF)}
+\end_layout
+
+\end_inset
+
+ for females and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{min(yrM)}
+\end_layout
+
+\end_inset
+
+ to 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{max(yrM)}
+\end_layout
+
+\end_inset
+
+ for males.
+ Pup and yearling survival were severely depressed in 1997 during the strong
+ El Ni
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -7153,8 +6449,2643 @@ status open
 
 \end_inset
 
-o conditions and better under La Nina conditions as measured by the MEI
- but the affected ages varied amongst the models.
+o and to a much lesser degree during the weaker 1992 El Ni
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+~n
+\end_layout
+
+\end_inset
+
+o.
+ Survival of sea lions ages 2 and older was also lower under El Ni
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+~n
+\end_layout
+
+\end_inset
+
+o conditions and better under La Ni
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+~n
+\end_layout
+
+\end_inset
+
+a conditions as measured by the Multivariate El Ni
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+~n
+\end_layout
+
+\end_inset
+
+o Southern Oscillation Index (MEI).
+ A unit increase in the MEI reduced the survival odds (S/(1-S)) by 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{100*round(1-MEIodds[1],2)}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (se = 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{100*round(MEI.se[1],3)}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ ) and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{100*round(1-MEIodds[2],2)}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (se = 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{100*round(MEI.se[2],3)}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ ) for ages 2 and 3 years and older, respectively.
+ For male sea lions aged 2 years and older, an increase of 100 observed
+ stranded sea lions due to leptospirosis, resulted in a predicted decrease
+ of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{100*round(1-Leptoodds,2)}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (se = 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{100*round(Lepto.se,3)}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+) in the odds of survival.
+ Female sea lions that were observed with a pup, had a lower survival rate
+ for the earliest ages of sexual maturity but this pattern reversed in the
+ later ages when their survival was substantially higher.
+ Approximately 80% of the resighted female sea lions had been observed with
+ a pup by age 8.
+ Our mark-resight study demonstrates the value of long-term longitudinal
+ studies of permanently marked long-lived animals to produce precise sex-
+ and age-specific estimate of survival and to investigate the role of the
+ environment and disease in survival.
+\end_layout
+
+\begin_layout Section*
+\paragraph_spacing double
+Introduction
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+Demographic models, a cornerstone of population analysis (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Johnson1994"
+
+\end_inset
+
+), require estimates of survival, reproduction, and movement rates of individual
+s into and out of a population.
+ For pinnipeds, which are long-lived, have expansive ranges, and spend most
+ of their lives at sea, demographic studies that span the lifetime of individual
+s are rare (but see 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Testa1987a"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Huber1991"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Hern'andez-Camacho2008a"
+
+\end_inset
+
+).
+ Consequently, population analysis has often been based on trends in indices
+ such as annual counts of pups or adults but the causal factors producing
+ the trends are often unknown (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Lowry1992"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Fritz2005"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Kirkwood2005"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Towell2006"
+
+\end_inset
+
+).
+ The annual variation in survival and natality rates derived from demographic
+ studies can provide insight into the underlying mechanisms for population
+ trends, such as sex- or age-specific responses to population size, environmenta
+l changes, or disease (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Eberhardt1977"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Fowler1992"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Jorgenson1997"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Coulson2000"
+
+\end_inset
+
+).
+ Estimates of survival and natality can also be used to develop correction
+ factors for population indices and to develop age-structured population
+ models to estimate population growth rates (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Wickens1997"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Holmes2007"
+
+\end_inset
+
+).
+ For pinnipeds, estimates of life-history parameters can be obtained from
+ cross-sectional samples from animals collected for research, during subsistence
+ harvests, or incidental to fisheries (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Lander1981"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Pitcher1981"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Boyd1985"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "York1994"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Bester1995"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Hammill1995"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Lima1995"
+
+\end_inset
+
+) but these data are often biased toward specific sex or age classes.
+ Mark-recapture studies of uniquely marked pinnipeds offer an alternative
+ and often less biased method of estimating life-history parameters and
+ have become a more common method to estimate vital rates (e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Testa1987a"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "LeBoeuf1988"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Huber1991"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Boyd1995a"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Schwarz2000a"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "McMahon2003"
+
+\end_inset
+
+,
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Beauplet2006"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "McIntosh2006a"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Wilkinson2011"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+California sea lions (
+\shape italic
+Zalophus californianus
+\shape default
+) are an abundant pinniped with an expansive range along the Pacific coast
+ of North America, from Mexico to southeast Alaska.
+ Each summer, most sea lions return to the breeding areas, which offers
+ a unique opportunity to observe all the age-classes and both sexes and
+ to conduct longitudinal studies of uniquely marked individuals.
+ The primary breeding areas are the Channel Islands off the coast of California
+ (U.S.
+ population) and offshore islands of Baja California, Mexico (Mexico population).
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+The U.S.
+ population has been increasing since sea lions were protected by the U.S.
+ Marine Mammal Protection Act in 1972 and is currently estimated at 240,000
+ to 280,000 animals (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Caretta2007"
+
+\end_inset
+
+).
+ The U.S.
+ population feeds in the California Current ecosystem which was impacted
+ by El Niño Southern Oscillation (ENSO) events that occurred in 1982-1983
+ (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Arntz1991"
+
+\end_inset
+
+), 1992-1993 (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Lynn1995"
+
+\end_inset
+
+), 1997-1998 (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Lynn1998"
+
+\end_inset
+
+), and 2002-2003 (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Venrick2003"
+
+\end_inset
+
+).
+ During those ENSO events, sea surface temperature (SST) increased and ecosystem
+ productivity declined (CITATIONS).
+ ENSO events are particularly significant for females and pups.
+ Pups fast while the females forage and females must find enough forage
+ to produce milk for the pup and sufficiently maintain their own health
+ for future reproduction.
+ (
+\series bold
+SHARON re-word to your liking and add citations on impacts of ENSO on attendance
+ and foraging)
+\series default
+.
+ ENSO events have resulted in temporary but significant declines in both
+ production and survival of pups (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Boness1991a"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "DeLong1991b"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Francis1991a"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "DeLong2000"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Melin2002a"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Caretta2007"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+In addition to environmental events that occurred during the period of populatio
+n growth, the California sea lion population also experienced occurrences
+ of leptospirosis disease (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Colagross-Schouten2002"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Norman2008"
+
+\end_inset
+
+), hookworm disease (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Lyons1997"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Lyons2001"
+
+\end_inset
+
+) and domoic acid poisoning from a naturally occurring toxin (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Scholin2000"
+
+\end_inset
+
+).
+ Environmental and disease events may influence the dynamics of a population
+ long after the immediate effects are observed in population trends (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Jorgenson1997"
+
+\end_inset
+
+).
+ Demographic studies allow the sex- and age-specific effects of such events
+ on population growth to be described and modeled.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+Recently 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hern'andez-Camacho2008a"
+
+\end_inset
+
+ reported sex- and age-specific survival rates for branded California sea
+ lions from a mark-recapture study in the Gulf of California, Mexico.
+ With fewer than 200 marked sea lions, they were only able to describe general
+ patterns in survival for four age classes.
+ While ENSO events impact sea lions in the Channel Islands (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Boness1991a"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "DeLong1991b"
+
+\end_inset
+
+), no impact has been observed in the Gulf of California (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Aurioles1991"
+
+\end_inset
+
+,
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Hern'andez-Camacho2008a"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+In 1987, we initiated a long-term branding and resighting study at San Miguel
+ Island (SMI), California because there had been no demographic studies
+ to estimate the life-history parameters of California sea lions breeding
+ in the California Channel Islands.
+ Without these basic measurements, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Lowry1992"
+
+\end_inset
+
+ used survival and natality rates of the northern fur seal (
+\shape italic
+Callorhinus ursinus
+\shape default
+) as a proxy to develop a model of U.S.
+ California sea lion population growth.
+ With branding and resighting data from 1987-2009, we have estimated sex-
+ and age-specific survival of California sea lions at San Miguel Island
+ and evaluated the effects of environmental variation, disease and individual
+ variation in pup weight.
+ 
+\end_layout
+
+\begin_layout Section*
+\paragraph_spacing double
+
+\series bold
+Methods
+\end_layout
+
+\begin_layout Subsection*
+\paragraph_spacing double
+
+\series bold
+Study Site and Sea Lion Natural History
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+San Miguel Island (SMI; 34.03
+\begin_inset Formula $^{\mathrm{o}}$
+\end_inset
+
+ N, 120.44
+\begin_inset Formula $^{\mathrm{o}}$
+\end_inset
+
+ W) is one of the Channel Islands located 46 km off the California coast
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Range-and-breeding"
+
+\end_inset
+
+).
+ California sea lions use SMI for pupping, breeding, and hauling-out.
+ Reproductive and hauling sites range from small, rocky coves to large,
+ expansive sandy beaches.
+ Most reproduction occurs on the west end of the island.
+ Hauling sites on the remainder of the island are used primarily by juveniles
+ and non-reproductive males especially during the reproductive season.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+All age, sex, and reproductive classes of California sea lions inhabit SMI
+ at various times throughout the year, but the greatest number of animals
+ at the colony occurs between late May and early August for the reproductive
+ season (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Peterson1967"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Odell1981"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Heath1989"
+
+\end_inset
+
+).
+ Most adult females are non-migratory and visit the colony regularly throughout
+ the year but males tend to disperse from the colony during the winter,
+ returning to the colony in late May.
+ California sea lions have distinct pupping and breeding periods within
+ the reproductive season.
+ Pupping occurs over a six week period from late May to early July.
+ California sea lion females give birth to a single pup and remain in constant
+ attendance of the pup for 5 to 8 d.
+ After the perinatal period, females begin an attendance cycle in which
+ they alternate 2 to 4 d foraging trips to sea with 1 to 2 d nursing visits
+ ashore until the pup is weaned at about 11 months of age (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Odell1981"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Heath1989"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Antonelis1990"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Melin2000a"
+
+\end_inset
+
+).
+ Breeding occurs about 3 to 4 weeks post-partum, beginning in late June
+ and ending in early August.
+ Males arrive at the colony in May but peak numbers occur in July at the
+ peak of breeding.
+ Only a small proportion of adult males establish breeding territories.
+ Individual males may hold a territory from one day to two months.
+ Non-breeding males haulout on beaches outside the main breeding areas.
+ Males disperse from the colony in early August and winter at hauling sites
+ along the California, Oregon and Washington coasts, the islands of British
+ Columbia, Canada and southeast Alaska.
+ Juveniles and adult females haul out at SMI as well as hauling areas along
+ the central California coast during the winter but lactating females must
+ return regularly to the colony to nurse their pups.
+ 
+\end_layout
+
+\begin_layout Subsection*
+\paragraph_spacing double
+
+\series bold
+Marking and Resighting Effort
+\end_layout
+
+\begin_layout Subsubsection*
+\paragraph_spacing double
+
+\shape italic
+Marking
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+From 1987 through 2007, we hot branded 3 to 5 month old California sea lion
+ pups at Adams Cove on SMI (200 to 500 each year).
+ We branded between 1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ and 4
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ of the pups born annually.
+ For 2 to 5 days, large groups of adult females and pups hauled out on the
+ beach in Adams Cove were slowly herded so as to release the adult females
+ and retain the pups for branding.
+ Pups that were too small for branding or unhealthy were removed from the
+ group.
+ Although this resulted in a slightly biased sample of pups, typically fewer
+ than a dozen pups (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textless
+\end_layout
+
+\end_inset
+
+ 2
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+) were excluded.
+ We believe that the unhealthy pups were unlikely to survive and the stress
+ of being held and branded might have further compromised any chance of
+ their survival.
+ Starting in 1993, the sample sex ratio was skewed to provide a larger sample
+ size for females to increase the precision of female survival estimates
+ and to provide a larger sample size for natality estimation.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+Pups were gathered and held in a large holding pen until they were branded
+ and released.
+ Before branding, each pup was weighed (to nearest 0.2 kg), sexed, and tagged
+ in the foreflippers with yellow roto-tags.
+ The tags helped with sighting of branded animals in large groups and provided
+ a returnable identification for animals found dead on beaches or in nets.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+Each pup was branded on the left shoulder (right-shoulder in 1987) with
+ a unique number and released.
+ Branding techniques are described in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Merrick1996"
+
+\end_inset
+
+.
+ Hot brands destroy the hair follicles and pigment-producing cells in the
+ epidermis, leaving a dark permanent mark that grows proportionally with
+ the animal.
+ Brands were completely healed within two months after application.
+ Each brand digit was about 7.5 cm high and 4.0 cm wide at application.
+ At adulthood, each digit was about 15.0 cm high and 8.0 cm wide.
+ Brands of this size were easily observed from distances up to 600 m using
+ binoculars or spotting scopes.
+\end_layout
+
+\begin_layout Subsubsection*
+\paragraph_spacing double
+
+\shape italic
+Resighting
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+To obtain accurate estimates of survival, sea lions of all age and sex classes
+ needed to be resighted.
+ Resighting all age and sex classes was complicated by the expansive range
+ of sea lions (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Range-and-breeding"
+
+\end_inset
+
+).
+ However, during the reproductive season, the range contracts primarily
+ to the breeding islands and the central and northern California hauling
+ sites.
+ We focused the resight effort to the reproductive season to minimize the
+ geographic areas that needed to be surveyed and to maximize the number
+ of marked sea lions of each age and sex class that could be sighted.
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+From 1990 through 2009, branded sea lions were resighted during the reproductive
+ season at SMI.
+ Observations were made from stationary blinds or from cliffs overlooking
+ populated beaches.
+ Because of the large number of areas that sea lions use on the island,
+ all areas could not be surveyed every day.
+ We divided the survey effort into two areas; Area 1 was surveyed daily
+ every year and Area 2 was surveyed daily in some years but more commonly
+ two to three times a week.
+ Observers scanned areas repeatedly until clearly visible branded animals
+ were identified.
+ Branded animals were identified using binoculars or 20 to 45X zoom spotting
+ scopes.
+ For each observation of a branded animal, the date, area, reproductive
+ status and brand number were recorded.
+ Prior to 1994, observation effort was limited to SMI under the assumption
+ that California sea lions would have fairly high fidelity to their natal
+ site.
+ However, a study in 1994 indicated that many juveniles were hauling out
+ at Año Nuevo Island (ANI; 37.01°N, 122.3°W), during the reproductive season
+ suggesting that observation effort only at SMI would not be adequate for
+ juveniles.
+ In 1996, ANI, the Farallon Islands (FAI; 37.7°N, 123.0°W) and haul-outs in
+ Monterey Bay and along the Big Sur coast were surveyed during the reproductive
+ season (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Range-and-breeding"
+
+\end_inset
+
+).
+ The more expansive effort demonstrated that most juveniles could be observed
+ at SMI, ANI and to a lesser degree, FAI.
+ Because of limited resources, we only added annual field sighting effort
+ at ANI from 1996 to 2009 that included surveys two to three times a week
+ between May and August.
+ We also supported observation effort at the FAI during 1998 because we
+ expected larger numbers of juveniles and adults to move further north during
+ the ENSO event.
+ We obtained opportunistic sightings from the FAI in other years.
+\end_layout
+
+\begin_layout Subsection*
+\paragraph_spacing double
+
+\series bold
+Model Development
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+Annual survival rates (i.e, probability of surviving a year) were estimated
+ from the release-resighting data of branded sea lions using the Cormack-Jolly-S
+eber (CJS) model formulation.
+ For CJS models, the initial capture and marking is a release event and
+ only recaptures (resightings) of the marked individuals at later sampling
+ occasions are treated as data.
+ For our analysis, each year from 1987-2007 a branded cohort of pups was
+ 
+\begin_inset Quotes eld
+\end_inset
+
+released
+\begin_inset Quotes erd
+\end_inset
+
+ and surviving pups were resighted in the following years during the reproductiv
+e season.
+ We used resights from 1990-2009 (no effort in 1987-1988) during 15 May
+ to 15 August of each year as the sampling occasion because it encompasses
+ pupping, breeding and post-breeding (when the structure of the rookery
+ is more dynamic and mixed) periods.
+ For CJS, sampling occasions are assumed to be instantaneous events such
+ that there are no deaths during the sampling period.
+ Observations obtained over a three month period are clearly not instantaneous,
+ but we chose this period to balance the need to get an adequate sample
+ size of all age and sex classes against the possibility of losses (deaths)
+ during the period.
+ In our analysis, we have assumed that all observed branded animals survive
+ during the three month period and all mortality occurs between occasions.
+ Annual survival for non-pups in year 
+\shape italic
+y
+\shape default
+ represented 1 July of year 
+\shape italic
+y
+\shape default
+ to 1 July of year 
+\shape italic
+y
+\shape default
++1.
+ For pups, survival was for the time period from branding to 1 July of the
+ following year.
+ Branding occurred at different times so unequal time intervals (e.g., 0.8
+ for 8 tenths of a year) were used for each pup survival year to represent
+ them as annual rates.
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+Most capture-recapture models assume that 
+\begin_inset Quotes eld
+\end_inset
+
+marks
+\begin_inset Quotes erd
+\end_inset
+
+ are not lost and are recorded correctly.
+ In comparison to flipper tags, which are often used on pinnipeds, brands
+ have the distinct advantage of being permanent and cannot be 
+\begin_inset Quotes eld
+\end_inset
+
+lost
+\begin_inset Quotes erd
+\end_inset
+
+ unless the brand is obscured (e.g., tar accumulation or bite scars) or illegible,
+ which occurred infrequently in our study.
+ However, brands can potentially be misread or recorded incorrectly, which
+ can bias survival estimates.
+ Brand misreads are most problematic if a brand of a dead animal is incorrectly
+ recorded as being seen and thus alive.
+ To reduce the potential impact of brand misreading on the estimates, we
+ defined a sighting of a branded sea lion to have occurred if it was seen
+ at least twice (typically on different days) in the same year or it was
+ photographed for verification.
+ As long as errors occur independently, this will reduce the error rate
+ substantially.
+ In 2003 we began using field computers with an error checking program as
+ part of the data entry process.
+ After the brand was entered into the computer, the observer was notified
+ if the brand number was for a sea lion that was known to be dead, the opposite
+ sex, or if the sea lion had not been seen for two or more years (which
+ is not necessarily an error but is uncommon for adult animals).
+ When any of these conditions occurred, the observer checked the brand while
+ in the field and corrected the brand number if an error was made.
+ We have received reports of branded sea lions all along the U.S.
+ west coast and occasionally in Mexico and Canada.
+ However, in addition to the seasonal restriction, we restricted the analysis
+ to sightings made on SMI, ANI and FAI where we had personnel with sufficient
+ experience to read and record brands.
+\end_layout
+
+\begin_layout Subsubsection*
+\paragraph_spacing double
+Model Design
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+For a sea lion to be sighted at some time after branding, it must survive
+ until that time and it must be seen and have its brand read.
+ Thus, the probability that a sea lion is sighted at some occasion following
+ release is a function of the probability that it survives (
+\begin_inset Formula $\varphi$
+\end_inset
+
+) and the probability of sighting (
+\begin_inset Formula $p$
+\end_inset
+
+) and reading the brand of a surviving sea lion.
+ Survival and sighting probabilities can vary due to time, age, sex, and
+ various other reasons.
+ A CJS model specification depends on survival (
+\begin_inset Formula $\varphi)$
+\end_inset
+
+ and sighting (
+\begin_inset Formula $p)$
+\end_inset
+
+ probability sub-models.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+\paragraph_spacing double
+
+\shape italic
+Survival probability
+\shape default
+ (
+\begin_inset Formula $\varphi$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+We examined 76 different models (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:survival models"
+
+\end_inset
+
+) for survival that included some combination of sex, age, year, pup weight,
+ reproductive status, and temporal environmental and disease covariates.
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Age and Sex}
+\end_layout
+
+\end_inset
+
+: Sea lion age was specified as the number of years at their last birthday
+ (specified as 1 July).
+ Thus, pups were age 0, yearlings age 1, and so on.
+ We used the following intervals for age: 0, 1, 2, 3-4, 5-7, 8-9, 10-11,
+ 12-14, and 15-21.
+ We used these intervals to reduce the number of age-specific parameters
+ and because they were relevant to sea lion life history.
+ Sea lions less than three years old were not reproductive and we expected
+ the greatest change in survival for juveniles so we estimated a separate
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ for ages 0, 1 and 2.
+ Females may become reproductive at age 3 (rarely) or 4 and most are reproductiv
+e by age 7 (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Melin2011"
+
+\end_inset
+
+).
+ Ages 8 to 21 were divided into four groups to examine changes in survival
+ at older ages.
+ The age intervals were wider for older animals because the sample size
+ of live animals decreased with age.
+ The age intervals were designed specifically for females but these intervals
+ are also applicable for males which can typically become territorial at
+ age 10.
+ Due to differences in their life history and behavior, we expected that
+ survival pattern would differ for males and females.
+ We also expected that any patterns across age would differ for the sexes,
+ so we considered models that included interactions with sex (sex*age).
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+There was little resighting effort expended in 1988 and 1989, so we excluded
+ those resighting occasions and set 
+\shape italic
+p
+\shape default
+=0 for those two years which precluded estimating year-specific survival
+ from 1987, 1988, and 1989 for the 1987 and 1988 cohorts.
+ Thus, for each model we included four parameters for female and male survival
+ from pup to age 3 (1990) for the 1987 cohort and from pup to age 2 for
+ the 1988 cohort.
+ For the remaining cohorts, survival could be estimated separately for each
+ age.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Pup Weight}
+\end_layout
+
+\end_inset
+
+: Pup weight affects post-weaning survival in other otariids (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Baker1992"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Hastings2011"
+
+\end_inset
+
+) so we examined models in which pup weight affected pup survival.
+ With the possibility of a carryover effect of pup weight where smaller
+ pups have lower survival throughout their lives (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Hastings2011"
+
+\end_inset
+
+), we also examined models in which pup weight influenced the survival of
+ yearlings and older animals by adding age-specific parameters until they
+ no longer improved the fit.
+ The pup weight covariate (Weight) was measured as the deviation of the
+ pup's weight from the sex-specific mean weight of pups from 1989-2007.
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Reproductive Status}
+\end_layout
+
+\end_inset
+
+: In terms of survival, reproduction is potentially costly for sea lions.
+ For females, once they give birth, they produce a pup most years and sustain
+ an energetically demanding cycle of lactation and gestation for much of
+ their adult life.
+ It may be potentially more costly for males who can be seriously or terminally
+ hurt while engaging in territorial behaviors or may lose substantial weight
+ while primarily fasting during their territorial tenure.
+ While age may encapsulate some variation in survival due to reproduction
+ as they mature sexually, some sea lions, particularly males may never breed.
+ Thus, we defined a sqeuence of individual time-varying covariate (Repro1990,
+ Repro1991,...,Repro2009) that was initially 0.
+ Once a female was seen either pregnant or with a pup, the Repro covariate
+ for that year and all subsequent years was set to 1 for survival probabilities.
+ Likewise, the Repro covariates for males were set to 1, if the male was
+ seen engaging in territorial behavior.
+ The impact of reproduction on survival may increase or decrease with age,
+ so we also considered an individual time-varying covariate (RepAge) that
+ measured the number of years since the sea lion was first seen as reproductive.
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Environment}
+\end_layout
+
+\end_inset
+
+: We expected that survival would vary by year due to natural variation
+ in prey availability and oceanographic conditions such as the El Niño events
+ in 1992-1993, 1997-1998 and 2002-2003.
+ However, we did not expect that temporal variation would act equally across
+ age classes.
+ Instead, we expected more temporal variation in survival of younger sea
+ lions and that our ability to detect temporal variation would decrease
+ for older ages partially due to smaller sample sizes resulting from mortality.
+ Thus, in posing alternative models, we fitted a sequence of models in which
+ temporal variation was included for age 0, age 0 and 1, ages 0, 1, 2, etc.
+ until there was no indication of a temporal signal in an age class.
+ For older age classes that did not support separate annual survival probabiliti
+es we evaluated models with annual survival varying as a linear function
+ of environmental conditions, the greatest of these being the periodic occurrenc
+e of ENSO events.
+ ENSO events are characterized by changes in atmospheric-ocean circulation
+ patterns and are described by a multivariate (MEI) measured at the equator
+ (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Wolter1998"
+
+\end_inset
+
+).
+ Because of changes in ocean circulation patterns, sea surface temperatures
+ increase along the California coast and provide a locally based proxy for
+ the strength and duration of the events as well as smaller scale perturbations
+ in the California Current that affect sea lion prey availability.
+ We know that ENSO events impact survival of sea lions (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "DeLong1991b"
+
+\end_inset
+
+) but the strength and duration of ENSO events determines the influence
+ they have on survival.
+ We evaluated two alternative covariates to capture differential effects
+ of ENSO: 1) average sea surface temperature (SST) anomaly, which was measured
+ at five NOAA data buoys (NOAA National Data Buoy Center, http://www.ndbc.noaa.gov)
+ located generally north of San Miguel Island in the area where females
+ primarily forage (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Melin2000d"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Melin2008"
+
+\end_inset
+
+); and 2) the MEI, which we lagged by three months because it is measured
+ at the equator and a three month lag provided the highest correlation with
+ the local SST.
+ For pups, we used the average from 1 October to 30 March and for non-pups
+ we used the average from 1 July to 30 June to correspond to the survival
+ periods.
+ For MEI, lagged by three months, these were actually the average from 1
+ April to 30 March of the following year.
+ For pups and yearlings, we also examined models with a linear trend in
+ survival over time.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Disease}
+\end_layout
+
+\end_inset
+
+: We also evaluated models in which the number of reported stranded male
+ sea lions diagnosed with leptospirosis disease (Lepto) was a covariate
+ for 2+ male survival.
+ Likewise, the number of reported stranded sea lions diagnosed with domoic
+ acid (DA) poisoning was a predictor for 2+ female survival.
+ Lepto and DA are the primary cause for stranding and mortality in male
+ and female California sea lions respectively (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Gulland1996"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Gulland2002"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Greig2005"
+
+\end_inset
+
+).
+ The number of sea lions (2 years and older) that stranded in central and
+ southern California were accumulated between 1 July and 30 June to match
+ the time frame for the survival estimates.
+ The stranding information was provided by Sarah Wilkin of the Southwest
+ Region of the National Marine Fisheries Service who collates the data from
+ the stranding coordinators throughout California.
+ 
+\end_layout
+
+\begin_layout Paragraph
+\paragraph_spacing double
+Resighting probability (
+\begin_inset Formula $p$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+We fitted nine different models for 
+\shape italic
+p
+\shape default
+ (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:resight models"
+
+\end_inset
+
+).
+ This may seem like a small number of models to consider, especially in
+ comparison to survival; however, our model set is the result of an iterative
+ analysis of these data over a decade as we collected data and refined the
+ analysis.
+ We have excluded many of the simpler models that were clearly inferior.
+ The models for 
+\shape italic
+p
+\shape default
+ were generally more complex because we shifted survey coverage over time
+ as we learned.
+ Initially we presumed a high level of fidelity to the branding site because
+ we assumed that the pups were born where they were captured for branding
+ and that they would have fidelity to the area (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Baker1995"
+
+\end_inset
+
+); so, our effort was focused in the vicinity of Adams Cove where pups were
+ branded.
+ However this presumption was incorrect because branded pups dispersed to
+ other areas of the colony, animals colonized new areas on SMI over the
+ study period, and juveniles and non-territorial males were primarily using
+ other areas of the island during the reproductive season.
+ In response we adjusted the sampling coverage across the island which meant
+ that any sex, age and spatial differences in resighting probability would
+ change over time.
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Year}
+\end_layout
+
+\end_inset
+
+: We expected 
+\shape italic
+p
+\shape default
+ to vary by year because the level of survey effort varied by year.
+ Directed annual resighting effort began in 1990 at SMI but the effort varied
+ significantly by year until 1994 when a dedicated resighting survey program
+ was instituted and the effort became consistent over years.
+ In addition, the resighting effort was expanded with the addition of a
+ resighting program at ANI in 1994 that continued through 2009.
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Area}
+\end_layout
+
+\end_inset
+
+: As in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Melin2011"
+
+\end_inset
+
+, we divided SMI into two areas to cope with individual fidelity to specific
+ areas that received unequal survey coverage.
+ Area 1 was the vicinity around Adams Cove, which received the most resighting
+ effort.
+ Area 2 was the remainder of the island, which received a lower level of
+ effort initially but increased over time as animals colonized new areas
+ within Area 2.
+ We defined a third area that included ANI and any opportunistic sightings
+ from FAI.
+ We defined an individual sea lion covariate for Areas 1 and 2 that varied
+ over time (i.e, Area11990,...,Area12010 and Area21990,...,Area22010 ).
+ The covariate for Area 1 was initially 0 at release but was set to 1 for
+ all years after a sea lion was seen in Area 1.
+ The covariate for Area 2 was also initially 0 and was set to 1 for all
+ years after being seen in Area 2 but it was reset to 0 if it was subsequently
+ seen in Area 1.
+ Sea lions never seen or only seen in Area 3 retained a value of 0 for both
+ covariates and were represented by the model intercept when the Area covariates
+ were included in the model.
+ Both Area 1 and Area 2 covariates were considered in models with parameters
+ that varied by age and sex and also by year.
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Reproductive Status}
+\end_layout
+
+\end_inset
+
+: With resighting surveys being conducted during the reproductive season,
+ we would expect higher resighting probabilities for pupping females and
+ territorial males.
+ Age may account for some of this variation, but there is age-variation
+ in recruitment (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Melin2011"
+
+\end_inset
+
+) and some sea lions, particularly males, may never breed.
+ As with survival, we used a time-varying individual reproductive covariate
+ (Repro1990,...,Repro2010) for resighting probability that was initially 0
+ but was set and remained at 1 for all years after being seen with a pup
+ (females) or was territorial (males).
+ We expected the affect of this covariate to differ for males and females
+ so we also considered models with a sex-Repro interaction (i.e, separate
+ parameters for each sex).
+ We also considered models in which the effect varied across years due to
+ the impact of ENSO events on reproduction, pup mortality, and presence
+ at SMI.
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Age and Sex}
+\end_layout
+
+\end_inset
+
+: We expected that sighting probability would vary for females and males
+ and it would differ across ages for each sex.
+ Adult females spend more time at the island for birth, breeding, and pup
+ attendance; whereas, adult males are on the island primarily for breeding.
+ Idle (non-territorial) males may spend far less time at the island or remain
+ elsewhere.
+ Juveniles do not participate in breeding and are more often seen at ANI,
+ especially males.
+ We used the same age intervals for sighting probability that we used for
+ survival except that we collapsed the last four age intervals into two
+ (8-11, 12+) because we did not expect much change in 
+\shape italic
+p
+\shape default
+ once sea lions reached these older ages.
+ With shifts in spatial survey coverage over time, we expected temporal
+ variation in the sex- and age-specific resighting probabilities (i.e., interactio
+n of sex, age, and year); however, we found that it was necessary to limit
+ fitting three-way interactions to data collected in 1994 and beyond, due
+ to paucity of data prior to that year.
+ We found that many estimates of p would end up at boundaries (0 or 1) if
+ we attempted to fit interactions for data prior to 1994.
+ So we segmented the model fitting at 1994.
+ For data prior to 1994, we fitted sex and age interactions but an additive
+ effect for year.
+ For data from 1994 and later we fitted the more complex three-way interaction
+ of year-age-sex with the additional covariates of reproduction and area.
+ There were few observations of reproductive sea lions prior to 1993 and
+ the sampling was almost exclusively in Area 1 prior to 1994, so limiting
+ these to 1994 and beyond had little impact on the parameter estimates.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+
+\end_layout
+
+\begin_layout Subsubsection*
+\paragraph_spacing double
+Model Fitting
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+Our initial analysis of these data were conducted with the computer software
+ MARK (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "White1999"
+
+\end_inset
+
+; 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.phidot.org/software/mark/
+\end_layout
+
+\end_inset
+
+).
+ However, we found that as we added individual time-varying covariates and
+ created more complex models, the time needed to fit a single model in MARK
+ made the analysis no longer feasible in a reasonable amount of time.
+ Also, with MARK there was no capacity for varying unequal time intervals,
+ which were 1 for non-pups and less than 1 and variable for each pup release
+ cohort because of shifts in branding dates.
+ Thus, we developed an R (R Core Development Team 2012
+\begin_inset CommandInset citation
+LatexCommand nocite
+key "RDevelopmentCoreTeam2012"
+
+\end_inset
+
+) package to fit CJS models with the special requirements we needed.
+ The package is called marked and is described in more detail by Johnson
+ et al (in press).
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+While it’s possible that our individual time-varying covariates could have
+ been handled better with multi-state models in MARK, the size of our analysis
+ and number of covariates, made it inefficient.
+ Also, the existing multi-state analysis in MARK would not have addressed
+ the problem of unequal time intervals across cohorts.
+\end_layout
+
+\begin_layout Subsubsection*
+\paragraph_spacing double
+Model Selection and Testing
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+We used Akaike's Information Criterion (AIC) and AIC adjusted for over-dispersio
+n (QAIC) model selection (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Burnham2002a"
+
+\end_inset
+
+) to select the best model(s).
+ For survival estimates and standard errors, we used model averaging for
+ all models with a QAIC that was within four of the best model (
+\begin_inset Formula $\triangle$
+\end_inset
+
+QAIC<4) .
+ In describing results for resighting probability we used the single best
+ model because it is a nuisance parameter and we are not interested in inference.
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+We used MARK to estimate over-dispersion with the median 
+\begin_inset Formula $\hat{c}$
+\end_inset
+
+ approach (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Cooch2012"
+
+\end_inset
+
+).
+ We used a global model of 
+\begin_inset Formula $\varphi$
+\end_inset
+
+(sex*age*year) 
+\shape italic
+p
+\shape default
+ (sex*age*year), which excludes individual covariates because the median
+ 
+\begin_inset Formula $\hat{c}$
+\end_inset
+
+ approach does not allow individual covariates.
+ We restricted the analysis to the 1993-2007 cohorts, which used most of
+ the data and avoided the missing data for the 1988 and 1989 occasions and
+ the low resight probabilities prior to 1994.
+ We used the estimated 
+\begin_inset Formula $\hat{c}$
+\end_inset
+
+ to compute QAIC and to inflate the estimated standard errors to reflect
+ additional uncertainty resulting from over-dispersion.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+\paragraph_spacing double
+Variance Estimation
+\end_layout
+
+\begin_layout Standard
+Hessian - delta method; REML
+\end_layout
+
+\begin_layout Section*
+\paragraph_spacing double
+
+\series bold
+Results
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+From 1987 to 2007, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{sum(cohort_table)}
+\end_layout
+
+\end_inset
+
+ sea lion pups were branded (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{sum(cohort_table[,1])}
+\end_layout
+
+\end_inset
+
+ females and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{sum(cohort_table[,2])}
+\end_layout
+
+\end_inset
+
+ males) between late September and mid-November (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Cohort_table"
+
+\end_inset
+
+).
+ During the resighting periods (15 May - 15 August), approximately 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{sprintf("%.1f",100*length(zcdata$ch[zcdata$sex=="F"&zcdata$TotalTimesResigh
+ted>1])/length(zcdata$ch[zcdata$sex=="F"]))}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ of female and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{sprintf("%.1f",100*length(zcdata$ch[zcdata$sex=="M"&zcdata$TotalTimesResigh
+ted>1])/length(zcdata$ch[zcdata$sex=="M"]))}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ of male branded sea lions were resighted in one or more years following
+ branding; however, there were large differences across cohorts (Figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "FigResight"
+
+\end_inset
+
+).
+ These were most notable for pup cohorts that were born just prior or during
+ an ENSO event.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+With a greater abundance of sea lions and greater survey effort, it was
+ not surprising that most sea lion resightings were at SMI (
+\shape italic
+n
+\shape default
+=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{IslandCounts[3]}
+\end_layout
+
+\end_inset
+
+) with fewer at ANI (
+\shape italic
+n
+\shape default
+=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{IslandCounts[1]}
+\end_layout
+
+\end_inset
+
+) and very few at FAI (
+\shape italic
+n
+\shape default
+=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{IslandCounts[2]}
+\end_layout
+
+\end_inset
+
+).
+ During the resighting periods, SMI was used mostly by adults; whereas,
+ ANI and FAI were used mostly by juveniles (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "FigResightbyIsland"
+
+\end_inset
+
+).
+ At ANI and FAI, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{sprintf("%.1f",100*sum(age.sex.island[1:3,,1])/sum(age.sex.island[,,1]))}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ were sea lions between 1 and 3 years of age; whereas, only 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{sprintf("%.1f",100*sum(age.sex.island[1:3,,2])/sum(age.sex.island[,,2]))}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ of the sightings at SMI were between those ages.
+ Male sea lions were more predominate at ANI and FAI and females were more
+ predominate at SMI (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "FigResightbyIsland"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+From the global model, a median 
+\begin_inset Formula $\hat{{c}}$
+\end_inset
+
+ over-dispersion value was estimated to be 1.11.
+ We used this value for calculations of 
+\begin_inset Formula $\Delta$
+\end_inset
+
+QAIC for model selection and model averaging.
+\end_layout
+
+\begin_layout Subsection*
+\paragraph_spacing double
+Capture probability
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+For capture (resighting) probability, the best model (model 6) (Table 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{best_models}
+\end_layout
+
+\end_inset
+
+) contained sex, age, year, Repro, Area and two- and three-way interactions.
+ For years prior to 1994, when the effort was less, resighting probability
+ was limited to additive year, sex and age effects and an interaction of
+ sex and age.
+ For all other years, the best model included all main effects and interactions
+ of sex, age, and year (sex*age*year).
+ Resighting probability varied by 6 to 10-fold over the years with resighting
+ probability increasing as survey effort was increased in the mid to late
+ 1990s (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "FigAvgResightProbByYear"
+
+\end_inset
+
+).
+ The large increase in 1994 was associated with initiation of a dedicated
+ resight effort at ANI and the increase in 1997 reflects an increase in
+ effort and expansion of regular surveys to cover beaches on SMI beyond
+ the Point Bennett rookery.
+ The differential usage of these areas by the sex and age groups led to
+ the interaction with year.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+Older sea lions were much more likely to be seen than juveniles (Figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "FigAvgResightProbByAge"
+
+\end_inset
+
+), but the age difference was lessened with surveys at ANI and FAI.
+ In general, differences in resighting probability between males and females
+ were much less than age and temporal differences but there were obvious
+ interactions with time and age (Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "FigAvgResightProbByYear"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "FigAvgResightProbByAge"
+
+\end_inset
+
+).
+ Resighting probability increased with age for females until age 5-7 when
+ most females become reproductive and for males, resighting probability
+ increased until age 12, the mean age of territorial males (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "FigAvgResightProbByAge"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+The best models also included covariates for location (Area) and reproductive
+ status (Repro).
+ Resighting probabilities were highest for Area 1 and lowest for those only
+ previously seen at ANI or FAI or not previously seen (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "FigAvgResightProbByReproArea"
+
+\end_inset
+
+) and these differences varied by sex and age (sex:age:(Area1 + Area2)).
+ Sea lions that were previously seen as reproductive (i.e., female with pup
+ or territorial male) were more likely to be seen because most of the effort
+ was at SMI during the breeding season.
+ The influence of reproductive status was greater for females than males
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "FigAvgResightProbByReproArea"
+
+\end_inset
+
+) and varied by year which reflected variation in pup production with lower
+ production in years influenced by El Ni
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+~n
+\end_layout
+
+\end_inset
+
+o (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "FigAvgResightProbByYear"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+Model 7, which had some support, was the same as model 6 with an additional
+ three-way interaction of sex with reproductive status and year.
+ To help understand this interaction, we computed the ratio of annual resighting
+ probabilities for reproductive and non-reproductive sea lions for each
+ year and sex.
+ A ratio value of one would mean no difference between reproductive and
+ non-reproductive sea lions and a larger variance of the ratio would imply
+ greater annual changes.
+ We used data starting in 1998 when there were sufficient re-sightings of
+ both reproductive females and males (i.e., 9-11 year old males from the 1987-1989
+ cohorts).
+ The variance of the ratio for female seal lions was 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{round(var.ratio,1)}
+\end_layout
+
+\end_inset
+
+ times greater than for males whose attendance is for breeding and unlike
+ females was affected less by variation in pup production and survival.
+\end_layout
+
+\begin_layout Subsection*
+\paragraph_spacing double
+Survival probability
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+Eleven of the 76 models for survival were in the top set of models (Table
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{best_models}
+\end_layout
+
+\end_inset
+
+).
+ Most were slight variants of each other.
+ All of the models contained sex and age and their interaction, annual variation
+ for pups and yearlings, pup weight at branding, annual variation in survival
+ related to indices for leptospirosis and domoic acid strandings, annual
+ variation for ages 2 and older related to MEI, and differential survival
+ for sea lions observed as reproductive with age and sex differences.
+ Where they differed was in the ages affected by MEI, sex differences due
+ to MEI, and a sex-age interaction for sea lions observed as reproductive.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+Survival varied by sex and age and their interaction (i.e., sex-specific age
+ pattern).
+ Both younger and older animals were more vulnerable to mortality than prime-age
+d animals leading to the typical dome shaped survival curve (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "FigAgeSpecificSurvival"
+
+\end_inset
+
+).
+ Sexual dimorphism and differences in timing of sexual maturity by sex led
+ to a sex-age interaction.
+ Survival was lowest for pups and yearlings and highest for prime-aged animals
+ between 2 and 11 years old.
+ Survival declined for ages 12 and older.
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+Annual variation in survival for pups and yearlings was sufficiently large
+ to warrant fitting a separate survival parameter for each year (Figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "FigPupYearlingSurvival"
+
+\end_inset
+
+).
+ Annual average survival varied from 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{min(pupF)}
+\end_layout
+
+\end_inset
+
+ to 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{formatC(max(pupF),format="f",digits=3)}
+\end_layout
+
+\end_inset
+
+ for female pups and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{min(pupM)}
+\end_layout
+
+\end_inset
+
+ to 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{max(pupM)}
+\end_layout
+
+\end_inset
+
+ for male pups (Tables 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{Fsurvivaltab}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{Msurvivaltab}
+\end_layout
+
+\end_inset
+
+).
+ Likewise, yearling survival varied from 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{min(yrF)}
+\end_layout
+
+\end_inset
+
+ to 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{max(yrF)}
+\end_layout
+
+\end_inset
+
+ for females and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{min(yrM)}
+\end_layout
+
+\end_inset
+
+ to 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{max(yrM)}
+\end_layout
+
+\end_inset
+
+ for males.
+ This variation was primarily due to the impact of ENSO on these age classes.
+ Pup and yearling survival were severely depressed in 1997 during the strong
+ El Niño event and to a much lesser degree during the weaker 1992 ENSO event
+ (Tables 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{Fsurvivaltab}
+\end_layout
+
+\end_inset
+
+-
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{Msurvivaltab}
+\end_layout
+
+\end_inset
+
+).
+ In addition, pups born during an ENSO had lower survival the following
+ year as yearlings.
+ This was most apparent in 1998 when pup survival was high but survival
+ of yearlings from the 1997 cohort was nearly as low as survival of the
+ yearlings from the 1996 cohort that were weaned during the 1997 ENSO.
+ The same pattern occurred, but to a lesser degree, in 1993 after the 1992
+ ENSO event.
+ The very weak 2003 ENSO event had little evident impact on their survival.
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+Models containing separate annual survival parameters for ages 2 and older
+ were not supported but simpler linear-logistic models relating survival
+ to environmental conditions and disease were supported.
+ Survival was lower under El Ni
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+~n
+\end_layout
+
+\end_inset
+
+o conditions and better under La Ni
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+~n
+\end_layout
+
+\end_inset
+
+a conditions as measured by the MEI but the affected ages varied amongst
+ the models.
  For the best model, a unit increase in the MEI reduced the survival odds
  (S/(1-S)) by 
 \begin_inset ERT
@@ -7296,7 +9227,7 @@ status collapsed
 
 \end_inset
 
- ) for ages 2 and 3+ respectively.
+ ) for ages 2 and 3+, respectively.
  The reduction in predicted survival was quite evident in 1997 (Tables 
 \begin_inset ERT
 status collapsed
@@ -7310,7 +9241,7 @@ ref{Fsurvivaltab}
 
 \end_inset
 
--
+ and 
 \begin_inset ERT
 status collapsed
 
@@ -7330,9 +9261,8 @@ ref{Msurvivaltab}
 
 \begin_layout Standard
 \paragraph_spacing double
-For sea lions 2 years and older, an increase of 100 observed strandings
- due to domoic acid and leptospirosis, resulted in a predicted decrease
- of 
+For sea lions aged 2 years and older, an increase of 100 observed strandings
+ due to DA and leptospirosis, resulted in a predicted decrease of 
 \begin_inset ERT
 status collapsed
 
@@ -7472,7 +9402,7 @@ status collapsed
 
 \end_inset
 
-) in the odds of survival for females and males respectively.
+) in the odds of survival for females and males, respectively.
  The effect size of DA was quite small in comparison to Leptospirosis and
  would have probably not been included if models with Leptospirosis but
  no DA effect were considered.
@@ -7559,8 +9489,8 @@ ref{Fsurvivaltab}
 
 \begin_layout Standard
 \paragraph_spacing double
-Both pup and yearling survival varied as a function of the pup's weight
- at the time of branding.
+Pup and yearling survival varied as a function of the pup's weight at the
+ time of branding.
  With the inclusion of annual variation in survival, the effect of pup weight
  was a relative scaling of survival of individuals within the year.
  On the logistic scale, the relationship between pup weight and pup or yearling
@@ -7674,7 +9604,7 @@ status collapsed
 
 
 \backslash
-Sexpr{100*round(exp(beta.mavg$estimate[2])-1,2)}
+Sexpr{formatC(100*round(exp(beta.mavg$estimate[2])-1,2),digits=2,format="f")}
 \end_layout
 
 \end_inset
@@ -7860,29 +9790,29 @@ reference "FigPropRepro"
  Not until age 16 and older are these values similar for males and females
  when very few males are alive (Table 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
 
 \backslash
-ref{SurvivorshipTab}
+ref{Survivorshiptab}
 \end_layout
 
 \end_inset
 
 ).
- While survivorship to age 2 is nearly identical for males and females,
+ Whereas survivorship to age 2 is nearly identical for males and females,
  subsequent survival rates diverge and a much higher proportion of females
  survive to ages 10 and older (Table 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
 
 \backslash
-ref{SurvivorshipTab}
+ref{Survivorshiptab}
 \end_layout
 
 \end_inset
@@ -7901,9 +9831,8 @@ Discussion
 
 \begin_layout Standard
 \paragraph_spacing double
-Our mark-recapture study of branded California sea lions at San Miguel Island
- produced precise estimates of age and sex-specific survivorship for the
- population.
+Our mark-recapture study of branded California sea lions at SMI produced
+ precise estimates of sex- and age-specific survivorship for the population.
  Our study shows the importance of longitudinal studies of long-lived animals
  to understanding the drivers of population trends.
  Similar to other large mammals, we determined that survival of pups and
@@ -7917,7 +9846,7 @@ Our mark-recapture study of branded California sea lions at San Miguel Island
 \paragraph_spacing double
 The long-term nature of the dataset allowed us to investigate environmental
  factors that influenced survival of different age and sex groups.
- El Niño affected principally the survival of pups and yearlings, outbreaks
+ ENSO affected principally the survival of pups and yearlings, outbreaks
  of leptosporosis disease affected survival of sub-adult and adult males,
  and outbreaks of domoic acid poisoning affected adult females.
  In addition, the lower survival of pups from 2000 to 2004 coincides with
@@ -7927,8 +9856,16 @@ The long-term nature of the dataset allowed us to investigate environmental
 
 \begin_layout Standard
 \paragraph_spacing double
-In a sexually dimorphic polygynous species, it is expected that age and
- sex-specific survival rates will differ for males and females (
+Carry-over effect: Given the short time period between weaning and their
+ first birthday (3 to 4 months), it was very likely that smaller pups might
+ survive a few months post-weaning and die as yearlings but any further
+ carryover was possible but unlikely.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+In a sexually dimorphic polygynous species, it is expected that sex- and
+ age-specific survival rates will differ for males and females (
 \begin_inset CommandInset citation
 LatexCommand citealt
 key "cluttonbrock1985"
@@ -7939,9 +9876,10 @@ key "cluttonbrock1985"
  We found that male sea lions had lower survival rates than females in all
  age groups except pups and yearlings.
  Males must attain a large size to successfully compete for territories
- and access to breeding females and so require greater resources for survival
- compared to females of the same ages.
- The mean age of territorial males is 12 years and we observed a decline
+ and gain access to breeding females.
+ Thus, they require greater amounts of resources for survival compared to
+ same-aged females.
+ The mean age of territorial males is 12 years, and we observed a decline
  in survival of males in the 11
 \begin_inset Formula $+$
 \end_inset
@@ -7955,7 +9893,8 @@ key "Peterson1967"
 
 \end_inset
 
-) and the energetic drain of such activities may reduce their survival..
+).
+ The energetic drain of such activities may reduce their survival.
  But we also found evidence for lower survival of sub-adult and adult males
  during outbreaks of leptospirosis disease indicating that the effects of
  disease on survival, even on a small scale, can be detected when the precision
@@ -7979,14 +9918,14 @@ key "Boyd1995a"
  8 and 10 years (
 \begin_inset CommandInset citation
 LatexCommand citealt
-key "Melin2011"
+key "Hern'andez-Camacho2008"
 
 \end_inset
 
 , 
 \begin_inset CommandInset citation
 LatexCommand citealt
-key "Hern'andez-Camacho2008"
+key "Melin2011"
 
 \end_inset
 
@@ -8005,34 +9944,32 @@ key "Hern'andez-Camacho2008"
 
  years) in our study tended to decline with age suggesting that female sea
  lions may incur a survival cost for reproducing.
- We also found weak evidence of lower survival of adult females during domoic
- acid events demonstrating that environmental covariate data can further
- describe the trends in survival.
- The sex-specific effects of leptospirosis disease and domoic acid poisoning
- are likely related to the winter distribution of the age groups most susceptibl
-e to the diseases.
+ We also found weak evidence of lower survival of adult females during DA
+ events demonstrating that environmental covariate data can further describe
+ the trends in survival.
+ The sex-specific effects of leptospirosis disease and DA poisoning are
+ likely related to the winter distribution of the age groups most susceptible
+ to the diseases.
  Adult and sub-adult males migrate northward from the colonies in the fall
- when the leptospirosis outbreaks generally occur whereas juveniles and
+ when the leptospirosis outbreaks generally occur, whereas juveniles and
  females remain in central California.
- Similarly, domoic acid outbreaks tend to occur in central California and
- mostly affect adult females.
+ Similarly, DA outbreaks tend to occur in central California and mostly
+ affect adult females.
  Thus the susceptibility to these two factors of mortality appears to be
  linked to sex-specific behavior.
 \end_layout
 
 \begin_layout Standard
 \paragraph_spacing double
-Unlike adults, the survival rates of male and female pups and yearlings
- were similar suggesting that mortality factors acting on these age groups,
- such as disease and El Niño, are not sex-specific.
- These age groups showed the greatest annual variability in survival which
- was mostly explained by El Niño events.
- El Niño events result from global changes in oceanographic and atmospheric
- patterns that temporarily alter the dynamics of marine ecosystems for a
- period of one to two years.
- In the California Current, El Niño events cause an increase in sea surface
- height, an increase in sea surface temperatures, and a depressed thermocline
- and nutricline (
+Unlike adults, the sex-specific survival rates of pups and yearlings were
+ similar suggesting that mortality factors, such as disease and ENSO, have
+ an equal impact on the sexes.
+ These age groups showed the greatest annual variability in survival, which
+ was mostly explained by ENSO.
+ ENSO results from global changes in oceanographic and atmospheric patterns
+ that temporarily alter the dynamics of marine ecosystems.
+ In the California Current, during an El Niño phase, sea surface height
+ and temperatures increase, and the thermocline and nutricline are depressed(
 \begin_inset CommandInset citation
 LatexCommand citealt
 key "Arntz1991"
@@ -8041,7 +9978,7 @@ key "Arntz1991"
 
 ).
  These oceanographic changes temporarily reduce primary and secondary productivi
-ty and the abundance and availability prey of California sea lions.
+ty and presumably reduce availability California sea lion prey.
  Females have difficulty provisioning their pups and the result is high
  mortality of pups from starvation.
  The pups that survive are weaned at lower weights compromising their survival
@@ -8061,8 +9998,8 @@ Arctocephalus
 \shape default
  spp.) indicate that our female pup and adult female survival rates are similar
  to species with similar life histories (9-11 month lactation period) which
- range between 0.889 and 0.953 for adult females and between 0.452 and 0.828
- for first year survival of females (
+ range between 0.452 and 0.828 for first year survival of females and between
+ 0.889 and 0.953 for adult females (
 \begin_inset CommandInset citation
 LatexCommand citealt
 key "Wickens1997"
@@ -8107,21 +10044,21 @@ key "Hern'andez-Camacho2008a"
 \end_inset
 
 , we found that survival rates of California sea lions decline as they get
- older, suggesting that senescence occurs in California sea lions.
+ older, suggesting that senescence occurs in this species.
  In general, our age-specific survival rates were similar for males but
- lower for females than those reported for sea lions in the Gulf of California.
+ lower for females than those reported for California sea lions in the Gulf
+ of California.
  Both studies found no sex effect for pups but sex-specific differences
  were apparent among juveniles and adults groups.
  Our study differentiated yearlings from juveniles and we found no sex effect
  for yearlings.
- El Niño did not appear to have a significant effect on survival of pups
- in the Gulf of California, which is counter to our findings in which pups
+ ENSO did not appear to have a significant effect on survival of pups in
+ the Gulf of California, which is counter to our findings in which pups
  born or weaned during El Niño conditions had significantly lower survival
  rates than their age groups in other years.
- The Gulf of California and San Miguel Island colonies inhabit very different
- environments and the differences between the two studies likely reflect
- a combination of true differences between the populations and sample size
- effects.
+ The Gulf of California and SMI colonies inhabit very different environments
+ and the differences between the two studies likely reflect a combination
+ of true differences between the populations and sample-size effects.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -8145,7 +10082,8 @@ key "Hern'andez-Camacho2008a"
 \begin_layout Standard
 \paragraph_spacing double
 Over the 19 years of this study, the design evolved as we learned about
- the behavior of sea lions.
+ the behavior and movements of sea lions and as the distribution of sea
+ lions changed over time at SMI.
  We increased the sighting effort, increased the number of surveyed areas,
  and skewed sample sizes toward females to increase the precision of survival
  estimates of the most critical component of the population.
@@ -8163,7 +10101,7 @@ Equally important as the design of the resighting effort is the reliability
  Between 1975 and 1986 various methods of tagging California sea lions were
  undertaken (DeLong, unpublished data) but yielded little resight data because
  of tag loss, tag unreadability, and the inability to approach animals to
- read tag numbers without disrupting the colony and the animal of interest.
+ read tag numbers without disrupting the colony and individual of interest.
  With branded animals, we had a reliable permanent mark and were able to
  achieve resighting probabilities as high as 85
 \begin_inset ERT
@@ -8187,17 +10125,17 @@ status collapsed
 
 \end_inset
 
- which is not common in most mark-recapture studies.
+, which is not common in most mark-recapture studies.
 \end_layout
 
 \begin_layout Standard
 \paragraph_spacing double
 One of the central assumptions to mark-recapture studies is that marks are
- not lost, overlooked or misread.
+ not lost, overlooked, or misread.
  Although brands cannot be lost, they must be read and recorded correctly
  and this process is prone to error.
  We attempted to minimize the error by defining a sighting event to have
- occurred if the sea lion was sighted 2 or more times in a year.
+ occurred if the sea lion was sighted two or more times in a year.
  This restriction on a sighting event should have reduced or eliminated
  most reading or recording errors unless a brand was consistently misread
  due to poor brand quality.
@@ -8214,27 +10152,27 @@ It is likely that the remaining heterogeneity is due to behavior that we
  currently have not or that cannot be modeled.
  For example, over the years of the study, we received and made sightings
  of branded animals from San Nicolas Island, a colony about the size of
- San Miguel Island and located approximately 60 km southeast of San Miguel.
+ SMI and located approximately 60 km southeast of SMI.
  Adult females with pups have been sighted in multiple years at San Nicolas
  Island indicating a small level of emigration is occurring.
- These animals may occasionally be observed at San Miguel Island when hauled-out
- but may not be regularly observed, introducing heterogeneity into the resightin
-g probability.
+ These animals may occasionally be observed at SMI when hauled-out but may
+ not be regularly observed, introducing heterogeneity into the resighting
+ probability.
  Other examples of behaviors that may introduce heterogeneity into the resightin
 g probabilities include nursing cycles of females and territorial behavior
  of males.
  Females with a nighttime nursing pattern may not be observed as frequently
- as females that nurse their pups during the daytime, and males that have
- water territories are more likely to be observed during the low tide than
- during the high tide.
+ as females that nurse their pups during the daytime.
+ Similarly, males that have water territories are more likely to be observed
+ during low tide than during high tide.
 \end_layout
 
 \begin_layout Standard
 \paragraph_spacing double
 The long-term nature of our dataset shows the importance of the number of
  cohorts, the number of marked animals in each cohort, and the number of
- years of resighting effort to accurately describe age and sex-specific
- survival patterns in a long-lived pinniped.
+ years of resighting effort to accurately describe sex- and age-specific
+ survival patterns in a long-lived animal.
  We branded about 200 animals annually during the first three years of the
  study compared to 500 animals branded annually in the remaining years.
  Increasing the sample size of branded animals resulted in greater precision
@@ -8261,10 +10199,15 @@ The long-term nature of our dataset shows the importance of the number of
 
 \begin_layout Standard
 \paragraph_spacing double
-Research on long-lived species requires long-term studies and while we have
- not yet followed a cohort through their life cycle, we have begun to develop
- a fairly complete picture of survival in California sea lions.
- That picture shows age and sex specific differences in survival with senescence
+Research on long-lived species requires long-term studies and even though
+ we have not yet followed a cohort through their entire life-cycle, we have
+ begun to develop a fairly complete assessment of survival in California
+ sea lions.
+ 
+\end_layout
+
+\begin_layout Standard
+That picture shows sex- and age-specific differences in survival with senescence
  for older animals but the dominant dynamic is the large annual variations
  in survival associated with El Niño oceanographic events.
  During the last several decades, El Niño events have played a central role
@@ -8295,7 +10238,7 @@ key "Melin2002a"
 
 \begin_layout Standard
 \paragraph_spacing double
-San Miguel Island is one of four breeding colonies in the Channel Islands.
+SMI is one of four breeding colonies in the Channel Islands.
  It is one of the largest, representing about 40
 \begin_inset ERT
 status collapsed
@@ -8326,7 +10269,7 @@ status collapsed
  rates from a large, increasing population and may not be reflective of
  populations with different trajectories or environmental stressors as evidenced
  by the differences between survival rates of sea lions in the Gulf of Californi
-a, Mexico and San Miguel Island.
+a, Mexico and SMI.
 \end_layout
 
 \begin_layout Section*
@@ -8340,16 +10283,16 @@ Acknowledgments
 
 \begin_layout Standard
 \paragraph_spacing double
-We thank the personnel at the National Marine Mammal Laboratory (NMML) of
- the Alaska Fisheries Science Center, Southwest Fisheries Science Center,
- Channel Islands National Park and all the volunteers who participated in
- the annual branding and tagging and sighting activities.
+We thank the personnel at the National Marine Mammal Laboratory of the Alaska
+ Fisheries Science Center, Southwest Fisheries Science Center, Channel Islands
+ National Park and all the volunteers who participated in the annual branding
+ and tagging and sighting activities.
  We also thank M.
  Hester, Point Reyes Bird Observatory, and E.M.
  Burch, J.
  Elliot and P.
  Morris, University of California, Santa Cruz for collecting data from Monterey
- Bay, the Farallon Islands and Año Nuevo Island.
+ Bay, the Farallon Islands, and Año Nuevo Island.
  Funding was provided by the Northwest Region of the National Marine Fisheries
  Service.
  Research activities were conducted under Marine Mammal Protection Act Permits
@@ -8470,7 +10413,7 @@ Description of alternative models for survival probability of branded California
  weight (Weight), leptospirosis disease (Lepto), domoic acid poisoning (DA),
  sea surface temperature anomaly (SSTA), multivariate El Ni
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -8492,7 +10435,7 @@ o Southern Oscillation index (MEI), and reproductive status (Repro).
  June 30, was used for 2+ survival.
  MEI, the multivariate El Ni
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -22166,7 +24109,7 @@ end{landscape}
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -22286,7 +24229,7 @@ Number
 \begin_inset Text
 
 \begin_layout Plain Layout
-Average Weight
+Average Weight (kg)
 \end_layout
 
 \end_inset
@@ -22304,7 +24247,7 @@ Number
 \begin_inset Text
 
 \begin_layout Plain Layout
-Average Weight
+Average Weight (kg)
 \end_layout
 
 \end_inset
@@ -22324,7 +24267,7 @@ Average Weight
 \begin_inset Text
 
 \begin_layout Plain Layout
-9/20-9/21 
+20-21 Sept 
 \end_layout
 
 \end_inset
@@ -22428,7 +24371,7 @@ Sexpr{sprintf("%.1f",weight_table[1,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-9/21-9/23
+21-23 Sept
 \end_layout
 
 \end_inset
@@ -22532,7 +24475,7 @@ Sexpr{sprintf("%.1f",weight_table[2,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-10/22-10/23
+22-23 Oct
 \end_layout
 
 \end_inset
@@ -22636,7 +24579,7 @@ Sexpr{sprintf("%.1f",weight_table[3,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-10/31-11/4
+31 Oct- 4 Nov
 \end_layout
 
 \end_inset
@@ -22740,7 +24683,7 @@ Sexpr{sprintf("%.1f",weight_table[4,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-10/20-10/24
+20-24 Oct
 \end_layout
 
 \end_inset
@@ -22844,7 +24787,7 @@ Sexpr{sprintf("%.1f",weight_table[5,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-11/12-11/15
+12-15 Nov
 \end_layout
 
 \end_inset
@@ -22948,7 +24891,7 @@ Sexpr{sprintf("%.1f",weight_table[6,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-10/18-10/22
+18-22 Oct
 \end_layout
 
 \end_inset
@@ -23052,7 +24995,7 @@ Sexpr{sprintf("%.1f",weight_table[7,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-10/2-10/5
+2-5 Oct
 \end_layout
 
 \end_inset
@@ -23156,7 +25099,7 @@ Sexpr{sprintf("%.1f",weight_table[8,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-9/27-10/4
+27 Sept-4 Oct
 \end_layout
 
 \end_inset
@@ -23260,7 +25203,7 @@ Sexpr{sprintf("%.1f",weight_table[9,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-9/26-9/29
+26-29 Sept
 \end_layout
 
 \end_inset
@@ -23364,7 +25307,7 @@ Sexpr{sprintf("%.1f",weight_table[10,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-9/23-9/26
+23-26 Sept
 \end_layout
 
 \end_inset
@@ -23468,7 +25411,7 @@ Sexpr{sprintf("%.1f",weight_table[11,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-10/22-10/27
+22-27 Oct
 \end_layout
 
 \end_inset
@@ -23572,7 +25515,7 @@ Sexpr{sprintf("%.1f",weight_table[12,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-9/26-10/1
+26 Sept-1 Oct
 \end_layout
 
 \end_inset
@@ -23676,7 +25619,7 @@ Sexpr{sprintf("%.1f",weight_table[13,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-9/27-10/2
+27 Sept-2 Oct
 \end_layout
 
 \end_inset
@@ -23780,7 +25723,7 @@ Sexpr{sprintf("%.1f",weight_table[14,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-9/26-10/1
+26 Sept-1 Oct
 \end_layout
 
 \end_inset
@@ -23884,7 +25827,7 @@ Sexpr{sprintf("%.1f",weight_table[15,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-9/26-9/30
+26-30 Sept
 \end_layout
 
 \end_inset
@@ -23988,7 +25931,7 @@ Sexpr{sprintf("%.1f",weight_table[16,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-9/27-9/30
+27-30 Sept
 \end_layout
 
 \end_inset
@@ -24092,7 +26035,7 @@ Sexpr{sprintf("%.1f",weight_table[17,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-10/10-10/14
+10-14 Oct
 \end_layout
 
 \end_inset
@@ -24196,7 +26139,7 @@ Sexpr{sprintf("%.1f",weight_table[18,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-10/15-10/19
+15-19 Oct
 \end_layout
 
 \end_inset
@@ -24300,7 +26243,7 @@ Sexpr{sprintf("%.1f",weight_table[19,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-9/20-9/25
+20-25 Sept
 \end_layout
 
 \end_inset
@@ -24404,7 +26347,7 @@ Sexpr{sprintf("%.1f",weight_table[20,2])}
 \begin_inset Text
 
 \begin_layout Plain Layout
-9/19-9/24
+19-24 Sept
 \end_layout
 
 \end_inset
@@ -24627,7 +26570,7 @@ Sexpr{sprintf("%.1f",mean(Brand$weight[Brand$sex=="M"]))}
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -24636,11 +26579,36 @@ status open
 
 \begin_layout Plain Layout
 
-print(xtable(best_models,digits=0,align=rep("c",5),caption="Top CJS models
- for California sea lion brand resighting data.
- Model numbers for p and Phi refer to Tables 1-2.
+\end_layout
+
+\begin_layout Plain Layout
+
+print(xtable(best_models,digits=0,align=rep("c",5),
+\end_layout
+
+\begin_layout Plain Layout
+
+caption="Top CJS models for California sea lion brand resighting data.
+ Model numbers for 
+\backslash
+
+\backslash
+textit{p} and $
+\backslash
+
+\backslash
+phi$ refer to Tables 1-2.
  Delta QAIC values are based on median chat of 1.11.",label="best_models"),caption.
-placement="top",latex.environments="",include.rownames=FALSE)
+placement="top",latex.environments="",include.rownames=FALSE,
+\end_layout
+
+\begin_layout Plain Layout
+
+sanitize.text.function=identity)
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -24650,6 +26618,10 @@ cat("
 
 \backslash
 clearpage")
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -24672,7 +26644,7 @@ clearpage")
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -24727,7 +26699,7 @@ clearpage")
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -24782,7 +26754,7 @@ clearpage")
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -24827,7 +26799,7 @@ caption{Average survivorship estimates and standard errors in parentheses
 ve at ages 5 and 10 for females and males respectively.
  Model averaged estimates were constructed using cohort-specific average
  pup weights and average environmental and disease stranding covariates.
- REML was used to average across cohorts.}}
+ REML was used to average across cohorts.}
 \backslash
 n",sep="")
 \end_layout
@@ -24838,7 +26810,7 @@ str=paste(str,"
 \backslash
 
 \backslash
-label{Survivorshiptab}
+label{Survivorshiptab}}
 \backslash
 n",sep="")
 \end_layout
@@ -25060,8 +27032,12 @@ name "fig:Range-and-breeding"
 
 \end_inset
 
-Range and breeding areas of California sea lions and location of San Miguel
- Island.
+Range and breeding areas of California sea lions.
+ Approximately 90% of the pup production of the U.S.
+ population is from San Miguel Island (SMI) and San Nicolas Island.
+ Sea lion pups were branded on SMI and resightings were used from SMI, Ano
+ Neuvo Island (ANI) and Farallon Island (FAI).
+ 
 \end_layout
 
 \end_inset
@@ -25385,8 +27361,8 @@ name "FigAgeSpecificSurvival"
 
 \end_inset
 
-California sea lion age and sex-specific annual survival rates for sea lions
- seen reproductive and not seen reproductive.
+California sea lion sex- and age-specific annual survival rates for sea
+ lions seen reproductive and not seen reproductive.
  Predictions are based on average covariate values for environmental and
  disease covariates.
  Sex and cohort-specific average pup weight was used for pup and yearling
@@ -25409,11 +27385,11 @@ California sea lion age and sex-specific annual survival rates for sea lions
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -25468,7 +27444,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 

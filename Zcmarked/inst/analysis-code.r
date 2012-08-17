@@ -167,7 +167,7 @@ dp1=list(p=list(time.bins=c(1987,1990,1991:maxyear)))
 # build set of p models with single Phi for parameter counts
 model.list=as.matrix(expand.grid(p=paste("p",0:8,sep="."),Phi="Phi.00"))
 # Each model is written out to a file spec_p.#.Phi.##.rda for p counts but not run
-crm.wrapper(model.list,zcdata.proc,new.ddl,crm_models,design.parameters=dp1,method=c("nlminb"))
+crm.wrapper(model.list,zcdata.proc,zc.ddl,crm_models,design.parameters=dp1,method=c("nlminb"))
 p.count=apply(as.matrix(model.list),1,function.wrapper,fx=fx.par.count,par="p")
 # Get Phi counts from models that have already been run
 model.list=as.matrix(expand.grid(p=paste("p",6,sep="."),Phi=paste("Phi",formatC(0:75,digits=1,flag="00"),sep=".")))
@@ -201,7 +201,7 @@ for(modelname in modelset)
 	eval(parse(text=paste("load(file='",modelname,".rda')",sep="")))
 	eval(parse(text=paste("model=",modelname,sep="")))
 	vcv=cjs.hessian(model)
-	model$vcv=vcv
+	model$vcv=vcv*1.11
 	eval(parse(text=paste(modelname,"=model",sep="")))
 	eval(parse(text=paste("save(",modelname,",file='",modelname,".rda')",sep="")))
 }	

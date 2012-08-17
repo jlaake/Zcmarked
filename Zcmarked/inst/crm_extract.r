@@ -2,6 +2,8 @@
 if(length(grep("RMark",.packages()))!=0)detach("package:RMark")
 library(Zcmarked)
 library(marked)
+library(CalcurData)
+library(CIPinnipedAnalysis)
 # read in Domoic acid strandings (da.txt) and lepto stranding (lepto.txt)
 dastatus=read.delim("DA.txt")
 leptostatus=read.delim("lepto.txt")
@@ -49,7 +51,8 @@ for (i in 1987:(maxyear-1))
 	zcdata[,paste("prepro",i+1,sep="")]=zcdata[,paste("repro",i,sep="")]
 zcdata$prepro1987=0
 # process data for cjs model with beginning time of 1987
-zcdata.proc=process.data(zcdata,model="cjs",begin.time=1987)
+zcdata$brand=NULL
+zcdata.proc=process.data(zcdata,model="cjs",begin.time=1987,accumulate=T)
 # create design data with time-varying fields area1,area2,area3,td,repro,prepro
 # if a field is not identified as time varying then all of those fields with the year value
 # will be included in data unless you specify fields argument.  Thus, even though prepro isn't
@@ -197,10 +200,18 @@ zc.ddl$Phi$leptom= zc.ddl$Phi$leptom/100
 zc.ddl$Phi$leptof= zc.ddl$Phi$leptof/100
 zc.ddl$Phi$DA= zc.ddl$Phi$DA/100
 #  Add in environmental covariates
-envcovdf=EnvironCovariates()
+#envcovdf=EnvironCovariates()
 zc.ddl$Phi=merge_design.covariates(zc.ddl$Phi,envcovdf,bytime=TRUE)
 zc.ddl$Phi=droplevels(zc.ddl$Phi)
 zc.ddl$p=droplevels(zc.ddl$p)
+
+fixed.0=fix.parameters(zcdata.proc,occasions=2:3,value=c(0))
+p.6=list(formula=~pre94:(sex*agep94)  + pre94:time + p94plus:time:sex:agep + p94plus:time:prepro + p94plus:male:prepro + p94plus:sex:agep:area1 + p94plus:sex:agep:area2, fixed=fixed.0, remove.intercept=TRUE)
+Phi.44=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:time + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom + female:twoplus:DA+ two:JulytoJuneMEI + threeplus:JulytoJuneMEI + male:repro + repro:AgeS))
+mark6.44a=crm(zcdata.proc,zc.ddl,model.parameters=list(p=p.6,Phi=Phi.44),accumulate=T,method=c("BFGS","nlminb","Nelder-Mead"),control=list(follow.on=TRUE),initial=mark6.44a$beta)
+
+mark6.44=mark(zcdata.proc,zc.ddl,model.parameters=list(p=p.6,Phi=Phi.44),invisible=F)
+
 # save files for passing to Linux machine
 save(zcdata,file="zcdata.rda")
 save(envcovdf,file="envcovdf.rda")
