@@ -6744,9 +6744,9 @@ key "Johnson1994"
 
 ), require estimates of survival, reproduction, and movement rates of individual
 s into and out of a population.
- For pinnipeds (seals and sea lions), which are long-lived, have expansive
- ranges, and spend most of their lives at sea, demographic studies that
- span the lifetime of individuals are rare (but see 
+ For pinnipeds, which are long-lived, have expansive ranges, and spend most
+ of their lives at sea, demographic studies that span the lifetime of individual
+s are rare (but see 
 \begin_inset CommandInset citation
 LatexCommand citealt
 key "Testa1987a"
@@ -6763,7 +6763,7 @@ key "Huber1991"
 , 
 \begin_inset CommandInset citation
 LatexCommand citealt
-key "Hern'andez-Camacho2008b"
+key "Hern'andez-Camacho2008a"
 
 \end_inset
 
@@ -6927,7 +6927,7 @@ key "Huber1991"
 , 
 \begin_inset CommandInset citation
 LatexCommand citealt
-key "Boyd1995"
+key "Boyd1995a"
 
 \end_inset
 
@@ -6999,10 +6999,8 @@ key "Caretta2007"
 
 ).
  The U.S.
- population feeds in the California Current ecosystem which is impacted
- by the El Niño Southern Oscillation (ENSO) with a warm El Niño phase and
- a cold La Niña phase.
- El Niño conditions occurred in 1982-1983 (
+ population feeds in the California Current ecosystem which was impacted
+ by El Niño events that occurred in 1982-1983 (
 \begin_inset CommandInset citation
 LatexCommand citealt
 key "Arntz1991"
@@ -7031,17 +7029,18 @@ key "Venrick2003"
 \end_inset
 
 ).
- El Niño conditions lower primary and secondary productivity in the California
- Current which reduces the abundance and changes the distribution of fishes
- and invertebrates (King et al.
- 2011), the prey of sea lions.
- Lactating California sea lions travel farther and dive deeper during El
- Niño conditions presumably in response to changes in prey availability
- (Melin et al.
- 2008) but the changes in behavior are often not sufficient to support reproduct
-ion.
- El Niño conditions have resulted in temporary but significant declines
- in both production and survival of pups (
+ El Niño events are particularly significant for females and pups.
+ Pups fast while the females forage and females must find enough forage
+ to produce milk for the pup and sufficiently maintain their own health
+ for future reproduction.
+ (
+\series bold
+SHARON re-word to your liking and add citations on impacts of ENSO on attendance
+ and foraging)
+\series default
+.
+ El Niño events have resulted in temporary but significant declines in both
+ production and survival of pups (
 \begin_inset CommandInset citation
 LatexCommand citealt
 key "Boness1991a"
@@ -7051,14 +7050,14 @@ key "Boness1991a"
 , 
 \begin_inset CommandInset citation
 LatexCommand citealt
-key "DeLong1991a"
+key "DeLong1991b"
 
 \end_inset
 
 , 
 \begin_inset CommandInset citation
 LatexCommand citealt
-key "Francis1991"
+key "Francis1991a"
 
 \end_inset
 
@@ -7084,10 +7083,6 @@ key "Caretta2007"
 \end_inset
 
 ).
- Declines in production result from the inability of pregnant females to
- find sufficient food to support gestation, and declines in pup survival
- result from the inability of lactating females to find enough food to support
- lactation, resulting in pup starvation.
  
 \end_layout
 
@@ -7148,13 +7143,13 @@ key "Jorgenson1997"
 \paragraph_spacing double
 Recently 
 \begin_inset CommandInset citation
-LatexCommand citealt
-key "Hern'andez-Camacho2008b"
+LatexCommand citet
+key "Hern'andez-Camacho2008a"
 
 \end_inset
 
  reported sex- and age-specific survival rates for branded California sea
- lions from a study in the Gulf of California, Mexico.
+ lions from a mark-recapture study in the Gulf of California, Mexico.
  With fewer than 200 marked sea lions, they were only able to describe general
  patterns in survival for four age classes.
  While ENSO events impact sea lions in the Channel Islands (
@@ -7167,7 +7162,7 @@ key "Boness1991a"
 , 
 \begin_inset CommandInset citation
 LatexCommand citealt
-key "DeLong1991a"
+key "DeLong1991b"
 
 \end_inset
 
@@ -7181,7 +7176,7 @@ key "Aurioles1991"
 ,
 \begin_inset CommandInset citation
 LatexCommand citealt
-key "Hern'andez-Camacho2008b"
+key "Hern'andez-Camacho2008a"
 
 \end_inset
 
@@ -7190,7 +7185,7 @@ key "Hern'andez-Camacho2008b"
 
 \begin_layout Standard
 \paragraph_spacing double
-In 1987, we initiated a long-term branding and sighting study at San Miguel
+In 1987, we initiated a long-term branding and resighting study at San Miguel
  Island (SMI), California because there had been no demographic studies
  to estimate the life-history parameters of California sea lions breeding
  in the California Channel Islands.
@@ -7205,11 +7200,11 @@ key "Lowry1992"
 \shape italic
 Callorhinus ursinus
 \shape default
-) as proxies to develop a model of U.S.
+) as a proxy to develop a model of U.S.
  California sea lion population growth.
- With branding and sighting data from 1987-2009, we have estimated sex-
+ With branding and resighting data from 1987-2009, we have estimated sex-
  and age-specific survival of California sea lions at San Miguel Island
- and evaluated the effects of environmental variation, disease, and individual
+ and evaluated the effects of environmental variation, disease and individual
  variation in pup weight.
  
 \end_layout
@@ -7316,7 +7311,7 @@ key "Antonelis1990"
 , 
 \begin_inset CommandInset citation
 LatexCommand citealt
-key "Melin2000c"
+key "Melin2000a"
 
 \end_inset
 
@@ -7327,10 +7322,10 @@ key "Melin2000c"
  peak of breeding.
  Only a small proportion of adult males establish breeding territories.
  Individual males may hold a territory from one day to two months.
- Non-breeding males haulout on beaches outside the breeding territories.
+ Non-breeding males haulout on beaches outside the main breeding areas.
  Males disperse from the colony in early August and winter at hauling sites
  along the California, Oregon and Washington coasts, the islands of British
- Columbia, Canada, and southeast Alaska.
+ Columbia, Canada and southeast Alaska.
  Juveniles and adult females haul out at SMI as well as hauling areas along
  the central California coast during the winter but lactating females must
  return regularly to the colony to nurse their pups.
@@ -7341,7 +7336,7 @@ key "Melin2000c"
 \paragraph_spacing double
 
 \series bold
-Marking and Sighting Effort
+Marking and Resighting Effort
 \end_layout
 
 \begin_layout Subsubsection*
@@ -7443,7 +7438,8 @@ status collapsed
 
 ) were excluded.
  We believe that the unhealthy pups were unlikely to survive and the stress
- of being captured might have further compromised any chance of their survival.
+ of being held and branded might have further compromised any chance of
+ their survival.
  Starting in 1993, the sample sex ratio was skewed to provide a larger sample
  size for females to increase the precision of female survival estimates
  and to provide a larger sample size for natality estimation.
@@ -7454,10 +7450,9 @@ status collapsed
 Pups were gathered and held in a large holding pen until they were branded
  and released.
  Before branding, each pup was weighed (to nearest 0.2 kg), sexed, and tagged
- in the foreflippers with uniquely numbered yellow roto-tags (Dalton Ltd,
- London, England).
- The tags helped with sighting branded animals in large groups and provided
- a returnable identification for animals found dead .
+ in the foreflippers with yellow roto-tags.
+ The tags helped with sighting of branded animals in large groups and provided
+ a returnable identification for animals found dead on beaches or in nets.
 \end_layout
 
 \begin_layout Standard
@@ -7467,7 +7462,7 @@ Each pup was branded on the left shoulder (right-shoulder in 1987) with
  Branding techniques are described in 
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Merrick1996a"
+key "Merrick1996"
 
 \end_inset
 
@@ -7486,14 +7481,14 @@ key "Merrick1996a"
 \paragraph_spacing double
 
 \shape italic
-Sighting
+Resighting
 \end_layout
 
 \begin_layout Standard
 \paragraph_spacing double
 To obtain accurate estimates of survival, sea lions of all age and sex classes
- needed to be resighted after the initial marking.
- Sighting all age and sex classes was complicated by the expansive range
+ needed to be resighted.
+ Resighting all age and sex classes was complicated by the expansive range
  of sea lions (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -7505,10 +7500,9 @@ reference "fig:Range-and-breeding"
  However, during the reproductive season, the range contracts primarily
  to the breeding islands and the central and northern California hauling
  sites.
- We focused the sighting effort in the reproductive season for analysis
- to minimize the geographic areas that needed to be surveyed and to maximize
- the number of marked sea lions of each age and sex class that could be
- resighted.
+ We focused the sightig effort to the reproductive season to minimize the
+ geographic areas that needed to be surveyed and to maximize the number
+ of marked sea lions of each age and sex class that could be resighted.
  
 \end_layout
 
@@ -7528,7 +7522,7 @@ From 1990 through 2009, branded sea lions were resighted during the reproductive
  Branded animals were identified using binoculars or 20 to 45X zoom spotting
  scopes.
  For each observation of a branded animal, the date, area, reproductive
- status, and brand number were recorded.
+ status and brand number were recorded.
  Prior to 1994, observation effort was limited to SMI under the assumption
  that California sea lions would have fairly high fidelity to their natal
  site.
@@ -7554,7 +7548,7 @@ reference "fig:Range-and-breeding"
  We also supported observation effort at the FAI during 1998 because we
  expected larger numbers of juveniles and adults to move further north during
  the El Niño event.
- We obtained opportunistic observations from the FAI in other years.
+ We obtained opportunistic sightings from the FAI in other years.
 \end_layout
 
 \begin_layout Subsection*
@@ -7567,10 +7561,10 @@ Model Development
 \begin_layout Standard
 \paragraph_spacing double
 Annual survival rates (i.e, probability of surviving a year) were estimated
- from the making and sighting data of branded sea lions using the Cormack-Jolly-
-Seber (CJS) model formulation.
+ from the release-resighting data of branded sea lions using the Cormack-Jolly-S
+eber (CJS) model formulation.
  For CJS models, the initial capture and marking is a release event and
- only recaptures (sightings) of the marked individuals at later sampling
+ only recaptures (resightings) of the marked individuals at later sampling
  occasions are treated as data.
  For our analysis, each year from 1987-2007 a branded cohort of pups was
  
@@ -7585,7 +7579,7 @@ released
 e season.
  We used resights from 1990-2009 (no effort in 1987-1988) during 15 May
  to 15 August of each year as the sampling occasion because it encompasses
- pupping, breeding, and post-breeding (when the structure of the rookery
+ pupping, breeding and post-breeding (when the structure of the rookery
  is more dynamic and mixed) periods.
  For CJS, sampling occasions are assumed to be instantaneous events such
  that there are no deaths during the sampling period.
@@ -7655,8 +7649,7 @@ lost
  sex, or if the sea lion had not been seen for two or more years (which
  is not necessarily an error but is uncommon for adult animals).
  When any of these conditions occurred, the observer checked the brand while
- in the field and corrected the brand number if an error was made, which
- reduced misreads of brands.
+ in the field and corrected the brand number if an error was made.
  We have received reports of branded sea lions all along the U.S.
  west coast and occasionally in Mexico and Canada.
  However, in addition to the seasonal restriction, we restricted the analysis
@@ -7719,9 +7712,8 @@ reference "tab:survival models"
 
 \end_inset
 
-) for survival that included some combination of sex, age, year, and covariates
- of pup weight, reproductive status, and temporal environmental and disease
- effects .
+) for survival that included some combination of sex, age, year, pup weight,
+ reproductive status, and temporal environmental and disease covariates.
  
 \end_layout
 
@@ -7752,7 +7744,7 @@ underline{Age and Sex}
 \begin_inset Formula $\varphi$
 \end_inset
 
- for ages 0, 1, and 2.
+ for ages 0, 1 and 2.
  Females may become reproductive at age 3 (rarely) or 4 and most are reproductiv
 e by age 7 (
 \begin_inset CommandInset citation
@@ -7766,8 +7758,9 @@ key "Melin2011"
  at older ages.
  The age intervals were wider for older animals because the sample size
  of live animals decreased with age.
- The average age of territorial males was 12 so these age intervals also
- work for males.
+ The age intervals were designed specifically for females but these intervals
+ were also applicable for males which can typically become territorial at
+ age 10.
  Due to differences in their life history and behavior, we expected that
  survival pattern would differ for males and females.
  We also expected that any patterns across age would differ for the sexes,
@@ -7776,8 +7769,8 @@ key "Melin2011"
 
 \begin_layout Standard
 \paragraph_spacing double
-There was little observation done in 1988 and 1989, so we excluded those
- occasions and set 
+There was little sighting effort expended in 1988 and 1989, so we excluded
+ those occasions and set 
 \shape italic
 p
 \shape default
@@ -7832,8 +7825,7 @@ key "Hastings2011"
  no longer improved the fit.
  The pup weight covariate (Weight) was measured as the deviation of the
  pup's weight from the sex-specific mean weight of pups from 1989-2007.
- We excluded 1987-1988 because we could not estimate pup and yearling survival
- because there was no sighting effort in 1988-1989.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -7853,17 +7845,17 @@ underline{Reproductive Status}
 : In terms of survival, reproduction is potentially costly for sea lions.
  For females, once they give birth, they produce a pup most years and sustain
  an energetically demanding cycle of lactation and gestation for much of
- their adult life; males can be seriously or terminally hurt while engaging
- in territorial behaviors or may lose substantial weight while fasting during
- their territorial tenure.
+ their adult life.
+ It may be potentially more costly for males who can be seriously or terminally
+ hurt while engaging in territorial behaviors or may lose substantial weight
+ while primarily fasting during their territorial tenure.
  While age may encapsulate some variation in survival due to reproduction
  as they mature sexually, some sea lions, particularly males may never breed.
- Thus, we defined a sqeuence of individual time-varying covariates (Repro1990,
+ Thus, we defined a sqeuence of individual time-varying covariate (Repro1990,
  Repro1991,...,Repro2009) that was initially 0.
  Once a female was seen either pregnant or with a pup, the Repro covariate
- for that year and all subsequent years was set to 1 for her survival probabilit
-ies.
- Likewise, the Repro covariates for males were set to 1 if the male was
+ for that year and all subsequent years was set to 1 for survival probabilities.
+ Likewise, the Repro covariates for males were set to 1, if the male was
  seen engaging in territorial behavior.
  The impact of reproduction on survival may increase or decrease with age,
  so we also considered an individual time-varying covariate (RepAge) that
@@ -7886,7 +7878,8 @@ underline{Environment}
 \end_inset
 
 : We expected that survival would vary by year due to natural variation
- in prey availability and oceanographic conditions such as ENSO.
+ in prey availability and oceanographic conditions such as the El Niño events
+ in 1992-1993, 1997-1998 and 2002-2003.
  However, we did not expect that temporal variation would act equally across
  age classes.
  Instead, we expected more temporal variation in survival of younger sea
@@ -7896,32 +7889,29 @@ underline{Environment}
  temporal variation was included for age 0, age 0 and 1, ages 0, 1, 2, etc.
  until there was no indication of a temporal signal in an age class.
  For older age classes that did not support separate annual survival probabiliti
-es we evaluated models with annual survival varying as a result of ENSO.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-ENSO is characterized by changes in atmospheric-ocean circulation patterns
+es we evaluated models with annual survival varying as a result of the El
+ Niño Southern Oscillation (ENSO).
+ ENSO is characterized by changes in atmospheric-ocean circulation patterns
  in the Pacific Ocean.
- We know that strong El Niño conditions impact sea lions (
+ During the El Niño phase sea surface temperatures increase along the California
+ coast which may impact sea lion prey availability in the California Current.
+ We know that strong El Niño events impact sea lions (
 \begin_inset CommandInset citation
 LatexCommand citealt
-key "DeLong1991a"
+key "DeLong1991b"
 
 \end_inset
 
-) but the strength and duration of El Niño conditions are likely to determine
- the influence they have on survival.
- Also, survival may be higher during La Niña conditions relative to neutral
- conditions.
- Thus, we evaluated two alternative covariates to measure the effect of
- ENSO on survival: 1) average sea surface temperature (SST) anomaly, which
- was measured at five NOAA data buoys (NOAA National Data Buoy Center, http://ww
-w.ndbc.noaa.gov) located generally north of San Miguel Island in the area where
- females primarily forage (
+) but the strength and duration of ENSO events determines the influence
+ they have on survival.
+ We evaluated two alternative covariates to capture differential effects
+ of ENSO: 1) average sea surface temperature (SST) anomaly, which was measured
+ at five NOAA data buoys (NOAA National Data Buoy Center, http://www.ndbc.noaa.gov)
+ located generally north of San Miguel Island in the area where females
+ primarily forage (
 \begin_inset CommandInset citation
 LatexCommand citealp
-key "Melin2000b"
+key "Melin2000d"
 
 \end_inset
 
@@ -7941,12 +7931,13 @@ key "Wolter1998"
 
 ), which we lagged by three months because it is measured at the equator
  and a three month lag provided the highest correlation with the local SST.
- For pups, we used the average SST from 1 October to 30 March and for non-pups
- we used the average SST from 1 July to 30 June to correspond to the survival
- periods in our models.
- For MEI, lagged by three months, we used the average from 1 April to 30
- March of the following year.
- 
+ For pups, we used the average from 1 October to 30 March and for non-pups
+ we used the average from 1 July to 30 June to correspond to the survival
+ periods.
+ For MEI, lagged by three months, these were actually the average from 1
+ April to 30 March of the following year.
+ For pups and yearlings, we also examined models with a linear trend in
+ survival over time.
 \end_layout
 
 \begin_layout Standard
@@ -7994,12 +7985,15 @@ key "Greig2005"
  The number of sea lions (2 years and older) that stranded in central and
  southern California were accumulated between 1 July and 30 June to match
  the time frame for the survival estimates.
+ The stranding information was provided by Sarah Wilkin of the Southwest
+ Region of the National Marine Fisheries Service who collates the data from
+ the stranding coordinators throughout California.
  
 \end_layout
 
 \begin_layout Paragraph
 \paragraph_spacing double
-Sighting probability (
+Resighting probability (
 \begin_inset Formula $p$
 \end_inset
 
@@ -8042,13 +8036,13 @@ key "Baker1995"
 
 ); so, our effort was focused in the vicinity of Adams Cove where pups were
  branded.
- However branded pups dispersed to other areas of the colony, animals colonized
- new areas on SMI over the study period, and juveniles and non-territorial
- males were primarily using other areas of the island during the reproductive
- season.
- So we adjusted the sampling coverage across the island to accommodate these
- behaviors which meant that any sex, age, and spatial differences in sighting
- probability would change over time.
+ However this presumption was incorrect because branded pups dispersed to
+ other areas of the colony, animals colonized new areas on SMI over the
+ study period, and juveniles and non-territorial males were primarily using
+ other areas of the island during the reproductive season.
+ In response we adjusted the sampling coverage across the island which meant
+ that any sex, age and spatial differences in sighting probability would
+ change over time.
  
 \end_layout
 
@@ -8071,11 +8065,11 @@ underline{Year}
 p
 \shape default
  to vary by year because the level of survey effort varied by year.
- Directed annual survey effort began in 1990 at SMI but the effort varied
+ Directed annual sighting effort began in 1990 at SMI but the effort varied
  significantly by year until 1994 when a dedicated sighting survey program
  was instituted and the effort became consistent over years.
- Also, the surveys were initiated at ANI in 1994 that continued through
- 2009.
+ In addition, the sighting effort was expanded with the addition of a sighting
+ program at ANI in 1994 that continued through 2009.
  
 \end_layout
 
@@ -8102,20 +8096,20 @@ key "Melin2011"
 
 , we divided SMI into two areas to cope with individual fidelity to specific
  areas that received unequal survey coverage.
- Area 1 included areas near Adams Cove (the branding site) which received
- the most effort.
+ Area 1 was the vicinity around Adams Cove, which received the most sighting
+ effort.
  Area 2 was the remainder of the island, which received a lower level of
  effort initially but increased over time as animals colonized new areas
  within Area 2.
- We defined a third area that included ANI and any opportunistic observations
+ We defined a third area that included ANI and any opportunistic sightings
  from FAI.
  We defined an individual sea lion covariate for Areas 1 and 2 that varied
  over time (i.e, Area11990,...,Area12010 and Area21990,...,Area22010 ).
  The covariate for Area 1 was initially 0 at release but was set to 1 for
  all years after a sea lion was seen in Area 1.
  The covariate for Area 2 was also initially 0 and was set to 1 for all
- years after being seen in Area 2 but it was reset to 0 if the animal was
- subsequently seen in Area 1.
+ years after being seen in Area 2 but it was reset to 0 if it was subsequently
+ seen in Area 1.
  Sea lions never seen or only seen in Area 3 retained a value of 0 for both
  covariates and were represented by the model intercept when the Area covariates
  were included in the model.
@@ -8158,7 +8152,7 @@ key "Melin2011"
  so we also considered models with a sex-Repro interaction (i.e, separate
  parameters for each sex).
  We also considered models in which the effect varied across years due to
- the impact of El Niño conditions on reproduction, pup mortality, and presence
+ the impact of ENSO events on reproduction, pup mortality, and presence
  at SMI.
  
 \end_layout
@@ -8197,12 +8191,8 @@ p
  of sex, age, and year); however, we found that it was necessary to limit
  fitting three-way interactions to data collected in 1994 and beyond, due
  to paucity of data prior to that year.
- We found that many estimates of 
-\shape italic
-p
-\shape default
- would end up at boundaries (0 or 1) if we attempted to fit interactions
- for data prior to 1994.
+ We found that many estimates of p would end up at boundaries (0 or 1) if
+ we attempted to fit interactions for data prior to 1994.
  So we segmented the model fitting at 1994.
  For data prior to 1994, we fitted sex and age interactions but an additive
  effect for year.
@@ -8401,12 +8391,12 @@ key "Laake2008a"
 \end_inset
 
 ).
- For survivorship (i.e., cumulative survival to age x), the REML estimates
- were computed on the logarithm of survivorship to transform the product
- to a sum and then back-transformed.
- The logarithmic transformation should provide a better approximation for
- the normality assumption of REML.
- 
+ Precision and estimates for survivorship (i.e., cumulative survival to age
+ x) were computed for log of survivorship which transforms product of survival
+ to sum.
+ This should provide a more reasonable approximation to normality assumption
+ for REML.
+ Estimates were then back-transformed.
 \end_layout
 
 \begin_layout Section*
@@ -8467,7 +8457,7 @@ reference "tab:Cohort_table"
 \end_inset
 
 ).
- During the survey periods (15 May - 15 August), approximately 
+ During the sighting periods (15 May - 15 August), approximately 
 \begin_inset ERT
 status collapsed
 
@@ -8549,13 +8539,13 @@ reference "FigResight"
 
 ).
  These were most notable for pup cohorts that were born just prior or during
- El Niño years.
+ an ENSO event.
 \end_layout
 
 \begin_layout Standard
 \paragraph_spacing double
 With a greater abundance of sea lions and greater survey effort, it was
- not surprising that most sea lion observations were at SMI (
+ not surprising that most sea lion sightings were at SMI (
 \shape italic
 n
 \shape default
@@ -8607,8 +8597,8 @@ Sexpr{IslandCounts[2]}
 \end_inset
 
 ).
- During the survey periods, SMI was used mostly by sea lions of age 3 and
- older; whereas, ANI and FAI were used mostly by juveniles (Figure 
+ During the sighting periods, SMI was used mostly by adults; whereas, ANI
+ and FAI were used mostly by juveniles (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "FigResightbyIsland"
@@ -8714,12 +8704,12 @@ QAIC for model selection and model averaging.
 
 \begin_layout Subsection*
 \paragraph_spacing double
-Sighting probability
+Capture probability
 \end_layout
 
 \begin_layout Standard
 \paragraph_spacing double
-For sighting probability, the best model (model 6) (Table 
+For capture (sighting) probability, the best model (model 6) (Table 
 \begin_inset ERT
 status collapsed
 
@@ -8732,15 +8722,15 @@ ref{best_models}
 
 \end_inset
 
-) contained sex, age, year, Repro, Area and two- and three-way interactions
- (Table 2).
+) contained sex, age, year, Repro, Area and two- and three-way interactions.
  For years prior to 1994, when the effort was less, sighting probability
  was limited to additive year, sex and age effects and an interaction of
- sex and age (Table 2).
+ sex and age.
  For all other years, the best model included all main effects and interactions
- of sex, age, and year (sex*age*year) (Table 2).
- Sighting probability varied by 6 to 10-fold over the years and generally
- increased survey effort increased in the mid to late 1990s (Figure 
+ of sex, age, and year (sex*age*year).
+ Resighting probability varied by 6 to 10-fold over the years with sighting
+ probability increasing as survey effort was increased in the mid to late
+ 1990s (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "FigAvgResightProbByYear"
@@ -8750,7 +8740,8 @@ reference "FigAvgResightProbByYear"
 ).
  The large increase in 1994 was associated with initiation of a dedicated
  resight effort at ANI and the increase in 1997 reflects an increase in
- effort and expansion of regular surveys to cover all beaches on SMI .
+ effort and expansion of regular surveys to cover beaches on SMI beyond
+ the Point Bennett rookery.
  The differential usage of these areas by the sex and age groups led to
  the interaction with year.
 \end_layout
@@ -8765,7 +8756,7 @@ reference "FigAvgResightProbByAge"
 
 \end_inset
 
-), but juveniles were more likely to be seen at ANI and FAI.
+), but the age difference was lessened with surveys at ANI and FAI.
  In general, differences in sighting probability between males and females
  were much less than age and temporal differences but there were obvious
  interactions with time and age (Figures 
@@ -8783,7 +8774,7 @@ reference "FigAvgResightProbByAge"
 \end_inset
 
 ).
- Sighting probability increased with age for females until age 5-7 when
+ Resighting probability increased with age for females until age 5-7 when
  most females become reproductive and for males, sighting probability increased
  until age 12, the mean age of territorial males (Figure 
 \begin_inset CommandInset ref
@@ -8800,7 +8791,7 @@ reference "FigAvgResightProbByAge"
 \paragraph_spacing double
 The best models also included covariates for location (Area) and reproductive
  status (Repro).
- Sighting probabilities were highest for Area 1 and lowest for those only
+ Resighting probabilities were highest for Area 1 and lowest for those only
  previously seen at ANI or FAI or not previously seen (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -8820,25 +8811,43 @@ reference "FigAvgResightProbByReproArea"
 
 \end_inset
 
-) and varied by year.
- In years when pup mortality was higher or pup production was lower, reproductiv
-e females without a pup do not need to attend to the pup and are less likely
- to be sighted.
+) and varied by year which reflected variation in pup production with lower
+ production in years influenced by El Ni
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+~n
+\end_layout
+
+\end_inset
+
+o (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "FigAvgResightProbByYear"
+
+\end_inset
+
+).
+ 
 \end_layout
 
 \begin_layout Standard
 \paragraph_spacing double
 Model 7, which had some support, was the same as model 6 with an additional
- three-way interaction of sex with reproductive status and year (Tables
- 2 and 4).
- To help understand this interaction, we computed the ratio of sighting
+ three-way interaction of sex with reproductive status and year.
+ To help understand this interaction, we computed the ratio of annual sighting
  probabilities for reproductive and non-reproductive sea lions for each
  year and sex.
- A ratio value of 1 would mean no difference between reproductive and non-reprod
-uctive sea lions and a larger variance of the ratio would imply greater
- annual changes.
- We used data starting in 1998 when there were sufficient sightings of both
- reproductive females and males (i.e., 9-11 year old males from the 1987-1989
+ A ratio value of one would mean no difference between reproductive and
+ non-reproductive sea lions and a larger variance of the ratio would imply
+ greater annual changes.
+ We used data starting in 1998 when there were sufficient resightings of
+ both reproductive females and males (i.e., 9-11 year old males from the 1987-1989
  cohorts).
  The variance of the ratio for female seal lions was 
 \begin_inset ERT
@@ -8853,11 +8862,8 @@ Sexpr{round(var.ratio,1)}
 
 \end_inset
 
- times greater than for males.
- Reproductive males are at the island for breeding and the time they spend
- at the island will not be affected by variation in pup mortality or production.
- Whereas attendance of reproductive females at the island depends on whether
- she has a pup and will show greater annual variability.
+ times greater than for males whose attendance is for breeding and unlike
+ females was affected less by variation in pup production and survival.
 \end_layout
 
 \begin_layout Subsection*
@@ -8887,10 +8893,9 @@ ref{best_models}
  for pups and yearlings, pup weight at branding, annual variation in survival
  related to indices for leptospirosis and domoic acid strandings, annual
  variation for ages 2 and older related to MEI, and differential survival
- for sea lions observed as reproductive with age and sex differences (Tables
- 1 and 4).
- They differed in the ages affected by MEI, sex differences due to MEI,
- and a sex-age interaction for sea lions observed as reproductive.
+ for sea lions observed as reproductive with age and sex differences.
+ Where they differed was in the ages affected by MEI, sex differences due
+ to MEI, and a sex-age interaction for sea lions observed as reproductive.
 \end_layout
 
 \begin_layout Standard
@@ -8906,9 +8911,10 @@ reference "FigAgeSpecificSurvival"
 \end_inset
 
 ).
- Male survival was generally lower than female survival for ages 2 and older.
- For both sexes, survival was lowest for pups and yearlings and highest
- for prime-aged animals between 2 and 11 years old.
+ Sexual dimorphism and differences in timing of sexual maturity by sex led
+ to a sex-age interaction.
+ Survival was lowest for pups and yearlings and highest for prime-aged animals
+ between 2 and 11 years old.
  Survival declined for ages 12 and older.
  
 \end_layout
@@ -8925,7 +8931,7 @@ reference "FigPupYearlingSurvival"
 \end_inset
 
 ).
- Annual average survival estimates varied from 
+ Annual average survival varied from 
 \begin_inset ERT
 status collapsed
 
@@ -9004,7 +9010,7 @@ ref{Msurvivaltab}
 \end_inset
 
 ).
- Yearling survival estimates varied from 
+ Likewise, yearling survival varied from 
 \begin_inset ERT
 status collapsed
 
@@ -9030,7 +9036,7 @@ Sexpr{max(yrF)}
 
 \end_inset
 
-for females and 
+ for females and 
 \begin_inset ERT
 status collapsed
 
@@ -9057,9 +9063,10 @@ Sexpr{max(yrM)}
 \end_inset
 
  for males.
+ This variation was primarily due to the impact of ENSO on these age classes.
  Pup and yearling survival were severely depressed in 1997 during the strong
- El Niño conditions and to a much lesser degree during the weaker 1992 El
- Niño (Tables 
+ El Niño event and to a much lesser degree during the weaker 1992 ENSO event
+ (Tables 
 \begin_inset ERT
 status collapsed
 
@@ -9086,14 +9093,14 @@ ref{Msurvivaltab}
 \end_inset
 
 ).
- In addition, pups born during an El Niño had lower survival the following
+ In addition, pups born during an ENSO had lower survival the following
  year as yearlings.
  This was most apparent in 1998 when pup survival was high but survival
  of yearlings from the 1997 cohort was nearly as low as survival of the
- yearlings from the 1996 cohort that were weaned during the 1997 El Niño.
+ yearlings from the 1996 cohort that were weaned during the 1997 ENSO.
  The same pattern occurred, but to a lesser degree, in 1993 after the 1992
- El Niño.
- The very weak 2003 El Niño event had little evident impact on survival.
+ ENSO event.
+ The very weak 2003 ENSO event had little evident impact on their survival.
  
 \end_layout
 
@@ -9271,7 +9278,7 @@ status collapsed
 
 \end_inset
 
- ) for ages 2 and ages 3 and older (3+), respectively.
+ ) for ages 2 and 3+, respectively.
  The reduction in predicted survival was quite evident in 1997 (Tables 
 \begin_inset ERT
 status collapsed
@@ -9298,8 +9305,8 @@ ref{Msurvivaltab}
 
 \end_inset
 
-) for 2 year olds but much less so for 3+ which had a weaker relationship
- with MEI and the model averaging included models with no impact on 3+ survival.
+) for 2 year olds but much less so for 3+ due to the smaller effect size
+ and the model averaging which included models with no impact on 3+ survival.
  
 \end_layout
 
@@ -9447,8 +9454,8 @@ status collapsed
 \end_inset
 
 ) in the odds of survival for females and males, respectively.
- The effect size of DA was quite small in comparison to leptospirosis and
- would have probably not been included if models with leptospirosis but
+ The effect size of DA was quite small in comparison to Leptospirosis and
+ would have probably not been included if models with Leptospirosis but
  no DA effect were considered.
  The largest number of observed leptospirosis related strandings was 
 \begin_inset ERT
@@ -9476,8 +9483,7 @@ Sexpr{leptostatus$time[which.max(leptostatus$leptom)]}
 
 \end_inset
 
- and the predicted male 2+ survival was substantially reduced and below
- the 1997 El Niño level (Table 
+ and the predicted male 2+ survival was substantially reduced (Table 
 \begin_inset ERT
 status collapsed
 
@@ -9557,14 +9563,14 @@ sep="")}
 
  for pups and 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
 
 \backslash
-Sexpr{paste(formatC(beta.mavg$estimate[2],width=3,flag=0,format="f")," (se
- = ",formatC(beta.mavg$se[2],width=4,flag=0,format="f"),")",sep="")}
+Sexpr{paste(round(beta.mavg$estimate[2],2)," (se = ",round(beta.mavg$se[2],3),")",
+sep="")}
 \end_layout
 
 \end_inset
@@ -9834,7 +9840,7 @@ The reliability and readability of the marking technique was equally important.
  Between 1975 and 1986 various methods of tagging California sea lions were
  undertaken (DeLong, unpublished data) but yielded little resight data because
  of tag loss, tag unreadability, and the inability to approach animals to
- read tag numbers without disrupting the colony and tagged individual.
+ read tag numbers without disrupting the colony and individual of interest.
  With branded animals, we had a reliable permanent mark and were able to
  achieve sighting probabilities as high as 85
 \begin_inset ERT
@@ -9858,7 +9864,7 @@ status collapsed
 
 \end_inset
 
-, which is not common in mark-recapture studies.
+, which is not common in most mark-recapture studies.
 \end_layout
 
 \begin_layout Standard
@@ -9867,12 +9873,12 @@ One of the central assumptions to mark-recapture studies is that marks are
  not lost, overlooked, or misread.
  Although brands cannot be lost, they must be read and recorded correctly
  and this process is prone to error.
- We attempted to minimize the error by only including observerations if
- the sea lion was observed two or more times in a year.
- Some errors may have still occured but our data filtering, field error
- checking protocols, and photographic verification should have reduced or
- eliminated most reading or recording errors unless a brand was consistently
- misread due to poor brand quality which is rare.
+ We attempted to minimize the error by defining a sighting event to have
+ occurred if the sea lion was sighted two or more times in a year.
+ Some errors may have still occured but our data filtering and more recent
+ photographic verification should have reduced or eliminated most reading
+ or recording errors unless a brand was consistently misread due to poor
+ brand quality which is rare.
  However, this definition of a sighting event may have also introduced heterogen
 eity in the sighting probability because those sea lions that were hauled-out
  less frequently or hauled-out in areas that were surveyed less frequently
@@ -9911,22 +9917,30 @@ The long-term nature of our data set demonstrates the importance of the
  
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Hern'andez-Camacho2008"
+key "Hern'andez-Camacho2008a"
 
 \end_inset
 
  had relatively small samples from a small number of cohorts and were only
  able to estimate sex- and age-specific survival for 4 age classes and could
  only demonstrate annual variation in pup survival.
- Our sample sizes of between 200 and 500 animals a year and 21 cohorts allowed
- us to explore more complicated models that described interactions between
- sex- and age-specific survival and the environment.
+ compared to our study.
+ Whereas, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hern'andez-Camacho2008a"
+
+\end_inset
+
+ branded a total of about 200, we branded about 200 animals annually during
+ the first three years of the study compared to 500 animals branded annually
+ in the remaining years.
  
 \end_layout
 
 \begin_layout Standard
 \paragraph_spacing double
-The number of cohorts and the time period in which the marking and sighting
+The number of cohorts and the time period in which the marking and resighting
  occurs can greatly influence the outcome of the models.
  For example, if we had only sampled 5 cohorts between 2000 and 2004 our
  survival rates for pups would have been lower than the survival rate that
@@ -9972,11 +9986,10 @@ As expected, age-specific survival was lowest for the youngest and oldest
  for a smaller pup to survive to age 1 but then die as a yearling which
  is the likely reason for the carry-over effect.
  Smaller pups have smaller fat reserves and may have more restrictive physiologi
-cal limitations to diving and foraging compared to fatter, larger pups.
+cal limitations to diving and foraging.
  However, the impact of weight is more relative than absolute as demonstrated
  by the differences in pup survival for 1996 when weaned pups encountered
- El Niño conditions and in 1998 when the weaned pups experienced La Niña
- conditions.
+ El Niño conditions and in 1998 when the weaned pups were in La Niña conditions.
  In 1996, the average weight of female pups was 
 \begin_inset ERT
 status collapsed
@@ -10041,16 +10054,29 @@ In general, our age-specific survival rates were similar for males but lower
  California (
 \begin_inset CommandInset citation
 LatexCommand citealt
-key "Hern'andez-Camacho2008"
+key "Hern'andez-Camacho2008a"
 
 \end_inset
 
 ).
  Once animals reached 2 years old, they had fairly high survival until they
  reached 15 years or older for females and 12 or older for males.
- Average survival to age 2 was nearly the same for males and females but
- in general male survival was lower and it declined more rapidly with age
- than did female survival.
+ Average survival to age 2 was nearly the same for males and females (Table
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{Survivorshiptab}
+\end_layout
+
+\end_inset
+
+) but in general male survival was lower and it declined more rapidly with
+ age than did females.
  In a sexually dimorphic polygynous species, it is expected that sex- and
  age-specific survival rates will differ for males and females (
 \begin_inset CommandInset citation
@@ -10069,7 +10095,7 @@ key "Clutton-Brock1985"
 \begin_inset Formula $+$
 \end_inset
 
- age group that may be related to the cost of reproduction.
+ age groups that may be related to the cost of reproduction.
  Adult males fight and fast for days to weeks or months while holding territorie
 s (
 \begin_inset CommandInset citation
@@ -10104,7 +10130,7 @@ key "Boyd1995a"
  8 and 10 years (
 \begin_inset CommandInset citation
 LatexCommand citealt
-key "Hern'andez-Camacho2008a"
+key "Hern'andez-Camacho2008"
 
 \end_inset
 
@@ -10118,17 +10144,30 @@ key "Melin2011"
 ) but some females remain reproductive until at least 25 years of age (
 \begin_inset CommandInset citation
 LatexCommand citealt
-key "Hern'andez-Camacho2008a"
+key "Hern'andez-Camacho2008"
 
 \end_inset
 
 ).
- With the exception of young reproductive females (4 and 5 year olds), females
- observed to be reproductive (e.g., seen with a pup) had higher survival rates
- than females that had not been observed as reproductive.
+ With the exception of young females, females observed to be reproductive
+ (e.g., seen with a pup) had higher survival rates than females that had not
+ been observed as reproductive.
  With the exception of 3 to 4 year old non-reproductive females, reproductive
  females had the highest annual survival rates and they remained above 80%
- even for sea lions 15 years and older .
+ even for sea lions 15 years and older (Table 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{Fsurvivaltab}
+\end_layout
+
+\end_inset
+
+).
  
 \end_layout
 
@@ -10136,10 +10175,10 @@ key "Hern'andez-Camacho2008a"
 \paragraph_spacing double
 During the last several decades, El Niño events have played a central role
  in the population dynamics of California sea lions through lower survival
- of pups and lower natality rates of adult females (
+ and lower natality rates of adult females (
 \begin_inset CommandInset citation
 LatexCommand citealt
-key "DeLong1991a"
+key "DeLong1991b"
 
 \end_inset
 
@@ -10154,13 +10193,6 @@ key "DeLong2000"
 \begin_inset CommandInset citation
 LatexCommand citealt
 key "Melin2002a"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Melin2011"
 
 \end_inset
 
@@ -10183,11 +10215,11 @@ ty and presumably reduce availability California sea lion prey.
  Females have difficulty provisioning their pups and the result is high
  mortality of pups from starvation.
  The pups that survive are weaned at lower weights compromising their survival
- as yearlings, when they must learn to feed independently in an environment
+ as yearlings, when they are learning to feed independently in an environment
  with reduced food.
- Older sea lions are able to travel farther and dive deeper and their foraging
- experience help to buffer them from the effects of ENSO in comparison to
- pups and yearlings.
+ Older sea lions will be able to travel farther and dive deeper and their
+ foraging experience help buffer them from the effects of ENSO in comparison
+ to pups and yearlings.
 \end_layout
 
 \begin_layout Standard
@@ -10202,14 +10234,10 @@ key "Gulland1996"
 \end_inset
 
 ) but our evidence is correlative and we cannot rule out the possibility
- that annual variability in other unknown factors is the cause of lower
- survival in those years.
- If lower survival is solely due to leptospirosis, then many infected individual
-s must die at sea rather than stranding on beaches where they can be recovered
- because even if there was only as few as 50,000 male sea lions the decline
- in survival from the observed number of strandings would be less than 0.005
- and the observed descrease was substantially larger.
- .
+ that annual variability in other unknown factors is the cause of the decline
+ in survival.
+ If it is solely due to leptospirosis, then many of infected individuals
+ are dying at sea and do not strand.
  The predicted effect of DA strandings is much smaller and less precise
  which suggests that either most sea lions affected by DA strand or are
  able to recover.
@@ -10228,7 +10256,7 @@ s must die at sea rather than stranding on beaches where they can be recovered
 \begin_layout Standard
 \paragraph_spacing double
 There are few studies of sea lion or fur seal species that have estimated
- age-specific survival using longitudinal data over the lifetime of the
+ age-specific survival using mark-resighting data over the lifetime of the
  animals.
  Survival rates from collections or mark-recapture studies of fur seals
  (
@@ -10282,7 +10310,7 @@ Longitudinal studies of long-lived species requires a commitment to long-term
  With such a commitment, we were able to estimate sex- and age-specific
  survival and demonstrate individual variation in survival due to pup weight
  and observed reproductive status and annual variation in survival as a
- result of variation in ENSO and disease related strandings.
+ result of variation in ENSO and disease strandings.
  
 \end_layout
 
@@ -10309,9 +10337,6 @@ We thank the personnel at the National Marine Mammal Laboratory of the Alaska
  Bay, the Farallon Islands, and Año Nuevo Island.
  Funding was provided by the Northwest Region of the National Marine Fisheries
  Service.
- We thank Sarah Wilkin of the Southwest Region of the National Marine Fisheries
- Service for collating the data from the stranding coordinators throughout
- California and provding them to us.
  Research activities were conducted under Marine Mammal Protection Act Permits
  717, 977, 1613 issued to the National Marine Mammal Laboratory.
 \end_layout
@@ -10425,11 +10450,23 @@ name "tab:survival models"
 \end_inset
 
 Description of alternative models for survival probability of branded California
- sea lion sighting data.
+ sea lion resighting data.
  Covariates as defined in the text included age (Age), time (Year), pup
  weight (Weight), leptospirosis disease (Lepto), domoic acid poisoning (DA),
- sea surface temperature anomaly (SSTA), multivariate El Niño Southern Oscillati
-on index (MEI), and reproductive status (Repro).
+ sea surface temperature anomaly (SSTA), multivariate El Ni
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+~n
+\end_layout
+
+\end_inset
+
+o Southern Oscillation index (MEI), and reproductive status (Repro).
  Age is the age bins used for survival (0,1,2,3-4,5-7,8-9,10-11,12-14,15-22).
  A Year effect was estimated for all ages(.) or separately for each age listed
  (P-pup,Y-Yearling, 2- age 2, and 2+ (2 and older) or 3+ (3 and older).
@@ -10438,8 +10475,21 @@ on index (MEI), and reproductive status (Repro).
  Lepto was used only for 2+ male survival and DA for 2+ female survival.
  SSTA, sea surface temperature anomaly averaged over the July 1 to following
  June 30, was used for 2+ survival.
- MEI averaged over April 1 to following March 30 (3 month lag) was used
- for 2+ or separate 2 year old and 3+ survival.
+ MEI, the multivariate El Ni
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+~n
+\end_layout
+
+\end_inset
+
+o index averaged over April 1 to following March 30 for a 3 month lag was
+ used for 2+ or separate 2 year old and 3+ survival.
  Sex:MEI allowed for a separate relationship for males.
  The observed reproductive status (Repro) could for sea lions previously
  seen reproductive and RepAge is the number of years since they were first
@@ -23539,7 +23589,7 @@ name "tab:resight models"
 \end_inset
 
 Description of nine alternative models for sighting probability of branded
- California sea lion sighting data.
+ California sea lion resighting data.
  Models 2-9 had separate models fitted for data prior to 1994 and 1994 and
  afterward when there was more sighting effort.
  A numeric entry in the cell refers to a prior model specification with
@@ -26562,7 +26612,7 @@ Sexpr{sprintf("%.1f",mean(Brand$weight[Brand$sex=="M"]))}
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -26636,7 +26686,7 @@ clearpage")
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -26691,7 +26741,7 @@ clearpage")
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -26746,7 +26796,7 @@ clearpage")
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -27002,7 +27052,7 @@ clearpage")
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -27027,7 +27077,7 @@ name "fig:Range-and-breeding"
 Range and breeding areas of California sea lions.
  Approximately 90% of the pup production of the U.S.
  population is from San Miguel Island (SMI) and San Nicolas Island.
- Sea lion pups were branded on SMI and sightings were used from SMI, Ano
+ Sea lion pups were branded on SMI and resightings were used from SMI, Ano
  Neuvo Island (ANI) and Farallon Island (FAI).
  
 \end_layout
@@ -27046,7 +27096,7 @@ Range and breeding areas of California sea lions.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -27100,7 +27150,7 @@ Proportion of male and female cohorts of California sea lion pups branded
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -27153,7 +27203,7 @@ Island-specific proportion of all branded California sea lion sightings
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -27205,7 +27255,7 @@ Average year-specific predicted sighting probability across all male and
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -27257,7 +27307,7 @@ Average age-specific predicted sighting probability across all years for
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -27320,7 +27370,7 @@ Repro Female - Neither
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -27377,7 +27427,7 @@ California sea lion sex- and age-specific annual survival rates for sea
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -27432,7 +27482,7 @@ Annual survival rate of California sea lion pups and yearlings at San Miguel
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT

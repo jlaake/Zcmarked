@@ -205,12 +205,12 @@ zc.ddl$Phi=merge_design.covariates(zc.ddl$Phi,envcovdf,bytime=TRUE)
 zc.ddl$Phi=droplevels(zc.ddl$Phi)
 zc.ddl$p=droplevels(zc.ddl$p)
 
+dp1=list(p=list(time.bins=c(1987,1990,1991:maxyear)))
 fixed.0=fix.parameters(zcdata.proc,occasions=2:3,value=c(0))
 p.6=list(formula=~pre94:(sex*agep94)  + pre94:time + p94plus:time:sex:agep + p94plus:time:prepro + p94plus:male:prepro + p94plus:sex:agep:area1 + p94plus:sex:agep:area2, fixed=fixed.0, remove.intercept=TRUE)
 Phi.44=list(formula=~-1+f1987+f1988+m1987+m1988+post:(sex*AgeS + p89plus:pup:time + p90plus:yearling:time + pup:weight+ yearling:weight + male:twoplus:leptom + female:twoplus:DA+ two:JulytoJuneMEI + threeplus:JulytoJuneMEI + male:repro + repro:AgeS))
-mark6.44a=crm(zcdata.proc,zc.ddl,model.parameters=list(p=p.6,Phi=Phi.44),accumulate=T,method=c("BFGS","nlminb","Nelder-Mead"),control=list(follow.on=TRUE),initial=mark6.44a$beta)
+mark6.44b=crm(zcdata.proc,zc.ddl,design.parameters=dp1,model.parameters=list(p=p.6,Phi=Phi.44),accumulate=T,method=c("BFGS"))
 
-mark6.44=mark(zcdata.proc,zc.ddl,model.parameters=list(p=p.6,Phi=Phi.44),invisible=F)
 
 # save files for passing to Linux machine
 save(zcdata,file="zcdata.rda")
@@ -218,7 +218,19 @@ save(envcovdf,file="envcovdf.rda")
 save(zc.ddl,file="zc.ddl.rda")
 save(zcdata.proc,file="zcdata.proc.rda")
 
+xx=.Fortran("cjs", as.double(model_data$imat$chmat), as.double(Phibeta), 
+		as.double(pbeta), as.double(model_data$imat$first), as.double(model_data$imat$last), 
+		as.double(model_data$imat$freq), as.integer(model_data$imat$loc), 
+		as.double(model_data$Phi.fixed), as.double(model_data$p.fixed), 
+		as.double(model_data$time.intervals), as.integer(nrow(model_data$imat$chmat)), 
+		as.integer(ncol(model_data$imat$chmat)), as.integer(nrow(model_data$Phi.fixed)), 
+		as.integer(nrow(model_data$p.fixed)), lnl = double(1), p0 = double(nrow(model_data$imat$chmat)), 
+		PACKAGE = "marked")
 
-
-
+detach("package:RMark")
+library(marked)
+data(dipper)
+dp=process.data(dipper,model="cjs")
+fixed.0=fix.parameters(dp,occasions=3,value=0)
+crm(dp,model.parameters=list(p=list(formula=~1,fixed=fixed.0)))
  
