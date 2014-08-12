@@ -17,6 +17,8 @@ LazyLoad: yes
 License: GPL version 2 or later
 Maintainer: Jeff Laake <Jeff.Laake@noaa.gov>
 Collate:
+    'dbConnection.r'
+    'define.models.r'
     'EnvironCovariates.r'
     'extract.Zc.r'
     'zzz.r'

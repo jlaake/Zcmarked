@@ -13,12 +13,7 @@ print.Zcmarked.version <- function(){
 	version <- linfo[pmatch("Version",linfo)]
 	built <- linfo[pmatch("Built",linfo)]
 	
-	um <- strsplit(version," ")[[1]]
-	version <- um[nchar(um)>0][2]
 	
-	um <- strsplit(built,"R")[[1]]
-	built <- um[nchar(um)>0][2]
-	
-	hello <- paste("This is Zcmarked ",version,"\nBuilt: R",built,sep="")
+	hello <- paste("This is Zcmarked ",version,sep="")
 	packageStartupMessage(hello)
 }

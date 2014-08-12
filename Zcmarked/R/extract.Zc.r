@@ -83,7 +83,8 @@ extract.Zc=function(dir=NULL,begin=515,end=815,select=1,lastyear=2010,lastcohort
 	LimitedResights=droplevels(LimitedResights)
 # BrandResightJoin
     BrandResightJoin=merge(Brand,LimitedResights,by="brand",all.x=TRUE)
-	if(lastyear>2009)BrandResightJoin$cohort=factor(BrandResightJoin$cohort,levels=c(sort(unique(c(BrandResightJoin$cohort, 2010:lastyear)))))
+#	if(lastyear>2009)
+		BrandResightJoin$cohort=factor(BrandResightJoin$cohort,levels=c(sort(unique(c(BrandResightJoin$cohort, 2010:lastyear)))))
 # LimitedResightswithCount
 	brandyear=as.character(paste(BrandResightJoin$brand,BrandResightJoin$pupyear,sep=""))
 	count.table=table(brandyear)
@@ -97,8 +98,8 @@ extract.Zc=function(dir=NULL,begin=515,end=815,select=1,lastyear=2010,lastcohort
 	cohort.count.table=with(BrandResightJoin,table(brand,cohort))
 	resight.count.table=ifelse(resight.count.table<=select,0,1)
 	cohort.count.table=ifelse(cohort.count.table<=0,0,1)
-	if(lastyear>lastcohort)
-		cohort.count.table=cbind(cohort.count.table, matrix(0,ncol=(lastyear-lastcohort),nrow=nrow(cohort.count.table)))
+#	if(lastyear>lastcohort)
+#		cohort.count.table=cbind(cohort.count.table, matrix(0,ncol=(lastyear-lastcohort),nrow=nrow(cohort.count.table)))
 	BrandResightJoin$nphotos=ifelse(BrandResightJoin$photos%in%c("","N")|is.na(BrandResightJoin$photos),0,1)
 	photo.table=with(BrandResightJoin,tapply(nphotos,list(brand,pupyear),sum))
 	photo.table[is.na(photo.table)]=0
@@ -120,12 +121,14 @@ extract.Zc=function(dir=NULL,begin=515,end=815,select=1,lastyear=2010,lastcohort
 #   zz=with(repro.df,tapply(first.repro.age,list(brand,repro.year),min))
 #    zz[is.na(zz)]=0
 #    repro.df=data.frame(brand=as.numeric(names(xx)),repro.year=as.numeric(xx),first.repro.age=as.numeric(zz))
-	repro.df=data.frame(brand=as.numeric(names(xx)),repro.year=as.numeric(xx))
+#     repro.df=data.frame(brand=as.numeric(names(xx)),repro.year=as.numeric(xx))
+    repro.df=data.frame(brand=names(xx),repro.year=as.numeric(xx))
 #	repro.table$repro.year=ifelse(repro.table$repro.year<100,1900+repro.table$repro.year,repro.table$repro.year)
 	repro.table=with(repro.df,table(brand,repro.year))
 	xx=as.matrix(repro.table)
 	class(xx)="matrix"
-	xx=cbind(data.frame(brand=as.numeric(row.names(repro.table))),xx)
+#	xx=cbind(data.frame(brand=as.numeric(row.names(repro.table))),xx)
+	xx=cbind(data.frame(brand=row.names(repro.table)),xx)
 	xx=merge(Brand[,"brand",drop=FALSE],xx,all.x=TRUE,by="brand")
 	xx=xx[,-1]
 	xx[is.na(xx)]=0
@@ -137,24 +140,28 @@ extract.Zc=function(dir=NULL,begin=515,end=815,select=1,lastyear=2010,lastcohort
 	names(ReproCovariates)=c(paste("repro",names(xx),sep=""),paste("RepAge",names(xx),sep=""))
 # RegionCovariates
 	xx=with(LimitedResightswithCount[LimitedResightswithCount$capregion==1,],tapply(pupyear,brand,min))
-	area1.table=data.frame(brand=as.numeric(names(xx)),area1.year=as.numeric(xx))
+#	area1.table=data.frame(brand=as.numeric(names(xx)),area1.year=as.numeric(xx))
+	area1.table=data.frame(brand=names(xx),area1.year=as.numeric(xx))
 #	area1.table$area1.year=ifelse(area1.table$area1.year<100,1900+area1.table$area1.year,area1.table$area1.year)
 	area1.table=with(area1.table,table(brand,area1.year))
 	xx=as.matrix(area1.table)
 	class(xx)="matrix"
-	xx=cbind(data.frame(brand=as.numeric(row.names(area1.table))),xx)
+#	xx=cbind(data.frame(brand=as.numeric(row.names(area1.table))),xx)
+	xx=cbind(data.frame(brand=row.names(area1.table)),xx)
 	xx=merge(Brand[,"brand",drop=FALSE],xx,all.x=TRUE,by="brand")
 	xx=xx[,-1]
 	xx[is.na(xx)]=0
 	xx[]=t(apply(xx,1,cumsum))
 	area1.table=xx
 	xx=with(LimitedResightswithCount[LimitedResightswithCount$capregion==2,],tapply(pupyear,brand,min))
-	area2.table=data.frame(brand=as.numeric(names(xx)),area2.year=as.numeric(xx))
+#	area2.table=data.frame(brand=as.numeric(names(xx)),area2.year=as.numeric(xx))
+	area2.table=data.frame(brand=names(xx),area2.year=as.numeric(xx))
 #	area2.table$area2.year=ifelse(area2.table$area2.year<100,1900+area2.table$area2.year,area2.table$area2.year)
 	area2.table=with(area2.table,table(brand,area2.year))
 	xx=as.matrix(area2.table)
 	class(xx)="matrix"
-	xx=cbind(data.frame(brand=as.numeric(row.names(area2.table))),xx)
+#	xx=cbind(data.frame(brand=as.numeric(row.names(area2.table))),xx)
+	xx=cbind(data.frame(brand=row.names(area2.table)),xx)
 	xx=merge(Brand[,"brand",drop=FALSE],xx,all.x=TRUE,by="brand")
 	xx=xx[,-1]
 	xx[is.na(xx)]=0
@@ -175,3 +182,4 @@ extract.Zc=function(dir=NULL,begin=515,end=815,select=1,lastyear=2010,lastcohort
 	MarkData$cohort=factor(MarkData$cohort)
 	return(MarkData)
 }
+
