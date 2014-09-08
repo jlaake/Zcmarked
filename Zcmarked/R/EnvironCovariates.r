@@ -32,7 +32,7 @@ EnvironCovariates<-function(average.years=c(1994:1996,1998:2008),fdir=NULL,sites
 #   UpwellingIndex for 33N & 36N 	
 	UWI=getCalcurData("Environ","UWIAnomaly",dir=fdir)
 	UWI=UWI[order(UWI$Year,UWI$Month),]
-	UWI=tapply(UWI$UWI,list(UWI$Year,UWI$Month,UWI$Location),unique)
+	UWI=tapply(UWI$UWIAnomaly,list(UWI$Year,UWI$Month,UWI$Location),unique)
 	minyear=min(as.numeric(dimnames(UWI)[[1]]))
 	maxyear=max(as.numeric(dimnames(UWI)[[1]]))
 	nyears=maxyear-minyear+1
