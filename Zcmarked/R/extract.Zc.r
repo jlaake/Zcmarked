@@ -176,6 +176,7 @@ extract.Zc=function(dir=NULL,begin=515,end=815,select=1,lastyear=2010,lastcohort
 	CaptureHistory$ch=apply(capture.history,1,paste,collapse="")
 	td=as.data.frame(capture.history[-ncol(capture.history)])
 	td=td-table(CaptureHistory$brand,CaptureHistory$cohort)
+	td[td[,ncol(td)]<0,ncol(td)]=0
 	names(td)=paste("td",as.numeric(names(td))+1,sep="")
 	MarkData=CaptureHistory[,c("ch","cohort","sex","weight","brand")]
 	MarkData=cbind(MarkData,RegionCovariates,ReproCovariates,td,CaptureHistory[,c("recap","TotalTimesResighted")])

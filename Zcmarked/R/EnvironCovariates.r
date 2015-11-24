@@ -1,5 +1,3 @@
-
-
 #' Extracts environmental covariate data for SMI Zc analysis
 #' : by extracting data from ACCESS database and creating a series of
 #' anomaly summaries for sea surface temperature(SST), upwelling index (UWI) and 
@@ -28,6 +26,8 @@ EnvironCovariates<-function(average.years=c(1994:1996,1998:2008),fdir=NULL,sites
 	OcttoMarSSTAnomalies=rowMeans(cbind(SSTAnomalies[1:(nyears-1),c("Oct","Nov","Dec")],SSTAnomalies[2:nyears,c("Jan","Feb","Mar")]),na.rm=TRUE)
 	ApriltoJuneSSTAnomalies=rowMeans(SSTAnomalies[,c("Apr","May","June")],na.rm=TRUE)
 	names(ApriltoJuneSSTAnomalies)=as.character(as.numeric(names(ApriltoJuneSSTAnomalies))-1)
+	ApriltoSeptSSTAnomalies=rowMeans(SSTAnomalies[,c("Apr","May","June","July","Aug","Sept")],na.rm=TRUE)
+	names(ApriltoSeptSSTAnomalies)=as.character(as.numeric(names(ApriltoSeptSSTAnomalies))-1)
 	JulytoJuneSSTAnomalies=rowMeans(cbind(SSTAnomalies[1:(nyears-1),c("July","Aug","Sept","Oct","Nov","Dec")],SSTAnomalies[2:nyears,c("Jan","Feb","Mar","Apr","May","June")]),na.rm=TRUE)
 #   UpwellingIndex for 33N & 36N 	
 	UWI=getCalcurData("Environ","UWIAnomaly",dir=fdir)
@@ -65,6 +65,7 @@ EnvironCovariates<-function(average.years=c(1994:1996,1998:2008),fdir=NULL,sites
 			OcttoJuneSSTAnomalies=OcttoJuneSSTAnomalies[as.character(1987:maxyear)],
 			OcttoMarSSTAnomalies=OcttoMarSSTAnomalies[as.character(1987:maxyear)],	
 			ApriltoJuneSSTAnomalies=ApriltoJuneSSTAnomalies[as.character(1987:maxyear)],
+			ApriltoSeptSSTAnomalies=ApriltoSeptSSTAnomalies[as.character(1987:maxyear)],
 			JulytoJuneSSTAnomalies=JulytoJuneSSTAnomalies[as.character(1987:maxyear)],
 			OcttoJuneUWI33Anomalies=OcttoJuneUWI33Anomalies[as.character(1987:maxyear)],
 			OcttoMarUWI33Anomalies=OcttoMarUWI33Anomalies[as.character(1987:maxyear)],
