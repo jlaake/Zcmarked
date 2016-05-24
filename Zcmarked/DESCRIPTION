@@ -1,16 +1,14 @@
 Package: Zcmarked
-Version: 1.0.0
-Date: 2012-01-04
-Title: SMI California Sea Lion Survival Analysis with
-    marked package
+Version: 1.1.0
+Date: 2016-04-27
+Title: SMI California Sea Lion Survival Analysis data extraction
 Author: Jeff Laake <jeff.laake@noaa.gov>
 Description: This package provides code for data manipulation and
     models for resight data of branded sea lions for survival
-    estimation with marked package.
+    estimation.
 Depends:
     R (>= 2.13.0),
-    marked
-Imports:
+    CalcurData,
     RODBC,
     CIPinnipedAnalysis
 LazyLoad: yes
@@ -21,4 +19,6 @@ Collate:
     'define.models.r'
     'EnvironCovariates.r'
     'extract.Zc.r'
+    'extract.sights.r'
     'zzz.r'
+RoxygenNote: 5.0.1
